@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pablo Correa</title>
+<meta name="description" content="Pablo Correa — enseignant (reconnaissance CDIP 3H–8H), canton de Vaud. Recherche en éducation : IA et évaluation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --ground:#FAFAF8; --ink:#1C2128; --muted:#5B626C; --faint:#8A919A;
+    --rule:#E2E3DF; --accent:#264A6E; --accent-soft:#E8EDF2;
+    --serif:"Source Serif 4", Georgia, "Times New Roman", serif;
+    --sans:"IBM Plex Sans", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ground:#15181C; --ink:#E7E8E6; --muted:#A3A9B1; --faint:#7C838C;
+      --rule:#2A2F35; --accent:#9DB9D8; --accent-soft:#1E2833;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#15181C; --ink:#E7E8E6; --muted:#A3A9B1; --faint:#7C838C;
+    --rule:#2A2F35; --accent:#9DB9D8; --accent-soft:#1E2833;
+  }
+
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{background:var(--ground); color:var(--ink); font-family:var(--sans); font-size:16px; line-height:1.6; padding-inline:24px; padding-block:0}
+
+  /* language switch */
+  :root[data-lang="en"] [data-l="fr"], :root:not([data-lang="en"]) [data-l="en"]{display:none !important}
+
+  a{color:var(--accent); text-decoration:none; border-bottom:1px solid color-mix(in srgb, var(--accent) 35%, transparent)}
+  a:hover{border-bottom-color:var(--accent)}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:2px}
+
+  .topbar{max-width:1040px; margin-inline:auto; display:flex; justify-content:flex-end; padding-top:28px}
+  .lang{display:inline-flex; border:1px solid var(--rule); border-radius:4px; overflow:hidden}
+  .lang button{font:500 .75rem/1 var(--sans); letter-spacing:.08em; padding:7px 11px; border:0; background:transparent; color:var(--muted); cursor:pointer}
+  .lang button[aria-pressed="true"]{background:var(--accent-soft); color:var(--ink)}
+
+  .page{max-width:1040px; margin-inline:auto; display:grid; grid-template-columns:300px 1fr; gap:80px; padding-block:56px 64px}
+
+  .id{position:sticky; top:calc(env(safe-area-inset-top, 0px) + 56px); align-self:start}
+  .id h1{font-family:var(--serif); font-weight:500; font-size:2.5rem; line-height:1.1; letter-spacing:-0.01em; margin:0 0 16px; text-wrap:balance}
+  .id .role{margin:0 0 4px}
+  .id .place{margin:0; font-size:.9375rem; color:var(--muted)}
+  .id .contact{margin:36px 0 0; padding:24px 0 0; border-top:1px solid var(--rule); display:grid; gap:16px; font-size:.9375rem}
+  .id .contact div{display:grid; gap:2px}
+  .id .contact a{word-break:break-word}
+  .label{font-size:.6875rem; font-weight:500; letter-spacing:.09em; text-transform:uppercase; color:var(--faint)}
+  .langs{margin:0; color:var(--ink)}
+
+  main{display:grid; gap:60px; min-width:0}
+  .lede{font-family:var(--serif); font-size:1.375rem; line-height:1.5; margin:0; max-width:38ch; text-wrap:pretty}
+
+  section h2{font-size:.75rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin:0 0 22px; padding-bottom:12px; border-bottom:1px solid var(--rule)}
+  section p{margin:0 0 14px; max-width:64ch}
+  section p:last-child{margin-bottom:0}
+
+  dl.entries{margin:0; display:grid; gap:24px}
+  .entry{display:grid; grid-template-columns:150px 1fr; gap:24px}
+  .entry dt{font-size:.875rem; color:var(--muted); padding-top:2px; font-variant-numeric:tabular-nums}
+  .entry dd{margin:0}
+  .what{font-weight:500; display:block}
+  .where{display:block; font-size:.9375rem; color:var(--ink); margin-top:1px}
+  .detail{color:var(--muted); font-size:.9375rem; display:block; margin-top:3px; max-width:60ch}
+  .status{display:inline-block; margin-left:8px; font-size:.6875rem; font-weight:500; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); vertical-align:2px}
+
+  .work{padding:22px 24px; background:var(--accent-soft); border-radius:4px}
+  .work .kind{font-size:.6875rem; font-weight:500; letter-spacing:.09em; text-transform:uppercase; color:var(--accent); margin:0 0 8px}
+  .work .title{font-family:var(--serif); font-style:italic; font-size:1.125rem; line-height:1.45; margin:0 0 10px; max-width:58ch}
+  .work .detail{margin:0}
+
+  ul.tags{list-style:none; padding:0; margin:18px 0 0; display:flex; flex-wrap:wrap; gap:8px}
+  ul.tags li{font-size:.8125rem; padding:4px 10px; border-radius:3px; border:1px solid var(--rule); color:var(--ink)}
+
+  footer{grid-column:1 / -1; margin-top:16px; padding-top:20px; border-top:1px solid var(--rule); display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; font-size:.8125rem; color:var(--faint)}
+
+  @media (max-width:860px){
+    .page{grid-template-columns:1fr; gap:52px; padding-block:40px 48px}
+    .id{position:static}
+    .id .contact{grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); margin-top:28px}
+  }
+  @media (max-width:520px){
+    body{padding-inline:18px}
+    .id h1{font-size:2.125rem}
+    .lede{font-size:1.1875rem}
+    .entry{grid-template-columns:1fr; gap:2px}
+    .work{padding:18px}
+  }
+</style>
+
+</head>
+<body>
+<div class="topbar">
+  <div class="lang" role="group" aria-label="Langue / Language">
+    <button type="button" id="btn-fr" data-set="fr" aria-pressed="true">FR</button>
+    <button type="button" id="btn-en" data-set="en" aria-pressed="false">EN</button>
+  </div>
+</div>
+
+<div class="page">
+  <aside class="id">
+    <h1>Pablo Correa</h1>
+    <p class="role"><span data-l="fr">Enseignant · Reconnaissance CDIP 3H–8H</span><span data-l="en">Teacher · CDIP-recognised, grades 3H–8H</span></p>
+    <p class="place"><span data-l="fr">Canton de Vaud, Suisse</span><span data-l="en">Canton of Vaud, Switzerland</span></p>
+
+    <div class="contact">
+      <div>
+        <span class="label"><span data-l="fr">E-mail</span><span data-l="en">Email</span></span>
+        <a href="mailto:pablo.correa-prieto@edu-vd.ch">pablo.correa-prieto@edu-vd.ch</a>
+      </div>
+      <div>
+        <span class="label">LinkedIn</span>
+        <a href="https://www.linkedin.com/in/pablocorreaprieto" target="_blank" rel="noopener">linkedin.com/in/pablocorreaprieto</a>
+      </div>
+      <div>
+        <span class="label"><span data-l="fr">Langues</span><span data-l="en">Languages</span></span>
+        <p class="langs"><span data-l="fr">Français · Espagnol · Anglais</span><span data-l="en">French · Spanish · English</span></p>
+      </div>
+    </div>
+  </aside>
+
+  <main>
+    <p class="lede">
+      <span data-l="fr">Enseignant dans les écoles vaudoises et chercheur en formation. Je m’intéresse à ce que l’intelligence artificielle change concrètement à l’école, en particulier dans l’évaluation des apprentissages.</span>
+      <span data-l="en">Teacher in Vaud public schools and early-career researcher. My work looks at what artificial intelligence concretely changes in schools, particularly in the assessment of learning.</span>
+    </p>
+
+    <section aria-labelledby="h-rech">
+      <h2 id="h-rech"><span data-l="fr">Recherche</span><span data-l="en">Research</span></h2>
+
+      <div class="work">
+        <p class="kind"><span data-l="fr">Article en préparation</span><span data-l="en">Paper in preparation</span></p>
+        <p class="title"><span data-l="fr">Les grands modèles de langage peuvent-ils écrire selon le plan d’études ? Alignement, exigence cognitive et qualité d’items d’évaluation en mathématiques pour le PER</span><span data-l="en">Can Large Language Models Write to the Curriculum? Benchmarking Alignment, Cognitive Demand, and Item Quality in Mathematics Items for the Plan d’études romand</span></p>
+        <p class="detail"><span data-l="fr">Évaluation d’items générés par IA au regard du Plan d’études romand — mathématiques, cycle 3 (MSN 31 Espace, MSN 33 Opérations).</span><span data-l="en">Evaluating AI-generated assessment items against the Plan d’études romand — mathematics, cycle 3 (MSN 31 Space, MSN 33 Operations).</span></p>
+      </div>
+
+      <ul class="tags" aria-label="Axes de recherche">
+        <li><span data-l="fr">IA en éducation</span><span data-l="en">AI in education</span></li>
+        <li><span data-l="fr">Évaluation des apprentissages</span><span data-l="en">Assessment</span></li>
+        <li><span data-l="fr">Alignement curriculaire</span><span data-l="en">Curriculum alignment</span></li>
+        <li><span data-l="fr">Éducation numérique</span><span data-l="en">Digital education</span></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="h-ens">
+      <h2 id="h-ens"><span data-l="fr">Enseignement</span><span data-l="en">Teaching</span></h2>
+      <dl class="entries">
+        <div class="entry">
+          <dt><span data-l="fr">Depuis 2026</span><span data-l="en">Since 2026</span></dt>
+          <dd>
+            <span class="what"><span data-l="fr">Enseignant remplaçant</span><span data-l="en">Substitute teacher</span></span>
+            <span class="where">DGEO, <span data-l="fr">canton de Vaud</span><span data-l="en">Canton of Vaud</span></span>
+            <span class="detail"><span data-l="fr">Remplacements de courte et de longue durée au primaire et au secondaire I, avec prise en charge complète de la classe : planification selon le PER, enseignement, évaluation et suivi des élèves.</span><span data-l="en">Short- and long-term assignments in primary and lower-secondary schools, with full responsibility for the class: planning to the PER, teaching, assessment and pupil follow-up.</span></span>
+          </dd>
+        </div>
+      </dl>
+      <ul class="tags" aria-label="Disciplines">
+        <li><span data-l="fr">Anglais</span><span data-l="en">English</span></li>
+        <li><span data-l="fr">Sciences humaines et sociales</span><span data-l="en">Humanities &amp; social sciences</span></li>
+        <li><span data-l="fr">Arts visuels</span><span data-l="en">Visual arts</span></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="h-form">
+      <h2 id="h-form"><span data-l="fr">Formation</span><span data-l="en">Education</span></h2>
+      <dl class="entries">
+        <div class="entry">
+          <dt>2026 – <span data-l="fr">en cours</span><span data-l="en">present</span></dt>
+          <dd>
+            <span class="what"><span data-l="fr">Master en méthodes de recherche en éducation</span><span data-l="en">Master’s in Research Methods in Education</span></span>
+            <span class="where">Universidad Internacional de La Rioja (UNIR) · 60 ECTS</span>
+          </dd>
+        </div>
+        <div class="entry">
+          <dt>2026</dt>
+          <dd>
+            <span class="what"><span data-l="fr">Reconnaissance CDIP</span><span data-l="en">CDIP recognition</span></span>
+            <span class="where"><span data-l="fr">Diplôme d’enseignement pour les degrés 3 à 8 (primaire)</span><span data-l="en">Teaching diploma for grades 3–8 (primary)</span></span>
+            <span class="detail"><span data-l="fr">Conférence suisse des directeurs cantonaux de l’instruction publique.</span><span data-l="en">Swiss Conference of Cantonal Ministers of Education.</span></span>
+          </dd>
+        </div>
+        <div class="entry">
+          <dt>2024</dt>
+          <dd>
+            <span class="what"><span data-l="fr">Bachelor en enseignement primaire, mention langue étrangère : français</span><span data-l="en">Bachelor’s in Primary Education, specialisation in French as a foreign language</span></span>
+            <span class="where">Universidad de La Laguna, <span data-l="fr">Espagne</span><span data-l="en">Spain</span> · 240 ECTS</span>
+          </dd>
+        </div>
+      </dl>
+    </section>
+
+    <section aria-labelledby="h-parc">
+      <h2 id="h-parc"><span data-l="fr">Parcours</span><span data-l="en">Background</span></h2>
+      <p><span data-l="fr">Avant l’enseignement, une première carrière dans la serrurerie, un métier technique qui fonde une approche concrète, rigoureuse et orientée vers les solutions.</span><span data-l="en">Before teaching, a first career as a locksmith — a technical trade that shaped a concrete, rigorous, solution-oriented approach.</span></p>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Pablo Correa</span>
+    <span><span data-l="fr">Mis à jour en septembre 2026</span><span data-l="en">Updated September 2026</span></span>
+  </footer>
+</div>
+
+<script>
+  (function(){
+    var root=document.documentElement;
+    function set(l){
+      root.setAttribute('data-lang', l);
+      root.setAttribute('lang', l);
+      document.querySelectorAll('.lang button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.set===l ? 'true':'false'); });
+      try{ localStorage.setItem('pc-lang', l); }catch(e){}
+    }
+    var saved=null; try{ saved=localStorage.getItem('pc-lang'); }catch(e){}
+    set(saved==='en' ? 'en' : 'fr');
+    document.querySelectorAll('.lang button').forEach(function(b){ b.addEventListener('click', function(){ set(b.dataset.set); }); });
+  })();
+</script>
+
+</body>
+</html>
