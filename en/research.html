@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Can Large Language Models Write to the Curriculum? – Research by Pablo Correa Prieto</title>
+<meta name="description" content="Research project by Pablo Correa Prieto: mathematics assessment items (cycle 3) written by large language models, reviewed against the Plan d’études romand for alignment, cognitive demand and item quality.">
+<meta name="author" content="Pablo Correa Prieto">
+<meta name="robots" content="max-image-preview:large">
+<link rel="canonical" href="https://pablocorreaprieto.ch/en/research">
+<link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/recherche">
+<link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/research">
+<link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/investigacion">
+<link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/recherche">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Can Large Language Models Write to the Curriculum?">
+<meta property="og:description" content="Research project by Pablo Correa Prieto: mathematics assessment items (cycle 3) written by large language models, reviewed against the Plan d’études romand for alignment, cognitive demand and item quality.">
+<meta property="og:url" content="https://pablocorreaprieto.ch/en/research">
+<meta property="og:site_name" content="Pablo Correa Prieto">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://pablocorreaprieto.ch/pablo-correa-prieto-research-curriculum-alignment.jpg">
+<meta property="og:image:width" content="1800">
+<meta property="og:image:height" content="945">
+<meta property="og:image:alt" content="Pablo Correa Prieto, research project: alignment, cognitive demand and quality of AI-generated mathematics items for the Plan d’études romand">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#1C2128">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --ground:#FAFAF8; --ink:#1C2128; --muted:#5B626C; --faint:#8A919A;
+    --rule:#E2E3DF; --accent:#264A6E; --accent-soft:#E8EDF2; --mark:#B8492A;
+    --serif:"Source Serif 4", Georgia, "Times New Roman", serif;
+    --sans:"IBM Plex Sans", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ground:#15181C; --ink:#E7E8E6; --muted:#A3A9B1; --faint:#7C838C;
+      --rule:#2A2F35; --accent:#9DB9D8; --accent-soft:#1E2833; --mark:#E07A5A;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#15181C; --ink:#E7E8E6; --muted:#A3A9B1; --faint:#7C838C;
+    --rule:#2A2F35; --accent:#9DB9D8; --accent-soft:#1E2833; --mark:#E07A5A;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{background:var(--ground); color:var(--ink); font-family:var(--sans); font-size:16px; line-height:1.6; margin:0; padding-inline:24px}
+  a{color:var(--accent); text-decoration:none; border-bottom:1px solid color-mix(in srgb, var(--accent) 35%, transparent)}
+  a:hover{border-bottom-color:var(--accent)}
+  a:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:2px}
+
+  .topbar{max-width:1040px; margin-inline:auto; display:flex; justify-content:space-between; align-items:center; gap:16px; padding-top:28px}
+  .brand{font-family:var(--serif); font-weight:500; font-size:1.375rem; line-height:1; letter-spacing:-0.01em; color:var(--ink); border:0; white-space:nowrap}
+  .brand .dot{color:var(--mark)}
+  .tb{display:inline-flex; border:1px solid var(--rule); border-radius:4px; overflow:hidden}
+  .tb a{display:inline-flex; align-items:center; font:500 .75rem/1 var(--sans); letter-spacing:.08em; padding:7px 11px; color:var(--muted); border:0}
+  .tb a:hover{color:var(--ink)}
+  .tb a[aria-current="page"]{background:var(--accent-soft); color:var(--ink)}
+
+  .doc{max-width:720px; margin-inline:auto; padding-block:52px 64px}
+  .crumbs{font-size:.8125rem; color:var(--faint); margin:0 0 30px}
+  .crumbs a{color:var(--muted); border-bottom-color:var(--rule)}
+  .kicker{font-size:.75rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin:0 0 14px}
+  h1{font-family:var(--serif); font-weight:500; font-size:clamp(2rem, 1.35rem + 2.6vw, 2.75rem); line-height:1.12; letter-spacing:-0.01em; margin:0; text-wrap:balance}
+  .subtitle{font-family:var(--serif); font-size:1.25rem; line-height:1.45; color:var(--muted); margin:14px 0 0; text-wrap:pretty}
+  .byline{font-size:.875rem; color:var(--muted); margin:18px 0 0}
+
+  figure{margin:36px 0}
+  figure img{display:block; width:100%; height:auto; border-radius:4px; border:1px solid var(--rule)}
+  figcaption{font-family:var(--sans); font-size:.8125rem; line-height:1.5; color:var(--muted); margin-top:8px}
+
+  .prose{font-family:var(--serif); font-size:1.1875rem; line-height:1.65}
+  .prose p{margin:0 0 1.05em; text-wrap:pretty}
+  .prose h2{font-family:var(--serif); font-weight:500; font-size:1.5rem; line-height:1.25; margin:1.9em 0 .55em; text-wrap:balance}
+  .prose h2 .n{color:var(--mark); margin-right:.3em}
+
+  .sec{margin-top:40px}
+  .sec h2{font-size:.75rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin:0 0 16px; padding-bottom:10px; border-bottom:1px solid var(--rule)}
+  .sec p{margin:0 0 12px; max-width:64ch}
+  .sec .lead{font-family:var(--serif); font-size:1.1875rem; line-height:1.6}
+  ol.dims{list-style:none; margin:0; padding:0; display:grid; gap:14px; counter-reset:d}
+  ol.dims li{counter-increment:d; display:grid; grid-template-columns:28px 1fr; gap:6px 10px; align-items:baseline}
+  ol.dims li::before{content:counter(d); font-family:var(--serif); font-size:1.375rem; color:var(--mark); line-height:1}
+  ol.dims b{font-weight:600}
+  ul.tags{list-style:none; padding:0; margin:0; display:flex; flex-wrap:wrap; gap:8px}
+  ul.tags li{font-size:.8125rem; padding:4px 10px; border-radius:3px; border:1px solid var(--rule)}
+
+  .pub{padding:24px 26px; background:var(--accent-soft); border-radius:4px}
+  .pub .kind{font-size:.6875rem; font-weight:600; letter-spacing:.09em; text-transform:uppercase; color:var(--accent); margin:0 0 8px}
+  .pub h2{font-family:var(--serif); font-style:italic; font-weight:500; font-size:1.5rem; line-height:1.3; margin:0 0 14px; text-transform:none; letter-spacing:0; color:var(--ink); border:0; padding:0}
+  .pub dl{display:grid; grid-template-columns:max-content 1fr; gap:6px 18px; margin:0 0 14px; font-size:.9375rem}
+  .pub dt{color:var(--muted)}
+  .pub dd{margin:0}
+  .pub p{margin:0 0 10px; max-width:64ch}
+  .pub .cite{font-size:.875rem; color:var(--muted)}
+  .pub.prep{background:transparent; border:1px solid var(--rule)}
+  .pub.prep h2{font-style:normal; font-size:1.1875rem}
+  ul.links{list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:8px 22px}
+
+  .about{margin-top:56px; padding:22px 24px; border:1px solid var(--rule); border-radius:4px; font-size:.9375rem}
+  .about .label{font-size:.6875rem; font-weight:600; letter-spacing:.09em; text-transform:uppercase; color:var(--faint); margin:0 0 8px}
+  .about p{margin:0 0 10px}
+  .about ul{list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:6px 20px}
+
+  footer{max-width:1040px; margin-inline:auto; padding:20px 0 36px; border-top:1px solid var(--rule); display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; font-size:.8125rem; color:var(--faint)}
+
+  @media (max-width:520px){
+    body{padding-inline:16px}
+    .topbar{padding-top:20px}
+    .brand{font-size:1.1875rem}
+    .doc{padding-block:36px 48px}
+    .prose{font-size:1.125rem}
+    .pub{padding:18px}
+    .pub dl{grid-template-columns:1fr; gap:0}
+    .pub dd{margin-bottom:6px}
+  }
+  @media print{
+    :root{--ground:#fff; --ink:#000; --muted:#444; --faint:#666; --rule:#ccc; --accent:#1f3d5c; --accent-soft:#f1f3f6}
+    body{padding:0}
+    .topbar, .crumbs, footer{display:none}
+    a{border:0; color:inherit}
+  }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://pablocorreaprieto.ch/en/research#page",
+   "url": "https://pablocorreaprieto.ch/en/research",
+   "name": "Can Large Language Models Write to the Curriculum? – Research by Pablo Correa Prieto",
+   "description": "Research project by Pablo Correa Prieto: mathematics assessment items (cycle 3) written by large language models, reviewed against the Plan d’études romand for alignment, cognitive demand and item quality.",
+   "inLanguage": "en",
+   "dateModified": "2026-09-26",
+   "author": {
+    "@id": "https://pablocorreaprieto.ch/#person"
+   },
+   "about": {
+    "@id": "https://pablocorreaprieto.ch/recherche#study"
+   },
+   "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-research-curriculum-alignment.jpg",
+    "contentUrl": "https://pablocorreaprieto.ch/pablo-correa-prieto-research-curriculum-alignment.jpg",
+    "url": "https://pablocorreaprieto.ch/pablo-correa-prieto-research-curriculum-alignment.jpg",
+    "width": 1800,
+    "height": 945,
+    "caption": "Pablo Correa Prieto, research project: alignment, cognitive demand and quality of AI-generated mathematics items for the Plan d’études romand",
+    "creator": {
+     "@id": "https://pablocorreaprieto.ch/#person"
+    },
+    "creditText": "Pablo Correa Prieto",
+    "copyrightNotice": "© 2026 Pablo Correa Prieto"
+   },
+   "image": [
+    {
+     "@type": "ImageObject",
+     "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-research-curriculum-alignment.jpg",
+     "contentUrl": "https://pablocorreaprieto.ch/pablo-correa-prieto-research-curriculum-alignment.jpg",
+     "url": "https://pablocorreaprieto.ch/pablo-correa-prieto-research-curriculum-alignment.jpg",
+     "width": 1800,
+     "height": 945,
+     "caption": "Pablo Correa Prieto, research project: alignment, cognitive demand and quality of AI-generated mathematics items for the Plan d’études romand",
+     "creator": {
+      "@id": "https://pablocorreaprieto.ch/#person"
+     },
+     "creditText": "Pablo Correa Prieto",
+     "copyrightNotice": "© 2026 Pablo Correa Prieto"
+    },
+    {
+     "@type": "ImageObject",
+     "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-study-design-llm-curriculum.jpg",
+     "contentUrl": "https://pablocorreaprieto.ch/pablo-correa-prieto-study-design-llm-curriculum.jpg",
+     "url": "https://pablocorreaprieto.ch/pablo-correa-prieto-study-design-llm-curriculum.jpg",
+     "width": 1800,
+     "height": 945,
+     "caption": "Study design by Pablo Correa Prieto: large language models write mathematics items (cycle 3), reviewed against the PER for alignment, cognitive demand and item quality",
+     "creator": {
+      "@id": "https://pablocorreaprieto.ch/#person"
+     },
+     "creditText": "Pablo Correa Prieto",
+     "copyrightNotice": "© 2026 Pablo Correa Prieto"
+    }
+   ],
+   "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://pablocorreaprieto.ch/en/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Research",
+      "item": "https://pablocorreaprieto.ch/en/research"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://pablocorreaprieto.ch/recherche#study",
+   "name": "Can Large Language Models Write to the Curriculum? Benchmarking Alignment, Cognitive Demand, and Item Quality in Mathematics Items for the Plan d’études romand",
+   "alternateName": [
+    "Can Large Language Models Write to the Curriculum?",
+    "Les grands modèles de langage peuvent-ils écrire selon le plan d’études ?",
+    "¿Pueden los grandes modelos de lenguaje escribir conforme al currículo?"
+   ],
+   "author": {
+    "@id": "https://pablocorreaprieto.ch/#person"
+   },
+   "creativeWorkStatus": "In preparation",
+   "keywords": [
+    "assessment",
+    "cognitive demand",
+    "curriculum alignment",
+    "generative AI",
+    "item generation",
+    "large language models",
+    "mathematics education",
+    "Plan d’études romand",
+    "Switzerland"
+   ],
+   "subjectOf": {
+    "@type": "CreativeWork",
+    "name": "OSF project",
+    "url": "https://osf.io/b653h/"
+   },
+   "about": [
+    "Large language models",
+    "Educational assessment",
+    "Mathematics education",
+    "Plan d’études romand"
+   ]
+  },
+  {
+   "@type": "Person",
+   "@id": "https://pablocorreaprieto.ch/#person",
+   "name": "Pablo Correa Prieto",
+   "givenName": "Pablo",
+   "familyName": "Correa Prieto",
+   "url": "https://pablocorreaprieto.ch/",
+   "image": "https://pablocorreaprieto.ch/pablo-correa-prieto.jpg",
+   "sameAs": [
+    "https://www.linkedin.com/in/pablocorreaprieto",
+    "https://scholar.google.com/citations?user=N2vtvGcAAAAJ",
+    "https://github.com/pablocorreaprieto",
+    "https://orcid.org/0009-0009-1844-7453",
+    "https://universidadinternacionaldelarioja.academia.edu/PabloCorreaPrieto",
+    "https://www.researchgate.net/profile/Pablo-Correa-Prieto",
+    "https://www.wikidata.org/wiki/Q141533563"
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<div class="topbar">
+  <a class="brand" href="/en/" aria-label="Pablo Correa Prieto – Home">pablo correa prieto<span class="dot">.</span></a>
+  <nav class="tb" aria-label="Language">
+    <a href="/recherche" hreflang="fr" lang="fr" aria-label="Français">FR</a>
+    <a href="/en/research" hreflang="en" lang="en" aria-label="English" aria-current="page">EN</a>
+    <a href="/es/investigacion" hreflang="es" lang="es" aria-label="Español">ES</a>
+  </nav>
+</div>
+
+<main class="doc">
+<p class="crumbs"><a href="/en/">Home</a> / Research</p>
+<header>
+  <p class="kicker">Research · paper in preparation</p>
+  <h1>Can Large Language Models Write to the Curriculum?</h1>
+  <p class="subtitle">Benchmarking Alignment, Cognitive Demand, and Item Quality in Mathematics Items for the Plan d’études romand</p>
+  <p class="byline">Pablo Correa Prieto · study in preparation · <a href="https://osf.io/b653h/" rel="noopener" target="_blank">OSF project</a></p>
+</header>
+<figure>
+  <img src="/pablo-correa-prieto-research-curriculum-alignment.jpg" width="1800" height="945" fetchpriority="high" alt="Pablo Correa Prieto, research project: alignment, cognitive demand and quality of AI-generated mathematics items for the Plan d’études romand">
+  <figcaption>The three dimensions examined: alignment, cognitive demand, item quality.</figcaption>
+</figure>
+<section class="sec">
+  <h2>The question</h2>
+  <p class="lead">I am preparing a paper on a specific question: can large language models produce mathematics assessment items for cycle 3 that comply with the Plan d’études romand (PER), the curriculum of French-speaking Switzerland?</p>
+</section>
+<section class="sec">
+  <h2>Why it matters</h2>
+  <p>Generating a set of exercises now takes a few seconds. But a correct exercise is not necessarily aligned with the objective set by the PER, nor pitched at the right level of demand for the class. The aim is not to replace the teacher who designs their assessments, but to find out what these tools are really worth when they are held to the requirements of the curriculum.</p>
+</section>
+<section class="sec">
+  <h2>Three dimensions</h2>
+  <ol class="dims">
+    <li><span><b>Alignment</b>: does the item match the PER objective it is meant to assess?</span></li>
+    <li><span><b>Cognitive demand</b>: what level of thinking does the item ask of the pupil?</span></li>
+    <li><span><b>Item quality</b>: is the item correct, clear and usable in class?</span></li>
+  </ol>
+  <figure>
+    <img src="/pablo-correa-prieto-study-design-llm-curriculum.jpg" width="1800" height="945" loading="lazy" decoding="async" alt="Study design by Pablo Correa Prieto: large language models write mathematics items (cycle 3), reviewed against the PER for alignment, cognitive demand and item quality">
+    <figcaption>Study design.</figcaption>
+  </figure>
+</section>
+<section class="sec">
+  <h2>Status and materials</h2>
+  <p>Study in preparation, carried out alongside my master’s in education research (UNIR). The study protocol, materials and preprint will be added to the OSF project <a href="https://osf.io/b653h/" rel="noopener" target="_blank">osf.io/b653h</a>.</p>
+  <ul class="tags" aria-label="Keywords"><li>assessment</li><li>cognitive demand</li><li>curriculum alignment</li><li>generative AI</li><li>item generation</li><li>large language models</li><li>mathematics education</li><li>Plan d’études romand</li><li>Switzerland</li></ul>
+</section>
+<section class="sec">
+  <h2>Further reading</h2>
+  <p><a href="/en/ai-teachers-prepare-assess">What AI really changes for teachers who prepare and assess</a> — the article that sets out the classroom stakes behind this research.</p>
+  <p>Working on these questions in French-speaking Switzerland? My contact details are on the <a href="/en/">home page</a>.</p>
+</section>
+<aside class="about" aria-label="About the author">
+  <p class="label">About the author</p>
+  <p>Pablo Correa Prieto is a CDIP-recognised primary teacher (3H–8H) working as a substitute teacher in Vaud schools. Alongside, he is doing a master’s in education research (UNIR): digital education and AI in schools.</p>
+  <ul><li><a href="/en/">Profile and contact</a></li><li><a href="/en/research">Research</a></li><li><a href="/en/publications">Publications</a></li></ul>
+</aside>
+</main>
+
+<footer>
+  <span>© 2026 Pablo Correa Prieto · <a href="/en/">pablocorreaprieto.ch</a></span>
+  <span>Updated September 2026</span>
+</footer>
+</body>
+</html>
