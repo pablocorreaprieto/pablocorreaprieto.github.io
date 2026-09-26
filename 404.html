@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Page introuvable – Pablo Correa Prieto</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#1C2128">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --ground:#FAFAF8; --ink:#1C2128; --muted:#5B626C; --faint:#8A919A;
+    --rule:#E2E3DF; --accent:#264A6E; --accent-soft:#E8EDF2; --mark:#B8492A;
+    --serif:"Source Serif 4", Georgia, "Times New Roman", serif;
+    --sans:"IBM Plex Sans", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ground:#15181C; --ink:#E7E8E6; --muted:#A3A9B1; --faint:#7C838C;
+      --rule:#2A2F35; --accent:#9DB9D8; --accent-soft:#1E2833; --mark:#E07A5A;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#15181C; --ink:#E7E8E6; --muted:#A3A9B1; --faint:#7C838C;
+    --rule:#2A2F35; --accent:#9DB9D8; --accent-soft:#1E2833; --mark:#E07A5A;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{background:var(--ground); color:var(--ink); font-family:var(--sans); font-size:16px; line-height:1.6; margin:0; padding-inline:24px}
+  a{color:var(--accent); text-decoration:none; border-bottom:1px solid color-mix(in srgb, var(--accent) 35%, transparent)}
+  a:hover{border-bottom-color:var(--accent)}
+  a:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:2px}
+
+  .topbar{max-width:1040px; margin-inline:auto; display:flex; justify-content:space-between; align-items:center; gap:16px; padding-top:28px}
+  .brand{font-family:var(--serif); font-weight:500; font-size:1.375rem; line-height:1; letter-spacing:-0.01em; color:var(--ink); border:0; white-space:nowrap}
+  .brand .dot{color:var(--mark)}
+
+  .doc{max-width:720px; margin-inline:auto; padding-block:52px 64px}
+  .kicker{font-size:.75rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin:0 0 14px}
+  h1{font-family:var(--serif); font-weight:500; font-size:clamp(2rem, 1.35rem + 2.6vw, 2.75rem); line-height:1.12; letter-spacing:-0.01em; margin:0; text-wrap:balance}
+  .lang{margin-top:40px; padding-top:22px; border-top:1px solid var(--rule)}
+  .lang:first-of-type{margin-top:28px}
+  .lang h2{font-family:var(--serif); font-weight:500; font-size:1.25rem; line-height:1.3; margin:0 0 8px}
+  .lang p{margin:0 0 12px; color:var(--muted); max-width:64ch}
+  ul.links{list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:8px 22px}
+
+  footer{max-width:1040px; margin-inline:auto; padding:20px 0 36px; border-top:1px solid var(--rule); display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; font-size:.8125rem; color:var(--faint)}
+
+  @media (max-width:520px){
+    body{padding-inline:16px}
+    .topbar{padding-top:20px}
+    .brand{font-size:1.1875rem}
+    .doc{padding-block:36px 48px}
+  }
+</style>
+</head>
+<body>
+<div class="topbar">
+  <a class="brand" href="/" aria-label="Pablo Correa Prieto – Accueil">pablo correa prieto<span class="dot">.</span></a>
+</div>
+
+<main class="doc">
+<p class="kicker">404</p>
+<h1>Page introuvable<br><span lang="en">Page not found</span><br><span lang="es">Página no encontrada</span></h1>
+
+<section class="lang" lang="fr">
+  <h2>Cette page n’existe pas ou a été déplacée.</h2>
+  <ul class="links">
+    <li><a href="/">Accueil</a></li>
+    <li><a href="/recherche">Recherche</a></li>
+    <li><a href="/publications">Publications</a></li>
+  </ul>
+</section>
+
+<section class="lang" lang="en">
+  <h2>This page doesn’t exist or has moved.</h2>
+  <ul class="links">
+    <li><a href="/en/">Home</a></li>
+    <li><a href="/en/research">Research</a></li>
+    <li><a href="/en/publications">Publications</a></li>
+  </ul>
+</section>
+
+<section class="lang" lang="es">
+  <h2>Esta página no existe o ha cambiado de dirección.</h2>
+  <ul class="links">
+    <li><a href="/es/">Inicio</a></li>
+    <li><a href="/es/investigacion">Investigación</a></li>
+    <li><a href="/es/publicaciones">Publicaciones</a></li>
+  </ul>
+</section>
+</main>
+
+<footer>
+  <span>© 2026 Pablo Correa Prieto · <a href="/">pablocorreaprieto.ch</a></span>
+</footer>
+</body>
+</html>
