@@ -1,2 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"><url><loc>https://pablocorreaprieto.ch/</loc><lastmod>2026-09-24</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/"/><xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/"/><xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/"/><image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto.jpg</image:loc></image:image><image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-enseignant.jpg</image:loc></image:image><image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-recherche-ia.jpg</image:loc></image:image></url><url><loc>https://pablocorreaprieto.ch/en/</loc><lastmod>2026-09-24</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/"/><xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/"/><xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/"/><image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto.jpg</image:loc></image:image><image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-teacher.jpg</image:loc></image:image><image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-ai-research.jpg</image:loc></image:image></url><url><loc>https://pablocorreaprieto.ch/es/</loc><lastmod>2026-09-24</lastmod><xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/"/><xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/"/><xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/"/><image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto.jpg</image:loc></image:image><image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-docente.jpg</image:loc></image:image><image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-investigacion-ia.jpg</image:loc></image:image></url></urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://pablocorreaprieto.ch/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/"/>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-enseignant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-recherche-ia.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pablocorreaprieto.ch/en/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/"/>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-teacher.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-ai-research.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pablocorreaprieto.ch/es/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/"/>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-docente.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-investigacion-ia.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pablocorreaprieto.ch/recherche</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/recherche"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/research"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/investigacion"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/recherche"/>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-recherche-alignement-per.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-schema-etude-llm-per.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pablocorreaprieto.ch/en/research</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/recherche"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/research"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/investigacion"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/recherche"/>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-research-curriculum-alignment.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-study-design-llm-curriculum.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pablocorreaprieto.ch/es/investigacion</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/recherche"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/research"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/investigacion"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/recherche"/>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-investigacion-alineacion-per.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-diseno-estudio-llm-per.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pablocorreaprieto.ch/publications</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/publications"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/publications"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/publicaciones"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/publications"/>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-publication-matematicas-juego.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pablocorreaprieto.ch/en/publications</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/publications"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/publications"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/publicaciones"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/publications"/>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-publication-mathematics-play.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pablocorreaprieto.ch/es/publicaciones</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/publications"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/publications"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/publicaciones"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/publications"/>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-publicacion-matematicas-juego.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pablocorreaprieto.ch/ia-enseignant-preparer-evaluer</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/ia-enseignant-preparer-evaluer"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/ai-teachers-prepare-assess"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/ia-docente-preparar-evaluar"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/ia-enseignant-preparer-evaluer"/>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-preparer-evaluer-apprendre.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-ia-trois-deplacements.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pablocorreaprieto.ch/en/ai-teachers-prepare-assess</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/ia-enseignant-preparer-evaluer"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/ai-teachers-prepare-assess"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/ia-docente-preparar-evaluar"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/ia-enseignant-preparer-evaluer"/>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-prepare-assess-learn.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-ai-three-shifts.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pablocorreaprieto.ch/es/ia-docente-preparar-evaluar</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/ia-enseignant-preparer-evaluer"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/ai-teachers-prepare-assess"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/ia-docente-preparar-evaluar"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/ia-enseignant-preparer-evaluer"/>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-preparar-evaluar-aprender.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-ia-tres-desplazamientos.jpg</image:loc></image:image>
+  </url>
+</urlset>
