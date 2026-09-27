@@ -1,3 +1,6 @@
-# Plain static site; this file only keeps the README from being published as a page.
+# Plain static site. Jekyll (run by GitHub Pages) only copies files; this keeps
+# repo docs and tooling out of the published site.
 exclude:
   - README.md
+  - CLAUDE.md
+  - tools/

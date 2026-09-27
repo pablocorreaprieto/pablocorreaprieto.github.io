@@ -12,6 +12,8 @@ French is the default language at the root; English lives in `/en/`, Spanish in 
 | Research project | `recherche.html` | `en/research.html` | `es/investigacion.html` |
 | Publications | `publications.html` | `en/publications.html` | `es/publicaciones.html` |
 | Article | `ia-enseignant-preparer-evaluer.html` | `en/ai-teachers-prepare-assess.html` | `es/ia-docente-preparar-evaluar.html` |
+| Articles index | `articles.html` | `en/articles.html` | `es/articulos.html` |
+| Figure reuse (licence) | `reutilisation-figures.html` | `en/figure-reuse.html` | `es/reutilizacion-figuras.html` |
 
 Other files:
 
@@ -21,6 +23,8 @@ Other files:
 - `favicon.*`, `apple-touch-icon.png` – icons.
 - `logo-mark.svg` – the wordmark shown on the home pages, loaded with `<svg><use href="/logo-mark.svg#m"/></svg>` so it inherits the page’s text colour (light, dark and print). External `<use>` does not work when a page is opened as a local file; preview with a local server (`python3 -m http.server`) instead.
 - `pablo-correa-prieto-*.jpg` – page and social-preview images, one per language, named descriptively in that language.
+- `tools/` – scripts that generate article covers and embed image metadata (see `tools/README.md`). Not published.
+- `_config.yml` – keeps `README.md`, `CLAUDE.md` and `tools/` out of the published site.
 
 URLs are extensionless (`/recherche`, not `/recherche.html`); GitHub Pages resolves them.
 

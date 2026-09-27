@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://pablocorreaprieto.ch/</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-09-27</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/"/>
@@ -13,7 +13,7 @@
   </url>
   <url>
     <loc>https://pablocorreaprieto.ch/en/</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-09-27</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/"/>
@@ -24,7 +24,7 @@
   </url>
   <url>
     <loc>https://pablocorreaprieto.ch/es/</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-09-27</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/"/>
@@ -92,32 +92,83 @@
   </url>
   <url>
     <loc>https://pablocorreaprieto.ch/ia-enseignant-preparer-evaluer</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-09-27</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/ia-enseignant-preparer-evaluer"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/ai-teachers-prepare-assess"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/ia-docente-preparar-evaluar"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/ia-enseignant-preparer-evaluer"/>
-    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-preparer-evaluer-apprendre.jpg</image:loc></image:image>
-    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-ia-trois-deplacements.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-ia-enseignant-titre-fr.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-ia-enseignant-deplacements-fr.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://pablocorreaprieto.ch/en/ai-teachers-prepare-assess</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-09-27</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/ia-enseignant-preparer-evaluer"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/ai-teachers-prepare-assess"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/ia-docente-preparar-evaluar"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/ia-enseignant-preparer-evaluer"/>
-    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-prepare-assess-learn.jpg</image:loc></image:image>
-    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-ai-three-shifts.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-ia-enseignant-titre-en.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-ia-enseignant-deplacements-en.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://pablocorreaprieto.ch/es/ia-docente-preparar-evaluar</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-09-27</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/ia-enseignant-preparer-evaluer"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/ai-teachers-prepare-assess"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/ia-docente-preparar-evaluar"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/ia-enseignant-preparer-evaluer"/>
-    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-preparar-evaluar-aprender.jpg</image:loc></image:image>
-    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-ia-tres-desplazamientos.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-ia-enseignant-titre-es.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-ia-enseignant-deplacements-es.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pablocorreaprieto.ch/articles</loc>
+    <lastmod>2026-09-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/articles"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/articles"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/articulos"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/articles"/>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-ia-enseignant-titre-fr.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pablocorreaprieto.ch/en/articles</loc>
+    <lastmod>2026-09-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/articles"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/articles"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/articulos"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/articles"/>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-ia-enseignant-titre-en.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pablocorreaprieto.ch/es/articulos</loc>
+    <lastmod>2026-09-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/articles"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/articles"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/articulos"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/articles"/>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-ia-enseignant-titre-es.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pablocorreaprieto.ch/reutilisation-figures</loc>
+    <lastmod>2026-09-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/reutilisation-figures"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/figure-reuse"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/reutilizacion-figuras"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/reutilisation-figures"/>
+  </url>
+  <url>
+    <loc>https://pablocorreaprieto.ch/en/figure-reuse</loc>
+    <lastmod>2026-09-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/reutilisation-figures"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/figure-reuse"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/reutilizacion-figuras"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/reutilisation-figures"/>
+  </url>
+  <url>
+    <loc>https://pablocorreaprieto.ch/es/reutilizacion-figuras</loc>
+    <lastmod>2026-09-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/reutilisation-figures"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/figure-reuse"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/reutilizacion-figuras"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/reutilisation-figures"/>
   </url>
 </urlset>
