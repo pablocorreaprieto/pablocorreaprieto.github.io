@@ -1,3 +1,4 @@
-# Plain static site; this file only keeps the README from being published as a page.
+# Plain static site; this file only keeps repo docs from being published as pages.
 exclude:
   - README.md
+  - CLAUDE.md
