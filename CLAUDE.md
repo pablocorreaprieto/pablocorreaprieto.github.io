@@ -19,10 +19,11 @@ Articles are short, rigorous pieces on AI in education, each with original figur
 - **No unpublished data or results** from Pablo’s studies; only what is already public.
 - **Charts only from real, cited data.** Conceptual diagrams are fine.
 - **Images:** no stock images, no photos of anyone except Pablo’s headshot, no AI-generated photorealistic images, no robot or glowing-brain clichés.
+- **Credit and CC BY apply to figures and covers only**, and only to ones Pablo made or has confirmed as his — never to photos of Pablo.
 - **Profiles:** link only the profiles listed under “Profiles”. Never Facebook or YouTube.
-- **Placeholders:** where text is needed and the facts aren’t available, leave a visible placeholder like `[À COMPLÉTER : …]` and list every placeholder in the reply. Never publish a page with placeholders.
+- **Placeholders:** where text is needed and the facts aren’t available, leave a visible placeholder like `[À COMPLÉTER : …]` and list every placeholder in the reply and the PR body. A PR with placeholders is not ready to merge; say so.
 - **Structured data (JSON-LD)** describes only what the visible page says.
-- **Never push or deploy until Pablo says “publish”.** See “Git workflow”.
+- **Never push to `main` and never merge.** Pablo merges. See “Git workflow”.
 
 ## Languages
 
@@ -43,7 +44,7 @@ Articles are short, rigorous pieces on AI in education, each with original figur
    - EN: “Text written with the help of AI, reviewed and approved by the author.”
    - ES: «Texto redactado con ayuda de una IA, revisado y validado por el autor.»
 7. Run the checklist and preview locally (`python3 -m http.server`).
-8. Wait for “publish”.
+8. Push the branch and open or update the pull request. Pablo reviews and merges (“publish”).
 
 ## Images
 
@@ -54,7 +55,7 @@ Each article gets:
 
 For every image:
 
-- Filename: `pablo-correa-prieto-<topic-slug>-<fr|en|es>.png`; covers: `pablo-correa-prieto-<topic-slug>-cover.png`.
+- Filename: `pablo-correa-prieto-<topic-slug>-<fr|en|es>.png`; covers: `pablo-correa-prieto-<topic-slug>-cover.png`. Exception: the figures of the first article (September 2026) stay JPG, with the same naming pattern.
 - Credit line inside the image, small, bottom right: `Pablo Correa Prieto · <year> · CC BY 4.0`.
 - A real `<img>` inside `<figure>` (never a CSS background), with `width` and `height`; don’t lazy-load the first image on a page.
 - `alt`: what the figure shows, in the page’s language. No keyword stuffing.
@@ -69,7 +70,7 @@ For every image:
 - Base URL: `https://pablocorreaprieto.ch` (from `CNAME`).
 - Home page: headshot near the top, next to the name (`pablo-correa-prieto.jpg`, alt “Pablo Correa Prieto”).
 - Home page JSON-LD: `Person` with `@id` `https://pablocorreaprieto.ch/#person`, `name` “Pablo Correa Prieto”, `alternateName` “Pablo Correa”, `image` (headshot), `sameAs` (profiles below). Other pages reference this `@id`.
-- Article JSON-LD: `BlogPosting` with `author` → the Person `@id`, `headline`, `inLanguage`, `datePublished`, `image`; plus one `ImageObject` per figure with `contentUrl`, `creator`, `creditText`, `copyrightNotice`, `license`, `acquireLicensePage` (a short page explaining how to reuse Pablo’s figures).
+- Article JSON-LD: `Article` (for every article) with `author` → the Person `@id`, `headline`, `inLanguage`, `datePublished`, `image`; plus one `ImageObject` per figure with `contentUrl`, `creator`, `creditText`, `copyrightNotice`, `license`, `acquireLicensePage` (a short page explaining how to reuse Pablo’s figures).
 - Open Graph and Twitter card tags using the cover.
 - An articles index page per language, each article shown with its cover.
 - `sitemap.xml`: every page with its hreflang alternates and its images (`<image:image><image:loc>` only; the other image tags are deprecated). Update `<lastmod>` for every page you change. Referenced in `robots.txt`.
@@ -80,15 +81,22 @@ Only these may be linked (visible links or JSON-LD `sameAs`):
 
 - ORCID: https://orcid.org/0009-0009-1844-7453
 - OSF: https://osf.io/skvn4
-- Google Scholar, LinkedIn, ResearchGate, Academia.edu, HAL, Wikidata: only URLs Pablo has confirmed exist.
+- GitHub: https://github.com/pablocorreaprieto
+- Google Scholar: https://scholar.google.com/citations?user=N2vtvGcAAAAJ
+- LinkedIn: https://www.linkedin.com/in/pablocorreaprieto
+- ResearchGate: https://www.researchgate.net/profile/Pablo-Correa-Prieto
+- Academia.edu: https://universidadinternacionaldelarioja.academia.edu/PabloCorreaPrieto
+- Wikidata: https://www.wikidata.org/wiki/Q141533563
+
+HAL: none for now. Any other profile only after Pablo confirms its URL.
 
 ## Git workflow
 
-- Work on a branch; commit locally.
-- **Nothing is pushed — not even a branch — until Pablo says “publish”.** On “publish”: push the branch and open a pull request. **Never push to `main`**; Pablo reviews and merges.
+- Work on a branch. Pushing working branches and opening or updating pull requests is always allowed (the cloud container is temporary, so push rather than leave commits only local).
+- **Never push to `main` and never merge.** “Publish” means Pablo merges the pull request himself after review.
 - Keep PRs focused, and describe every change and anything left open in the PR body.
 
-## Checklist before asking Pablo to publish
+## Checklist before asking Pablo to review
 
 - [ ] FR, EN and ES pages exist; `hreflang` is reciprocal
 - [ ] Every image: name in filename, credit line, alt, figcaption, embedded metadata
@@ -102,7 +110,7 @@ Only these may be linked (visible links or JSON-LD `sameAs`):
 
 ## Check the live site after every deploy
 
-GitHub Pages deploys only from `main`, so a pushed branch changes nothing live. After a PR is merged:
+GitHub Pages deploys only from `main`, so a pushed branch changes nothing live. After Pablo merges a PR:
 
 1. Wait for the GitHub Pages deployment to finish (the “pages build and deployment” run on `main`).
 2. Fetch each changed URL on https://pablocorreaprieto.ch and confirm it returns 200 and shows the change. Also confirm an unknown URL returns the 404 page.
