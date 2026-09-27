@@ -2,36 +2,108 @@
 
 Rules for working on pablocorreaprieto.ch. Structure and the page-editing checklist are in `README.md`; read it first.
 
+## The site
+
+Personal site of Pablo Correa Prieto (short form: Pablo Correa). Teacher in Vaud, master’s student in education research (UNIR), research interest: AI in education.
+
+Readers: Vaud school directors, and researchers / doctoral supervisors. Neither should feel the page is written for someone else.
+
+Articles are short, rigorous pieces on AI in education, each with original figures credited to Pablo, so that the site and its images come up when someone searches his name, including in Google Images.
+
+## Non-negotiables
+
+- **Nothing invented or inflated.** No claims about Pablo’s experience, roles, results, qualifications, publications or affiliations beyond what the site already states or he supplies in the conversation. This includes titles, dates, co-authors, venues, institutions, job titles and numbers.
+- **Don’t upgrade status or wording:** “in preparation” is not “submitted” or “published”; a bachelor’s thesis (TFG) is a `Thesis`, not a `ScholarlyArticle`.
+- **Dates** come from the site, from Pablo, or from git history — never estimated.
+- **Citations:** only sources you have actually opened (the DOI resolves or the page loads). APA 7. If you can’t verify one, write `[SOURCE À VÉRIFIER]` and tell Pablo. Never invent authors, years, titles or pages.
+- **No unpublished data or results** from Pablo’s studies; only what is already public.
+- **Charts only from real, cited data.** Conceptual diagrams are fine.
+- **Images:** no stock images, no photos of anyone except Pablo’s headshot, no AI-generated photorealistic images, no robot or glowing-brain clichés.
+- **Profiles:** link only the profiles listed under “Profiles”. Never Facebook or YouTube.
+- **Placeholders:** where text is needed and the facts aren’t available, leave a visible placeholder like `[À COMPLÉTER : …]` and list every placeholder in the reply. Never publish a page with placeholders.
+- **Structured data (JSON-LD)** describes only what the visible page says.
+- **Never push or deploy until Pablo says “publish”.** See “Git workflow”.
+
 ## Languages
 
-- **French first.** French is the source language and lives at the root (`/`). Write or change the French page first, then bring English (`/en/`) and Spanish (`/es/`) in line with it.
-- **EN and ES stay in sync with FR.** A change to one language is not done until all three pages carry it: visible text, `<title>`, meta description, `og:*` tags, image alt text, JSON-LD, the FR/EN/ES switcher and the `hreflang` links. If a translation can’t be done yet, say so; don’t ship a partial set.
-- Content that exists in one language only (e.g. the LinkedIn version of the article, which is French only) stays that way; don’t create translations of it or links to non-existent versions.
+- **French first.** French is the source language and lives at the root (`/`); English at `/en/`, Spanish at `/es/`.
+- **EN and ES stay in sync with FR.** A change is not done until all three pages carry it: visible text, `<title>`, meta description, `og:*` tags, image alt text, figure labels, JSON-LD, the FR/EN/ES switcher and reciprocal `hreflang` (fr, en, es, x-default → fr). If a translation can’t be done yet, say so; don’t ship a partial set.
+- EN and ES articles are adapted, not translated word for word.
+- Content that exists in one language only (e.g. the LinkedIn version of the first article, French only) stays that way; don’t create links to non-existent versions.
 
-## Nothing invented or inflated
+## Workflow for each article
 
-- Never add or change facts about Pablo’s research, publications, teaching, qualifications or biography unless he supplied them in the conversation or they already appear on the site. This includes titles, dates, co-authors, venues, institutions, job titles and numbers.
-- Don’t upgrade status or wording: “in preparation” is not “submitted” or “published”; a bachelor’s thesis (TFG) is a `Thesis`, not a `ScholarlyArticle`.
-- Dates come from the site, from Pablo, or from git history — never estimated.
-- Where text is needed and the facts aren’t available, leave a visible placeholder like `[À COMPLÉTER : …]` and list every placeholder in the reply. Never publish a page with placeholders to `main`.
-- Structured data (JSON-LD) must describe only what the visible page says.
+1. Ask Pablo for the topic, his angle (3–5 points in his own words) and any sources he wants used. **Don’t draft before you have his angle.**
+2. Draft the French version: 700–1,200 words, plain and precise, no hype.
+3. Make the images (see “Images”).
+4. Show Pablo the draft and the images; wait for his edits.
+5. Write the English and Spanish versions, with figure labels translated.
+6. End every version with a one-line AI-assistance note:
+   - FR: « Texte rédigé avec l’aide d’une IA, relu et validé par l’auteur. »
+   - EN: “Text written with the help of AI, reviewed and approved by the author.”
+   - ES: «Texto redactado con ayuda de una IA, revisado y validado por el autor.»
+7. Run the checklist and preview locally (`python3 -m http.server`).
+8. Wait for “publish”.
 
-## Meta descriptions
+## Images
 
-- `<meta name="description">` is **160 characters or fewer**, in the page’s language. Count before committing.
-- Shorten by cutting words or reusing wording already on the page, keeping the meaning; don’t add claims to fill space.
-- Keep `og:description` identical to the meta description unless the page deliberately uses a different one (the home pages do).
+Each article gets:
+
+- **1–2 content figures** that explain something (model diagram, concept map, timeline, study design). SVG source in the repo, exported to PNG at least 1600 px wide; one PNG per language when the figure contains text.
+- **1 cover image:** abstract (network / data-flow pattern in the site palette), generated by a script in `tools/` with a fixed seed, 1200×630, no text except the credit line. Also used as `og:image`.
+
+For every image:
+
+- Filename: `pablo-correa-prieto-<topic-slug>-<fr|en|es>.png`; covers: `pablo-correa-prieto-<topic-slug>-cover.png`.
+- Credit line inside the image, small, bottom right: `Pablo Correa Prieto · <year> · CC BY 4.0`.
+- A real `<img>` inside `<figure>` (never a CSS background), with `width` and `height`; don’t lazy-load the first image on a page.
+- `alt`: what the figure shows, in the page’s language. No keyword stuffing.
+- `<figcaption>`: short description + `© Pablo Correa Prieto, <year> — CC BY 4.0`.
+- Embedded metadata (exiftool): Creator, Credit Line, Copyright Notice, Web Statement of Rights (https://creativecommons.org/licenses/by/4.0/).
+- Open each exported PNG and check it visually before using it. Keep sources and scripts so every figure can be regenerated.
+
+## Pages and structured data
+
+- `<title>`: `<Article title> — Pablo Correa Prieto`. Visible byline and date.
+- **Meta description: 160 characters or fewer**, in the page’s language. Count before committing. Shorten by cutting words or reusing wording already on the page; don’t add claims to fill space. Keep `og:description` identical unless the page deliberately differs (the home pages do).
+- Base URL: `https://pablocorreaprieto.ch` (from `CNAME`).
+- Home page: headshot near the top, next to the name (`pablo-correa-prieto.jpg`, alt “Pablo Correa Prieto”).
+- Home page JSON-LD: `Person` with `@id` `https://pablocorreaprieto.ch/#person`, `name` “Pablo Correa Prieto”, `alternateName` “Pablo Correa”, `image` (headshot), `sameAs` (profiles below). Other pages reference this `@id`.
+- Article JSON-LD: `BlogPosting` with `author` → the Person `@id`, `headline`, `inLanguage`, `datePublished`, `image`; plus one `ImageObject` per figure with `contentUrl`, `creator`, `creditText`, `copyrightNotice`, `license`, `acquireLicensePage` (a short page explaining how to reuse Pablo’s figures).
+- Open Graph and Twitter card tags using the cover.
+- An articles index page per language, each article shown with its cover.
+- `sitemap.xml`: every page with its hreflang alternates and its images (`<image:image><image:loc>` only; the other image tags are deprecated). Update `<lastmod>` for every page you change. Referenced in `robots.txt`.
+
+## Profiles
+
+Only these may be linked (visible links or JSON-LD `sameAs`):
+
+- ORCID: https://orcid.org/0009-0009-1844-7453
+- OSF: https://osf.io/skvn4
+- Google Scholar, LinkedIn, ResearchGate, Academia.edu, HAL, Wikidata: only URLs Pablo has confirmed exist.
 
 ## Git workflow
 
-- **Never push to `main`.** Work on a branch and open a pull request; Pablo reviews and merges.
+- Work on a branch; commit locally.
+- **Nothing is pushed — not even a branch — until Pablo says “publish”.** On “publish”: push the branch and open a pull request. **Never push to `main`**; Pablo reviews and merges.
 - Keep PRs focused, and describe every change and anything left open in the PR body.
-- Before opening a PR: every internal link and sitemap URL resolves to a file, all JSON-LD parses, and `<lastmod>` in `sitemap.xml` is updated for every page you changed.
+
+## Checklist before asking Pablo to publish
+
+- [ ] FR, EN and ES pages exist; `hreflang` is reciprocal
+- [ ] Every image: name in filename, credit line, alt, figcaption, embedded metadata
+- [ ] JSON-LD is valid JSON with the fields above
+- [ ] Sitemap includes the new pages and their images; `<lastmod>` updated
+- [ ] Every internal link resolves to a file
+- [ ] Meta descriptions ≤ 160 characters
+- [ ] Every citation verified, or flagged `[SOURCE À VÉRIFIER]`
+- [ ] AI-assistance note present in all three versions
+- [ ] No placeholders left
 
 ## Check the live site after every deploy
 
-GitHub Pages deploys only from `main`, so a push to a branch changes nothing live. After a PR is merged:
+GitHub Pages deploys only from `main`, so a pushed branch changes nothing live. After a PR is merged:
 
 1. Wait for the GitHub Pages deployment to finish (the “pages build and deployment” run on `main`).
-2. Fetch each changed URL on https://pablocorreaprieto.ch and confirm it returns 200 and shows the change (e.g. the new text or meta description). Also confirm an unknown URL returns the 404 page.
+2. Fetch each changed URL on https://pablocorreaprieto.ch and confirm it returns 200 and shows the change. Also confirm an unknown URL returns the 404 page.
 3. Report what you checked. If the site can’t be reached from your environment (the Claude Code cloud environment’s network policy may block the domain), say so explicitly and don’t claim the change is live; ask Pablo to check or to allow the domain.
