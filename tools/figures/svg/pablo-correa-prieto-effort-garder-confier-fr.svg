@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="945" viewBox="0 0 1800 945" lang="fr">
+<defs>
+<style>
+@font-face{font-family:'Source Serif 4'; src:url(../../title-card/fonts/source-serif-4-latin-opsz-normal.woff2) format('woff2'); font-weight:200 900}
+@font-face{font-family:'IBM Plex Sans'; src:url(../../title-card/fonts/ibm-plex-sans-latin-400-normal.woff2) format('woff2'); font-weight:400}
+@font-face{font-family:'IBM Plex Sans'; src:url(../../title-card/fonts/ibm-plex-sans-latin-500-normal.woff2) format('woff2'); font-weight:500}
+@font-face{font-family:'IBM Plex Sans'; src:url(../../title-card/fonts/ibm-plex-sans-latin-600-normal.woff2) format('woff2'); font-weight:600}
+.serif{font-variation-settings:'opsz' 60}
+</style>
+<marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M1,1 L10,6 L1,11" fill="none" stroke="#264A6E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+<rect width="1800" height="945" fill="#FAFAF8"/>
+<text x="115" y="111" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="25" font-weight="600" fill="#264A6E" text-anchor="start" letter-spacing="4" data-maxw="1570">APPRENDRE · PROPOSITION</text>
+<text class="serif" x="112" y="228" font-family="'Source Serif 4', Georgia, serif" font-size="76" font-weight="450" fill="#1C2128" letter-spacing="-1.5" data-maxw="1570">Où se trouve l’effort utile ?</text>
+<rect x="115" y="290" width="770" height="6" rx="3" fill="#B8492A"/>
+<text class="serif" x="115" y="358" font-family="'Source Serif 4', Georgia, serif" font-size="46" font-weight="500" fill="#1C2128" data-maxw="770">Garder exigeant</text>
+<text x="115" y="400" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="25" font-weight="400" fill="#5B626C" text-anchor="start" data-maxw="770">L’effort est l’apprentissage visé</text>
+<circle cx="124" cy="461" r="6" fill="#B8492A"/>
+<text x="147" y="470" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#1C2128" text-anchor="start" data-maxw="735">Se rappeler sans aide</text>
+<circle cx="124" cy="519" r="6" fill="#B8492A"/>
+<text x="147" y="528" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#1C2128" text-anchor="start" data-maxw="735">Produire sa réponse avant de la vérifier</text>
+<circle cx="124" cy="577" r="6" fill="#B8492A"/>
+<text x="147" y="586" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#1C2128" text-anchor="start" data-maxw="735">Expliquer avec ses mots</text>
+<circle cx="124" cy="635" r="6" fill="#B8492A"/>
+<text x="147" y="644" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#1C2128" text-anchor="start" data-maxw="735">Faire un premier essai sur un problème</text>
+<rect x="915" y="290" width="770" height="6" rx="3" fill="#2F6DB0"/>
+<text class="serif" x="915" y="358" font-family="'Source Serif 4', Georgia, serif" font-size="46" font-weight="500" fill="#1C2128" data-maxw="770">Confier à l’outil, sous contrôle</text>
+<text x="915" y="400" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="25" font-weight="400" fill="#5B626C" text-anchor="start" data-maxw="770">L’effort n’est qu’un moyen</text>
+<circle cx="924" cy="461" r="6" fill="#2F6DB0"/>
+<text x="947" y="470" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#1C2128" text-anchor="start" data-maxw="735">Mettre en forme</text>
+<circle cx="924" cy="519" r="6" fill="#2F6DB0"/>
+<text x="947" y="528" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#1C2128" text-anchor="start" data-maxw="735">Générer des exercices d’entraînement en plus</text>
+<circle cx="924" cy="577" r="6" fill="#2F6DB0"/>
+<text x="947" y="586" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#1C2128" text-anchor="start" data-maxw="735">Reformuler une consigne au bon niveau</text>
+<circle cx="924" cy="635" r="6" fill="#2F6DB0"/>
+<text x="947" y="644" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#1C2128" text-anchor="start" data-maxw="735">Donner des indices plutôt que des réponses</text>
+<text x="115" y="700" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="26" font-weight="500" fill="#1C2128" text-anchor="start" data-maxw="1570">La même tâche peut changer de colonne selon l’objectif visé.</text>
+<text x="115" y="752" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="19" font-weight="400" fill="#5B626C" text-anchor="start" data-maxw="1570">Proposition de l’auteur, d’après Bjork et Bjork (2011) et Bastani et al. (2025). Schéma : Pablo Correa Prieto.</text>
+<line x1="115" y1="795" x2="1685" y2="795" stroke="#E2E3DF" stroke-width="2"/>
+<text x="115" y="855" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="28"><tspan font-weight="600" fill="#1C2128">Pablo Correa Prieto</tspan><tspan fill="#5B626C"> · enseignant et recherche en éducation</tspan></text>
+<text x="1685" y="854" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#264A6E" text-anchor="end" letter-spacing="3">PABLOCORREAPRIETO.CH</text>
+<text x="1685" y="919" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="17" font-weight="400" fill="#6C737C" text-anchor="end">Pablo Correa Prieto · 2026 · CC BY 4.0</text>
+</svg>

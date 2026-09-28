@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Marking with AI: compare it with our real errors, not with perfection — Pablo Correa Prieto</title>
+<meta name="description" content="A century of research shows that teachers’ marking varies. Pablo Correa Prieto argues this is the right baseline for judging AI as a second reader.">
+<meta name="author" content="Pablo Correa Prieto">
+<meta name="robots" content="max-image-preview:large">
+<link rel="canonical" href="https://pablocorreaprieto.ch/en/ai-marking-second-reader">
+<link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/ia-correction-second-regard">
+<link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/ai-marking-second-reader">
+<link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/ia-correccion-segunda-mirada">
+<link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/ia-correction-second-regard">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Marking with AI: compare it with our real errors, not with perfection">
+<meta property="og:description" content="A century of research shows that teachers’ marking varies. Pablo Correa Prieto argues this is the right baseline for judging AI as a second reader.">
+<meta property="og:url" content="https://pablocorreaprieto.ch/en/ai-marking-second-reader">
+<meta property="og:site_name" content="Pablo Correa Prieto">
+<meta property="og:locale" content="en_GB">
+<meta property="og:locale:alternate" content="fr_CH">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:image" content="https://pablocorreaprieto.ch/pablo-correa-prieto-correction-titre-en.jpg">
+<meta property="og:image:width" content="1800">
+<meta property="og:image:height" content="945">
+<meta property="og:image:alt" content="Title card reading “Our real errors, not perfection.”, with the name Pablo Correa Prieto and the address pablocorreaprieto.ch">
+<meta property="article:published_time" content="2026-09-28">
+<meta property="article:modified_time" content="2026-09-28">
+<meta property="article:author" content="https://pablocorreaprieto.ch/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#1C2128">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --ground:#FAFAF8; --ink:#1C2128; --muted:#5B626C; --faint:#6C737C;
+    --rule:#E2E3DF; --accent:#264A6E; --accent-soft:#E8EDF2; --mark:#B8492A;
+    --serif:"Source Serif 4", Georgia, "Times New Roman", serif;
+    --sans:"IBM Plex Sans", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ground:#15181C; --ink:#E7E8E6; --muted:#A3A9B1; --faint:#7C838C;
+      --rule:#2A2F35; --accent:#9DB9D8; --accent-soft:#1E2833; --mark:#E07A5A;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#15181C; --ink:#E7E8E6; --muted:#A3A9B1; --faint:#7C838C;
+    --rule:#2A2F35; --accent:#9DB9D8; --accent-soft:#1E2833; --mark:#E07A5A;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{background:var(--ground); color:var(--ink); font-family:var(--sans); font-size:16px; line-height:1.6; margin:0; padding-inline:24px}
+  a{color:var(--accent); text-decoration:none; border-bottom:1px solid color-mix(in srgb, var(--accent) 35%, transparent)}
+  a:hover{border-bottom-color:var(--accent)}
+  a:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:2px}
+
+  .topbar{max-width:1040px; margin-inline:auto; display:flex; justify-content:space-between; align-items:center; gap:16px; padding-top:28px}
+  .brand{font-family:var(--serif); font-weight:500; font-size:1.375rem; line-height:1; letter-spacing:-0.01em; color:var(--ink); border:0; white-space:nowrap}
+  .brand .dot{color:var(--mark)}
+  .tb{display:inline-flex; border:1px solid var(--rule); border-radius:4px; overflow:hidden}
+  .tb a{display:inline-flex; align-items:center; font:500 .75rem/1 var(--sans); letter-spacing:.08em; padding:7px 11px; color:var(--muted); border:0}
+  .tb a:hover{color:var(--ink)}
+  .tb a[aria-current="page"]{background:var(--accent-soft); color:var(--ink)}
+
+  .doc{max-width:720px; margin-inline:auto; padding-block:52px 64px}
+  .crumbs{font-size:.8125rem; color:var(--faint); margin:0 0 30px}
+  .crumbs a{color:var(--muted); border-bottom-color:var(--rule)}
+  .kicker{font-size:.75rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin:0 0 14px}
+  h1{font-family:var(--serif); font-weight:500; font-size:clamp(2rem, 1.35rem + 2.6vw, 2.75rem); line-height:1.12; letter-spacing:-0.01em; margin:0; text-wrap:balance}
+  .subtitle{font-family:var(--serif); font-size:1.25rem; line-height:1.45; color:var(--muted); margin:14px 0 0; text-wrap:pretty}
+  .byline{font-size:.875rem; color:var(--muted); margin:18px 0 0}
+
+  figure{margin:36px 0}
+  figure img{display:block; width:100%; height:auto; border-radius:4px; border:1px solid var(--rule)}
+  .prose .ai-note{font-family:var(--sans); font-size:.875rem; color:var(--muted); margin-top:2.2em; padding-top:14px; border-top:1px solid var(--rule)}
+  figcaption{font-family:var(--sans); font-size:.8125rem; line-height:1.5; color:var(--muted); margin-top:8px}
+  .prose ul.list{margin:0 0 1.05em; padding-left:1.1em}
+  .prose ul.list li{margin:0 0 .45em}
+  .refs{margin-top:2.4em; padding-top:18px; border-top:1px solid var(--rule); font-family:var(--sans)}
+  .refs h2{font-size:.75rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin:0 0 14px}
+  .refs ol{list-style:none; margin:0; padding:0; display:grid; gap:10px; font-size:.875rem; line-height:1.55; color:var(--muted)}
+  .refs li{padding-left:1.6em; text-indent:-1.6em; overflow-wrap:anywhere}
+  .refs a{border-bottom-color:transparent}
+
+  .prose{font-family:var(--serif); font-size:1.1875rem; line-height:1.65}
+  .prose p{margin:0 0 1.05em; text-wrap:pretty}
+  .prose h2{font-family:var(--serif); font-weight:500; font-size:1.5rem; line-height:1.25; margin:1.9em 0 .55em; text-wrap:balance}
+  .prose h2 .n{color:var(--mark); margin-right:.3em}
+
+  .sec{margin-top:40px}
+  .sec h2{font-size:.75rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin:0 0 16px; padding-bottom:10px; border-bottom:1px solid var(--rule)}
+  .sec p{margin:0 0 12px; max-width:64ch}
+  .sec .lead{font-family:var(--serif); font-size:1.1875rem; line-height:1.6}
+  ol.dims{list-style:none; margin:0; padding:0; display:grid; gap:14px; counter-reset:d}
+  ol.dims li{counter-increment:d; display:grid; grid-template-columns:28px 1fr; gap:6px 10px; align-items:baseline}
+  ol.dims li::before{content:counter(d); font-family:var(--serif); font-size:1.375rem; color:var(--mark); line-height:1}
+  ol.dims b{font-weight:600}
+  ul.tags{list-style:none; padding:0; margin:0; display:flex; flex-wrap:wrap; gap:8px}
+  ul.tags li{font-size:.8125rem; padding:4px 10px; border-radius:3px; border:1px solid var(--rule)}
+
+  .pub{padding:24px 26px; background:var(--accent-soft); border-radius:4px}
+  .pub .kind{font-size:.6875rem; font-weight:600; letter-spacing:.09em; text-transform:uppercase; color:var(--accent); margin:0 0 8px}
+  .pub h2{font-family:var(--serif); font-style:italic; font-weight:500; font-size:1.5rem; line-height:1.3; margin:0 0 14px; text-transform:none; letter-spacing:0; color:var(--ink); border:0; padding:0}
+  .pub dl{display:grid; grid-template-columns:max-content 1fr; gap:6px 18px; margin:0 0 14px; font-size:.9375rem}
+  .pub dt{color:var(--muted)}
+  .pub dd{margin:0}
+  .pub p{margin:0 0 10px; max-width:64ch}
+  .pub .cite{font-size:.875rem; color:var(--muted)}
+  .pub.prep{background:transparent; border:1px solid var(--rule)}
+  .pub.prep h2{font-style:normal; font-size:1.1875rem}
+  ul.links{list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:8px 22px}
+
+  .about{margin-top:56px; padding:22px 24px; border:1px solid var(--rule); border-radius:4px; font-size:.9375rem}
+  .about .label{font-size:.6875rem; font-weight:600; letter-spacing:.09em; text-transform:uppercase; color:var(--faint); margin:0 0 8px}
+  .about p{margin:0 0 10px}
+  .about ul{list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:6px 20px}
+
+  footer{max-width:1040px; margin-inline:auto; padding:20px 0 36px; border-top:1px solid var(--rule); display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; font-size:.8125rem; color:var(--faint)}
+
+  @media (max-width:520px){
+    body{padding-inline:16px}
+    .topbar{padding-top:20px}
+    .brand{font-size:1.1875rem}
+    .doc{padding-block:36px 48px}
+    .prose{font-size:1.125rem}
+    .pub{padding:18px}
+    .pub dl{grid-template-columns:1fr; gap:0}
+    .pub dd{margin-bottom:6px}
+  }
+  @media print{
+    :root{--ground:#fff; --ink:#000; --muted:#444; --faint:#666; --rule:#ccc; --accent:#1f3d5c; --accent-soft:#f1f3f6}
+    body{padding:0}
+    .topbar, .crumbs, footer{display:none}
+    a{border:0; color:inherit}
+  }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://pablocorreaprieto.ch/en/ai-marking-second-reader#article",
+   "headline": "Marking with AI: compare it with our real errors, not with perfection",
+   "description": "A century of research shows that teachers’ marking varies. Pablo Correa Prieto argues this is the right baseline for judging AI as a second reader.",
+   "inLanguage": "en",
+   "datePublished": "2026-09-28",
+   "dateModified": "2026-09-28",
+   "author": {
+    "@id": "https://pablocorreaprieto.ch/#person"
+   },
+   "publisher": {
+    "@id": "https://pablocorreaprieto.ch/#person"
+   },
+   "mainEntityOfPage": "https://pablocorreaprieto.ch/en/ai-marking-second-reader",
+   "url": "https://pablocorreaprieto.ch/en/ai-marking-second-reader",
+   "image": [
+    {
+     "@type": "ImageObject",
+     "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-correction-titre-en.jpg",
+     "contentUrl": "https://pablocorreaprieto.ch/pablo-correa-prieto-correction-titre-en.jpg",
+     "url": "https://pablocorreaprieto.ch/pablo-correa-prieto-correction-titre-en.jpg",
+     "width": 1800,
+     "height": 945,
+     "caption": "Our real errors, not perfection.",
+     "creator": {
+      "@id": "https://pablocorreaprieto.ch/#person"
+     },
+     "creditText": "Pablo Correa Prieto",
+     "copyrightNotice": "© 2026 Pablo Correa Prieto",
+     "description": "Title card reading “Our real errors, not perfection.”, with the name Pablo Correa Prieto and the address pablocorreaprieto.ch",
+     "license": "https://creativecommons.org/licenses/by/4.0/",
+     "acquireLicensePage": "https://pablocorreaprieto.ch/en/figure-reuse"
+    },
+    {
+     "@type": "ImageObject",
+     "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-correction-meme-copie-en.png",
+     "contentUrl": "https://pablocorreaprieto.ch/pablo-correa-prieto-correction-meme-copie-en.png",
+     "url": "https://pablocorreaprieto.ch/pablo-correa-prieto-correction-meme-copie-en.png",
+     "width": 1800,
+     "height": 945,
+     "caption": "Same paper, 73 teachers: grades from A to F. Data: Brimi (2011).",
+     "creator": {
+      "@id": "https://pablocorreaprieto.ch/#person"
+     },
+     "creditText": "Pablo Correa Prieto",
+     "copyrightNotice": "© 2026 Pablo Correa Prieto",
+     "description": "Bar chart: of 73 teachers who marked the same essay, 10 gave an A, 18 a B, 30 a C, 9 a D and 6 an F; out of 100, marks ranged from 50 to 96",
+     "license": "https://creativecommons.org/licenses/by/4.0/",
+     "acquireLicensePage": "https://pablocorreaprieto.ch/en/figure-reuse"
+    },
+    {
+     "@type": "ImageObject",
+     "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-correction-second-regard-en.png",
+     "contentUrl": "https://pablocorreaprieto.ch/pablo-correa-prieto-correction-second-regard-en.png",
+     "url": "https://pablocorreaprieto.ch/pablo-correa-prieto-correction-second-regard-en.png",
+     "width": 1800,
+     "height": 945,
+     "caption": "The second reader: AI marks in parallel, the teacher reviews the disagreements and decides.",
+     "creator": {
+      "@id": "https://pablocorreaprieto.ch/#person"
+     },
+     "creditText": "Pablo Correa Prieto",
+     "copyrightNotice": "© 2026 Pablo Correa Prieto",
+     "description": "Diagram: an anonymised paper is marked by the teacher and, in parallel, by AI; if the two marks agree, the mark is confirmed; if not, the teacher reviews the paper and decides",
+     "license": "https://creativecommons.org/licenses/by/4.0/",
+     "acquireLicensePage": "https://pablocorreaprieto.ch/en/figure-reuse"
+    }
+   ],
+   "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://pablocorreaprieto.ch/#website",
+    "name": "Pablo Correa Prieto",
+    "url": "https://pablocorreaprieto.ch/"
+   },
+   "translationOfWork": {
+    "@id": "https://pablocorreaprieto.ch/ia-correction-second-regard#article"
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://pablocorreaprieto.ch/#person",
+   "name": "Pablo Correa Prieto",
+   "givenName": "Pablo",
+   "familyName": "Correa Prieto",
+   "url": "https://pablocorreaprieto.ch/",
+   "image": "https://pablocorreaprieto.ch/pablo-correa-prieto.jpg",
+   "sameAs": [
+    "https://www.linkedin.com/in/pablocorreaprieto",
+    "https://scholar.google.com/citations?user=N2vtvGcAAAAJ",
+    "https://github.com/pablocorreaprieto",
+    "https://orcid.org/0009-0009-1844-7453",
+    "https://osf.io/skvn4",
+    "https://universidadinternacionaldelarioja.academia.edu/PabloCorreaPrieto",
+    "https://www.researchgate.net/profile/Pablo-Correa-Prieto",
+    "https://www.wikidata.org/wiki/Q141533563"
+   ],
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "ORCID",
+    "value": "0009-0009-1844-7453",
+    "url": "https://orcid.org/0009-0009-1844-7453"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://pablocorreaprieto.ch/en/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Articles",
+     "item": "https://pablocorreaprieto.ch/en/articles"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Marking with AI: compare it with our real errors, not with perfection",
+     "item": "https://pablocorreaprieto.ch/en/ai-marking-second-reader"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<div class="topbar">
+  <a class="brand" href="/en/" aria-label="Pablo Correa Prieto – Home">pablo correa prieto<span class="dot">.</span></a>
+  <nav class="tb" aria-label="Language">
+    <a href="/ia-correction-second-regard" hreflang="fr" lang="fr" aria-label="Français">FR</a>
+    <a href="/en/ai-marking-second-reader" hreflang="en" lang="en" aria-label="English" aria-current="page">EN</a>
+    <a href="/es/ia-correccion-segunda-mirada" hreflang="es" lang="es" aria-label="Español">ES</a>
+  </nav>
+</div>
+
+<main class="doc">
+<p class="crumbs"><a href="/en/">Home</a> / <a href="/en/articles">Articles</a></p>
+<article>
+<header>
+  <p class="kicker">Article · AI and assessment</p>
+  <h1>Marking with AI: compare it with our real errors, not with perfection</h1>
+  <p class="byline">Pablo Correa Prieto · first published in French on <time datetime="2026-09-28">28 September 2026</time> · <a href="/ia-correction-second-regard" hreflang="fr" lang="fr">original version</a></p>
+</header>
+<figure>
+  <img src="/pablo-correa-prieto-correction-titre-en.jpg" width="1800" height="945" fetchpriority="high" alt="Title card reading “Our real errors, not perfection.”, with the name Pablo Correa Prieto and the address pablocorreaprieto.ch">
+  <figcaption>Our real errors, not perfection.<br><small>© Pablo Correa Prieto, 2026 — <a href="/en/figure-reuse">CC BY 4.0</a></small></figcaption>
+</figure>
+<div class="prose">
+<p>In <a href="/en/ai-teachers-prepare-assess">an earlier article</a>, I wrote that AI is usually compared with an error-free ideal, when the honest comparison is with how we actually mark. That claim needs evidence. To know what a marking aid is worth, we first need to know what human marking is worth. On that question, the research is old, plentiful and not very flattering to us.</p>
+<h2><span class="n">1.</span>Same paper, very different marks</h2>
+<p>In 1912, Daniel Starch and Edward Elliott sent the same two English exam papers to two hundred American high schools; 142 teachers marked them. When asked, teachers usually said two markers would differ by 10 points at most. In fact, the marks given to the same paper could spread over 35 to 40 points, and for one of the two papers, 22 of the 142 teachers did not give a pass mark (Starch &amp; Elliott, 1912). The following year, the two researchers repeated the experiment in geometry, and the marks were even more scattered than in English. Their conclusion speaks directly to maths teachers: there is no reason to think a mathematics paper can be marked more precisely than any other (Starch &amp; Elliott, 1913).</p>
+<p>Almost a century later, Hunter Brimi (2011) put the question to 90 secondary teachers marking the same paper. Among the 73 who marked out of 100, scores ranged from 50 to 96. In letter grades, the same paper received 10 As, 18 Bs, 30 Cs, 9 Ds and 6 Fs.</p>
+<figure>
+  <img src="/pablo-correa-prieto-correction-meme-copie-en.png" width="1800" height="945" loading="lazy" decoding="async" alt="Bar chart: of 73 teachers who marked the same essay, 10 gave an A, 18 a B, 30 a C, 9 a D and 6 an F; out of 100, marks ranged from 50 to 96">
+  <figcaption>Same paper, 73 teachers: grades from A to F. Data: Brimi (2011).<br><small>© Pablo Correa Prieto, 2026 — <a href="/en/figure-reuse">CC BY 4.0</a></small></figcaption>
+</figure>
+<h2><span class="n">2.</span>The order of papers and the length of the session matter</h2>
+<p>I had mentioned fatigue at the bottom of the pile. Klein and El (2003) gave the same 31 compositions by seventh-grade pupils to 60 teachers, in three different orders. As the teachers worked through the stack, grades rose gradually, eventually exceeding those given by specialist markers; between the first and the last papers, the gap was about 10%. The authors link this drift to long, uninterrupted marking sessions.</p>
+<p>Order also works another way: trainee teachers marked two average essays lower when they followed five good essays than when they followed five poor ones (Hales &amp; Tokar, 1975, as cited in Meadows &amp; Billington, 2005). The same review, however, reports a study of exam marking that found no important effect of the point at which a script was marked. So the effect is not always the same; but our mark depends partly on what we have just read.</p>
+<p>Add what every teacher knows: a criterion applied more generously to the thirtieth paper than to the third, a typo in a question that we only spot once the papers have been handed back. None of this is professional misconduct. It is simply how human markers work.</p>
+<h2><span class="n">3.</span>What the first studies on AI show</h2>
+<p>Against this baseline, large language models are neither perfect nor useless. On 1,710 short answers from pupils aged 5 to 16 in science and history, to be judged right or wrong, GPT-4 reached an agreement of 0.70 (Cohen’s kappa) with teachers, against 0.75 between the teachers themselves (Henkel et al., 2024). On 20 essays by Year 7 and 8 pupils, rated by 37 teachers on ten criteria, the best model tested reached a correlation of 0.74 with the teachers’ scores; but it marked more generously and was weaker at judging the quality of the content (Seßler et al., 2025). For written feedback on pupils’ writing, trained human raters did better than ChatGPT 3.5 in every category but one, criteria-based feedback (Steiss et al., 2024).</p>
+<p>My reading of these results: AI is not yet a reliable marker on its own, especially when it comes to judging the substance of a text. But the gap with a human marker is much smaller than it looks when AI is compared with perfection.</p>
+<h2><span class="n">4.</span>A second reader, not an automatic marker</h2>
+<p>That is why I see it as a second pair of eyes. The teacher marks; the tool suggests a mark or a comment in parallel; only the papers where the two disagree are looked at again. Ofqual, the regulator of qualifications and exams in England, describes exactly this set-up (AI marks in parallel with the human marker, and discrepancies flag a response for review) and notes that it avoids anchoring. It also states that using AI as the sole means of determining a student’s mark does not comply with its regulations (Williamson, 2026).</p>
+<figure>
+  <img src="/pablo-correa-prieto-correction-second-regard-en.png" width="1800" height="945" loading="lazy" decoding="async" alt="Diagram: an anonymised paper is marked by the teacher and, in parallel, by AI; if the two marks agree, the mark is confirmed; if not, the teacher reviews the paper and decides">
+  <figcaption>The second reader: AI marks in parallel, the teacher reviews the disagreements and decides.<br><small>© Pablo Correa Prieto, 2026 — <a href="/en/figure-reuse">CC BY 4.0</a></small></figcaption>
+</figure>
+<p>What I expect from it is that the tool catches part of what fatigue or the order of the papers makes us miss. This is a hypothesis: as far as I know, no study has yet measured, in real classrooms, how many marking errors such a second reader prevents.</p>
+<p>Two conditions are non-negotiable. The first is data protection. A guidance sheet on Eduvaud, the Vaud education portal, written for upper-secondary teachers, puts it in one line: never send personal or sensitive data through online AI tools; when in doubt, use the tools provided by the canton (<cite>IA et protection des données</cite>, 2024). In practice: anonymised papers, with no name or detail that could identify the pupil. The second: the decision stays with the teacher. The tool flags; it does not decide.</p>
+<h2>The right question</h2>
+<p>So the useful question is not “does AI mark without errors?”. No marker does. It is rather: does a teacher who marks with a second reader make fewer mistakes than a teacher marking alone? That is an empirical question, and it deserves to be tested in our own classrooms, with our own papers and criteria.</p>
+<h2>Let’s talk</h2>
+<p>Do you already mark with a second reader, human or not? Have you ever compared your marks with a colleague’s on the same papers? I would be glad to discuss it. My contact details: <a href="/en/">pablocorreaprieto.ch</a></p>
+<p class="ai-note">Text written with the help of AI, reviewed and approved by the author.</p>
+</div>
+<section class="refs" aria-labelledby="refs-title">
+<h2 id="refs-title">References</h2>
+<ol>
+<li>Brimi, H. M. (2011). Reliability of grading high school work in English. <i>Practical Assessment, Research &amp; Evaluation, 16</i>(17). <a href="https://eric.ed.gov/?id=EJ954940" rel="noopener">https://eric.ed.gov/?id=EJ954940</a></li>
+<li>Henkel, O., Hills, L., Boxer, A., Roberts, B., &amp; Levonian, Z. (2024). Can large language models make the grade? An empirical study evaluating LLMs ability to mark short answer questions in K-12 education. In <i>Proceedings of the Eleventh ACM Conference on Learning @ Scale</i> (pp. 300–304). ACM. <a href="https://doi.org/10.1145/3657604.3664693" rel="noopener">https://doi.org/10.1145/3657604.3664693</a></li>
+<li><i>IA et protection des données</i> [Guidance sheet]. (2024). Portail Eduvaud, Direction générale de l’enseignement postobligatoire. <a href="https://www.eduvaud.ch/wp-content/uploads/2025/08/IA_enseignants_exam-vjuillet2025.pdf" rel="noopener">https://www.eduvaud.ch/wp-content/uploads/2025/08/IA_enseignants_exam-vjuillet2025.pdf</a></li>
+<li>Klein, J. F., &amp; El, L. P. (2003). Impairment of teacher efficiency during extended sessions of test correction. <i>European Journal of Teacher Education, 26</i>(3), 379–392. <a href="https://doi.org/10.1080/0261976032000128201" rel="noopener">https://doi.org/10.1080/0261976032000128201</a></li>
+<li>Meadows, M., &amp; Billington, L. (2005). <i>A review of the literature on marking reliability</i> [Report for the National Assessment Agency]. <a href="https://filestore.aqa.org.uk/content/research/CERP_RP_MM_01052005.pdf" rel="noopener">https://filestore.aqa.org.uk/content/research/CERP_RP_MM_01052005.pdf</a></li>
+<li>Seßler, K., Fürstenberg, M., Bühler, B., &amp; Kasneci, E. (2025). Can AI grade your essays? A comparative analysis of large language models and teacher ratings in multidimensional essay scoring. In <i>Proceedings of the 15th International Learning Analytics and Knowledge Conference (LAK ’25)</i> (pp. 462–472). ACM. <a href="https://doi.org/10.1145/3706468.3706527" rel="noopener">https://doi.org/10.1145/3706468.3706527</a></li>
+<li>Starch, D., &amp; Elliott, E. C. (1912). Reliability of the grading of high-school work in English. <i>The School Review, 20</i>(7), 442–457. <a href="https://doi.org/10.1086/435971" rel="noopener">https://doi.org/10.1086/435971</a></li>
+<li>Starch, D., &amp; Elliott, E. C. (1913). Reliability of grading work in mathematics. <i>The School Review, 21</i>(4), 254–259. <a href="https://doi.org/10.1086/436086" rel="noopener">https://doi.org/10.1086/436086</a></li>
+<li>Steiss, J., Tate, T., Graham, S., Cruz, J., Hebert, M., Wang, J., Moon, Y., Tseng, W., Warschauer, M., &amp; Olson, C. B. (2024). Comparing the quality of human and ChatGPT feedback of students’ writing. <i>Learning and Instruction, 91</i>, Article 101894. <a href="https://doi.org/10.1016/j.learninstruc.2024.101894" rel="noopener">https://doi.org/10.1016/j.learninstruc.2024.101894</a></li>
+<li>Williamson, J. (2026). <i>Principles of AI use in marking</i> [Working paper]. Ofqual. <a href="https://www.gov.uk/government/publications/principles-of-ai-use-in-marking/principles-of-ai-use-in-marking" rel="noopener">https://www.gov.uk/government/publications/principles-of-ai-use-in-marking</a></li>
+</ol>
+</section>
+</article>
+<aside class="about" aria-label="About the author">
+  <p class="label">About the author</p>
+  <p>Pablo Correa Prieto is a CDIP-recognised primary teacher (3H–8H) working as a substitute teacher in Vaud schools. Alongside, he is doing a master’s in education research (UNIR): digital education and AI in schools.</p>
+  <ul><li><a href="/en/">Profile and contact</a></li><li><a href="/en/research">Research</a></li><li><a href="/en/articles">All articles</a></li></ul>
+</aside>
+</main>
+
+<footer>
+  <span>© 2026 Pablo Correa Prieto · <a href="/en/">pablocorreaprieto.ch</a></span>
+  <span>Updated September 2026</span>
+</footer>
+</body>
+</html>

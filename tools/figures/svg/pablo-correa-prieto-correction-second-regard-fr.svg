@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="945" viewBox="0 0 1800 945" lang="fr">
+<defs>
+<style>
+@font-face{font-family:'Source Serif 4'; src:url(../../title-card/fonts/source-serif-4-latin-opsz-normal.woff2) format('woff2'); font-weight:200 900}
+@font-face{font-family:'IBM Plex Sans'; src:url(../../title-card/fonts/ibm-plex-sans-latin-400-normal.woff2) format('woff2'); font-weight:400}
+@font-face{font-family:'IBM Plex Sans'; src:url(../../title-card/fonts/ibm-plex-sans-latin-500-normal.woff2) format('woff2'); font-weight:500}
+@font-face{font-family:'IBM Plex Sans'; src:url(../../title-card/fonts/ibm-plex-sans-latin-600-normal.woff2) format('woff2'); font-weight:600}
+.serif{font-variation-settings:'opsz' 60}
+</style>
+<marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M1,1 L10,6 L1,11" fill="none" stroke="#264A6E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+<rect width="1800" height="945" fill="#FAFAF8"/>
+<text x="115" y="111" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="25" font-weight="600" fill="#264A6E" text-anchor="start" letter-spacing="4" data-maxw="1570">ÉVALUATION · PROPOSITION</text>
+<text class="serif" x="112" y="228" font-family="'Source Serif 4', Georgia, serif" font-size="76" font-weight="450" fill="#1C2128" letter-spacing="-1.5" data-maxw="1570">Un second regard, pas un correcteur<tspan fill="#B8492A">.</tspan></text>
+<rect x="115" y="425" width="300" height="150" rx="6" fill="#FFFFFF" stroke="#E2E3DF" stroke-width="2"/>
+<text x="145" y="469" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#264A6E" text-anchor="start" letter-spacing="3" data-maxw="240">COPIE</text>
+<text class="serif" x="145" y="513" font-family="'Source Serif 4', Georgia, serif" font-size="34" font-weight="450" fill="#1C2128" data-maxw="240">Anonymisée,</text>
+<text class="serif" x="145" y="555" font-family="'Source Serif 4', Georgia, serif" font-size="34" font-weight="450" fill="#1C2128" data-maxw="240">sans nom</text>
+<rect x="505" y="290" width="400" height="150" rx="6" fill="#FFFFFF" stroke="#E2E3DF" stroke-width="2"/>
+<text x="535" y="334" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#264A6E" text-anchor="start" letter-spacing="3" data-maxw="340">ENSEIGNANT</text>
+<text class="serif" x="535" y="378" font-family="'Source Serif 4', Georgia, serif" font-size="34" font-weight="450" fill="#1C2128" data-maxw="340">Corrige</text>
+<text class="serif" x="535" y="420" font-family="'Source Serif 4', Georgia, serif" font-size="34" font-weight="450" fill="#1C2128" data-maxw="340">comme d’habitude</text>
+<rect x="505" y="560" width="400" height="150" rx="6" fill="#FFFFFF" stroke="#E2E3DF" stroke-width="2"/>
+<text x="535" y="604" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#264A6E" text-anchor="start" letter-spacing="3" data-maxw="340">IA, EN PARALLÈLE</text>
+<text class="serif" x="535" y="648" font-family="'Source Serif 4', Georgia, serif" font-size="34" font-weight="450" fill="#1C2128" data-maxw="340">Propose une note</text>
+<text class="serif" x="535" y="690" font-family="'Source Serif 4', Georgia, serif" font-size="34" font-weight="450" fill="#1C2128" data-maxw="340">ou une remarque</text>
+<rect x="995" y="425" width="300" height="150" rx="6" fill="#FFFFFF" stroke="#E2E3DF" stroke-width="2"/>
+<text x="1025" y="469" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#264A6E" text-anchor="start" letter-spacing="3" data-maxw="240">COMPARER</text>
+<text class="serif" x="1025" y="513" font-family="'Source Serif 4', Georgia, serif" font-size="34" font-weight="450" fill="#1C2128" data-maxw="240">Les deux</text>
+<text class="serif" x="1025" y="555" font-family="'Source Serif 4', Georgia, serif" font-size="34" font-weight="450" fill="#1C2128" data-maxw="240">concordent ?</text>
+<rect x="1385" y="290" width="300" height="150" rx="6" fill="#FFFFFF" stroke="#E2E3DF" stroke-width="2"/>
+<text x="1415" y="334" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#264A6E" text-anchor="start" letter-spacing="3" data-maxw="240">OUI</text>
+<text class="serif" x="1415" y="378" font-family="'Source Serif 4', Georgia, serif" font-size="34" font-weight="450" fill="#1C2128" data-maxw="240">La note est</text>
+<text class="serif" x="1415" y="420" font-family="'Source Serif 4', Georgia, serif" font-size="34" font-weight="450" fill="#1C2128" data-maxw="240">validée</text>
+<rect x="1385" y="560" width="300" height="150" rx="6" fill="#FFFFFF" stroke="#B8492A" stroke-width="2"/>
+<text x="1415" y="604" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#264A6E" text-anchor="start" letter-spacing="3" data-maxw="240">NON</text>
+<text class="serif" x="1415" y="648" font-family="'Source Serif 4', Georgia, serif" font-size="34" font-weight="450" fill="#1C2128" data-maxw="240">L’enseignant</text>
+<text class="serif" x="1415" y="690" font-family="'Source Serif 4', Georgia, serif" font-size="34" font-weight="450" fill="#1C2128" data-maxw="240">relit et tranche</text>
+<path d="M415,500 L456.0,500 L456.0,365 L497,365" fill="none" stroke="#264A6E" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M415,500 L456.0,500 L456.0,635 L497,635" fill="none" stroke="#264A6E" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M905,365 L946.0,365 L946.0,500 L987,500" fill="none" stroke="#264A6E" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M905,635 L946.0,635 L946.0,500 L987,500" fill="none" stroke="#264A6E" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M1295,500 L1336.0,500 L1336.0,365 L1377,365" fill="none" stroke="#264A6E" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M1295,500 L1336.0,500 L1336.0,635 L1377,635" fill="none" stroke="#264A6E" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="115" y="752" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="19" font-weight="400" fill="#5B626C" text-anchor="start" data-maxw="1570">D’après le dispositif de notation en parallèle décrit par l’Ofqual (Williamson, 2026). La décision finale reste à l’enseignant.</text>
+<text x="115" y="780" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="19" font-weight="400" fill="#5B626C" text-anchor="start" data-maxw="1570">Schéma : Pablo Correa Prieto.</text>
+<line x1="115" y1="795" x2="1685" y2="795" stroke="#E2E3DF" stroke-width="2"/>
+<text x="115" y="855" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="28"><tspan font-weight="600" fill="#1C2128">Pablo Correa Prieto</tspan><tspan fill="#5B626C"> · enseignant et recherche en éducation</tspan></text>
+<text x="1685" y="854" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#264A6E" text-anchor="end" letter-spacing="3">PABLOCORREAPRIETO.CH</text>
+<text x="1685" y="919" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="17" font-weight="400" fill="#6C737C" text-anchor="end">Pablo Correa Prieto · 2026 · CC BY 4.0</text>
+</svg>

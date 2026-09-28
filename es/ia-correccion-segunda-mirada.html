@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Corregir con IA: compararla con nuestros errores reales, no con la perfección — Pablo Correa Prieto</title>
+<meta name="description" content="Un siglo de investigación muestra que la corrección humana varía. Pablo Correa Prieto explica por qué es la base adecuada para juzgar la IA como segunda mirada.">
+<meta name="author" content="Pablo Correa Prieto">
+<meta name="robots" content="max-image-preview:large">
+<link rel="canonical" href="https://pablocorreaprieto.ch/es/ia-correccion-segunda-mirada">
+<link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/ia-correction-second-regard">
+<link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/ai-marking-second-reader">
+<link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/ia-correccion-segunda-mirada">
+<link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/ia-correction-second-regard">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Corregir con IA: compararla con nuestros errores reales, no con la perfección">
+<meta property="og:description" content="Un siglo de investigación muestra que la corrección humana varía. Pablo Correa Prieto explica por qué es la base adecuada para juzgar la IA como segunda mirada.">
+<meta property="og:url" content="https://pablocorreaprieto.ch/es/ia-correccion-segunda-mirada">
+<meta property="og:site_name" content="Pablo Correa Prieto">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="fr_CH">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:image" content="https://pablocorreaprieto.ch/pablo-correa-prieto-correction-titre-es.jpg">
+<meta property="og:image:width" content="1800">
+<meta property="og:image:height" content="945">
+<meta property="og:image:alt" content="Portada con el texto «Nuestros errores, no la perfección.», el nombre Pablo Correa Prieto y la dirección pablocorreaprieto.ch">
+<meta property="article:published_time" content="2026-09-28">
+<meta property="article:modified_time" content="2026-09-28">
+<meta property="article:author" content="https://pablocorreaprieto.ch/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#1C2128">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --ground:#FAFAF8; --ink:#1C2128; --muted:#5B626C; --faint:#6C737C;
+    --rule:#E2E3DF; --accent:#264A6E; --accent-soft:#E8EDF2; --mark:#B8492A;
+    --serif:"Source Serif 4", Georgia, "Times New Roman", serif;
+    --sans:"IBM Plex Sans", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ground:#15181C; --ink:#E7E8E6; --muted:#A3A9B1; --faint:#7C838C;
+      --rule:#2A2F35; --accent:#9DB9D8; --accent-soft:#1E2833; --mark:#E07A5A;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#15181C; --ink:#E7E8E6; --muted:#A3A9B1; --faint:#7C838C;
+    --rule:#2A2F35; --accent:#9DB9D8; --accent-soft:#1E2833; --mark:#E07A5A;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{background:var(--ground); color:var(--ink); font-family:var(--sans); font-size:16px; line-height:1.6; margin:0; padding-inline:24px}
+  a{color:var(--accent); text-decoration:none; border-bottom:1px solid color-mix(in srgb, var(--accent) 35%, transparent)}
+  a:hover{border-bottom-color:var(--accent)}
+  a:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:2px}
+
+  .topbar{max-width:1040px; margin-inline:auto; display:flex; justify-content:space-between; align-items:center; gap:16px; padding-top:28px}
+  .brand{font-family:var(--serif); font-weight:500; font-size:1.375rem; line-height:1; letter-spacing:-0.01em; color:var(--ink); border:0; white-space:nowrap}
+  .brand .dot{color:var(--mark)}
+  .tb{display:inline-flex; border:1px solid var(--rule); border-radius:4px; overflow:hidden}
+  .tb a{display:inline-flex; align-items:center; font:500 .75rem/1 var(--sans); letter-spacing:.08em; padding:7px 11px; color:var(--muted); border:0}
+  .tb a:hover{color:var(--ink)}
+  .tb a[aria-current="page"]{background:var(--accent-soft); color:var(--ink)}
+
+  .doc{max-width:720px; margin-inline:auto; padding-block:52px 64px}
+  .crumbs{font-size:.8125rem; color:var(--faint); margin:0 0 30px}
+  .crumbs a{color:var(--muted); border-bottom-color:var(--rule)}
+  .kicker{font-size:.75rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin:0 0 14px}
+  h1{font-family:var(--serif); font-weight:500; font-size:clamp(2rem, 1.35rem + 2.6vw, 2.75rem); line-height:1.12; letter-spacing:-0.01em; margin:0; text-wrap:balance}
+  .subtitle{font-family:var(--serif); font-size:1.25rem; line-height:1.45; color:var(--muted); margin:14px 0 0; text-wrap:pretty}
+  .byline{font-size:.875rem; color:var(--muted); margin:18px 0 0}
+
+  figure{margin:36px 0}
+  figure img{display:block; width:100%; height:auto; border-radius:4px; border:1px solid var(--rule)}
+  .prose .ai-note{font-family:var(--sans); font-size:.875rem; color:var(--muted); margin-top:2.2em; padding-top:14px; border-top:1px solid var(--rule)}
+  figcaption{font-family:var(--sans); font-size:.8125rem; line-height:1.5; color:var(--muted); margin-top:8px}
+  .prose ul.list{margin:0 0 1.05em; padding-left:1.1em}
+  .prose ul.list li{margin:0 0 .45em}
+  .refs{margin-top:2.4em; padding-top:18px; border-top:1px solid var(--rule); font-family:var(--sans)}
+  .refs h2{font-size:.75rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin:0 0 14px}
+  .refs ol{list-style:none; margin:0; padding:0; display:grid; gap:10px; font-size:.875rem; line-height:1.55; color:var(--muted)}
+  .refs li{padding-left:1.6em; text-indent:-1.6em; overflow-wrap:anywhere}
+  .refs a{border-bottom-color:transparent}
+
+  .prose{font-family:var(--serif); font-size:1.1875rem; line-height:1.65}
+  .prose p{margin:0 0 1.05em; text-wrap:pretty}
+  .prose h2{font-family:var(--serif); font-weight:500; font-size:1.5rem; line-height:1.25; margin:1.9em 0 .55em; text-wrap:balance}
+  .prose h2 .n{color:var(--mark); margin-right:.3em}
+
+  .sec{margin-top:40px}
+  .sec h2{font-size:.75rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin:0 0 16px; padding-bottom:10px; border-bottom:1px solid var(--rule)}
+  .sec p{margin:0 0 12px; max-width:64ch}
+  .sec .lead{font-family:var(--serif); font-size:1.1875rem; line-height:1.6}
+  ol.dims{list-style:none; margin:0; padding:0; display:grid; gap:14px; counter-reset:d}
+  ol.dims li{counter-increment:d; display:grid; grid-template-columns:28px 1fr; gap:6px 10px; align-items:baseline}
+  ol.dims li::before{content:counter(d); font-family:var(--serif); font-size:1.375rem; color:var(--mark); line-height:1}
+  ol.dims b{font-weight:600}
+  ul.tags{list-style:none; padding:0; margin:0; display:flex; flex-wrap:wrap; gap:8px}
+  ul.tags li{font-size:.8125rem; padding:4px 10px; border-radius:3px; border:1px solid var(--rule)}
+
+  .pub{padding:24px 26px; background:var(--accent-soft); border-radius:4px}
+  .pub .kind{font-size:.6875rem; font-weight:600; letter-spacing:.09em; text-transform:uppercase; color:var(--accent); margin:0 0 8px}
+  .pub h2{font-family:var(--serif); font-style:italic; font-weight:500; font-size:1.5rem; line-height:1.3; margin:0 0 14px; text-transform:none; letter-spacing:0; color:var(--ink); border:0; padding:0}
+  .pub dl{display:grid; grid-template-columns:max-content 1fr; gap:6px 18px; margin:0 0 14px; font-size:.9375rem}
+  .pub dt{color:var(--muted)}
+  .pub dd{margin:0}
+  .pub p{margin:0 0 10px; max-width:64ch}
+  .pub .cite{font-size:.875rem; color:var(--muted)}
+  .pub.prep{background:transparent; border:1px solid var(--rule)}
+  .pub.prep h2{font-style:normal; font-size:1.1875rem}
+  ul.links{list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:8px 22px}
+
+  .about{margin-top:56px; padding:22px 24px; border:1px solid var(--rule); border-radius:4px; font-size:.9375rem}
+  .about .label{font-size:.6875rem; font-weight:600; letter-spacing:.09em; text-transform:uppercase; color:var(--faint); margin:0 0 8px}
+  .about p{margin:0 0 10px}
+  .about ul{list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:6px 20px}
+
+  footer{max-width:1040px; margin-inline:auto; padding:20px 0 36px; border-top:1px solid var(--rule); display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; font-size:.8125rem; color:var(--faint)}
+
+  @media (max-width:520px){
+    body{padding-inline:16px}
+    .topbar{padding-top:20px}
+    .brand{font-size:1.1875rem}
+    .doc{padding-block:36px 48px}
+    .prose{font-size:1.125rem}
+    .pub{padding:18px}
+    .pub dl{grid-template-columns:1fr; gap:0}
+    .pub dd{margin-bottom:6px}
+  }
+  @media print{
+    :root{--ground:#fff; --ink:#000; --muted:#444; --faint:#666; --rule:#ccc; --accent:#1f3d5c; --accent-soft:#f1f3f6}
+    body{padding:0}
+    .topbar, .crumbs, footer{display:none}
+    a{border:0; color:inherit}
+  }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://pablocorreaprieto.ch/es/ia-correccion-segunda-mirada#article",
+   "headline": "Corregir con IA: compararla con nuestros errores reales, no con la perfección",
+   "description": "Un siglo de investigación muestra que la corrección humana varía. Pablo Correa Prieto explica por qué es la base adecuada para juzgar la IA como segunda mirada.",
+   "inLanguage": "es",
+   "datePublished": "2026-09-28",
+   "dateModified": "2026-09-28",
+   "author": {
+    "@id": "https://pablocorreaprieto.ch/#person"
+   },
+   "publisher": {
+    "@id": "https://pablocorreaprieto.ch/#person"
+   },
+   "mainEntityOfPage": "https://pablocorreaprieto.ch/es/ia-correccion-segunda-mirada",
+   "url": "https://pablocorreaprieto.ch/es/ia-correccion-segunda-mirada",
+   "image": [
+    {
+     "@type": "ImageObject",
+     "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-correction-titre-es.jpg",
+     "contentUrl": "https://pablocorreaprieto.ch/pablo-correa-prieto-correction-titre-es.jpg",
+     "url": "https://pablocorreaprieto.ch/pablo-correa-prieto-correction-titre-es.jpg",
+     "width": 1800,
+     "height": 945,
+     "caption": "Nuestros errores reales, no la perfección.",
+     "creator": {
+      "@id": "https://pablocorreaprieto.ch/#person"
+     },
+     "creditText": "Pablo Correa Prieto",
+     "copyrightNotice": "© 2026 Pablo Correa Prieto",
+     "description": "Portada con el texto «Nuestros errores, no la perfección.», el nombre Pablo Correa Prieto y la dirección pablocorreaprieto.ch",
+     "license": "https://creativecommons.org/licenses/by/4.0/",
+     "acquireLicensePage": "https://pablocorreaprieto.ch/es/reutilizacion-figuras"
+    },
+    {
+     "@type": "ImageObject",
+     "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-correction-meme-copie-es.png",
+     "contentUrl": "https://pablocorreaprieto.ch/pablo-correa-prieto-correction-meme-copie-es.png",
+     "url": "https://pablocorreaprieto.ch/pablo-correa-prieto-correction-meme-copie-es.png",
+     "width": 1800,
+     "height": 945,
+     "caption": "El mismo examen, 73 docentes: notas de la A a la F. Datos: Brimi (2011).",
+     "creator": {
+      "@id": "https://pablocorreaprieto.ch/#person"
+     },
+     "creditText": "Pablo Correa Prieto",
+     "copyrightNotice": "© 2026 Pablo Correa Prieto",
+     "description": "Gráfico de barras: de 73 docentes que corrigieron la misma redacción, 10 pusieron A, 18 B, 30 C, 9 D y 6 F; sobre 100, las notas fueron de 50 a 96",
+     "license": "https://creativecommons.org/licenses/by/4.0/",
+     "acquireLicensePage": "https://pablocorreaprieto.ch/es/reutilizacion-figuras"
+    },
+    {
+     "@type": "ImageObject",
+     "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-correction-second-regard-es.png",
+     "contentUrl": "https://pablocorreaprieto.ch/pablo-correa-prieto-correction-second-regard-es.png",
+     "url": "https://pablocorreaprieto.ch/pablo-correa-prieto-correction-second-regard-es.png",
+     "width": 1800,
+     "height": 945,
+     "caption": "La segunda mirada: la IA puntúa en paralelo, el docente revisa las discrepancias y decide.",
+     "creator": {
+      "@id": "https://pablocorreaprieto.ch/#person"
+     },
+     "creditText": "Pablo Correa Prieto",
+     "copyrightNotice": "© 2026 Pablo Correa Prieto",
+     "description": "Esquema: un examen anonimizado lo corrige el docente y, en paralelo, lo puntúa la IA; si las dos notas coinciden, se valida; si no, el docente lo revisa y decide",
+     "license": "https://creativecommons.org/licenses/by/4.0/",
+     "acquireLicensePage": "https://pablocorreaprieto.ch/es/reutilizacion-figuras"
+    }
+   ],
+   "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://pablocorreaprieto.ch/#website",
+    "name": "Pablo Correa Prieto",
+    "url": "https://pablocorreaprieto.ch/"
+   },
+   "translationOfWork": {
+    "@id": "https://pablocorreaprieto.ch/ia-correction-second-regard#article"
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://pablocorreaprieto.ch/#person",
+   "name": "Pablo Correa Prieto",
+   "givenName": "Pablo",
+   "familyName": "Correa Prieto",
+   "url": "https://pablocorreaprieto.ch/",
+   "image": "https://pablocorreaprieto.ch/pablo-correa-prieto.jpg",
+   "sameAs": [
+    "https://www.linkedin.com/in/pablocorreaprieto",
+    "https://scholar.google.com/citations?user=N2vtvGcAAAAJ",
+    "https://github.com/pablocorreaprieto",
+    "https://orcid.org/0009-0009-1844-7453",
+    "https://osf.io/skvn4",
+    "https://universidadinternacionaldelarioja.academia.edu/PabloCorreaPrieto",
+    "https://www.researchgate.net/profile/Pablo-Correa-Prieto",
+    "https://www.wikidata.org/wiki/Q141533563"
+   ],
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "ORCID",
+    "value": "0009-0009-1844-7453",
+    "url": "https://orcid.org/0009-0009-1844-7453"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Inicio",
+     "item": "https://pablocorreaprieto.ch/es/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Artículos",
+     "item": "https://pablocorreaprieto.ch/es/articulos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Corregir con IA: compararla con nuestros errores reales, no con la perfección",
+     "item": "https://pablocorreaprieto.ch/es/ia-correccion-segunda-mirada"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<div class="topbar">
+  <a class="brand" href="/es/" aria-label="Pablo Correa Prieto – Inicio">pablo correa prieto<span class="dot">.</span></a>
+  <nav class="tb" aria-label="Idioma">
+    <a href="/ia-correction-second-regard" hreflang="fr" lang="fr" aria-label="Français">FR</a>
+    <a href="/en/ai-marking-second-reader" hreflang="en" lang="en" aria-label="English">EN</a>
+    <a href="/es/ia-correccion-segunda-mirada" hreflang="es" lang="es" aria-label="Español" aria-current="page">ES</a>
+  </nav>
+</div>
+
+<main class="doc">
+<p class="crumbs"><a href="/es/">Inicio</a> / <a href="/es/articulos">Artículos</a></p>
+<article>
+<header>
+  <p class="kicker">Artículo · La IA y la evaluación</p>
+  <h1>Corregir con IA: compararla con nuestros errores reales, no con la perfección</h1>
+  <p class="byline">Pablo Correa Prieto · publicado en francés el <time datetime="2026-09-28">28 de septiembre de 2026</time> · <a href="/ia-correction-second-regard" hreflang="fr" lang="fr">versión original</a></p>
+</header>
+<figure>
+  <img src="/pablo-correa-prieto-correction-titre-es.jpg" width="1800" height="945" fetchpriority="high" alt="Portada con el texto «Nuestros errores, no la perfección.», el nombre Pablo Correa Prieto y la dirección pablocorreaprieto.ch">
+  <figcaption>Nuestros errores reales, no la perfección.<br><small>© Pablo Correa Prieto, 2026 — <a href="/es/reutilizacion-figuras">CC BY 4.0</a></small></figcaption>
+</figure>
+<div class="prose">
+<p>En <a href="/es/ia-docente-preparar-evaluar">un artículo anterior</a> escribí que solemos comparar la IA con un ideal sin errores, cuando la comparación honesta es con nuestra propia manera de corregir. Esa afirmación necesita pruebas. Para saber cuánto vale una herramienta que ayuda a corregir, primero hay que saber cuánto vale la corrección humana. Sobre esto, la investigación es antigua, abundante y poco halagadora para nosotros.</p>
+<h2><span class="n">1.</span>El mismo examen, notas muy distintas</h2>
+<p>En 1912, Daniel Starch y Edward Elliott enviaron los mismos dos exámenes de inglés a doscientos institutos estadounidenses; 142 docentes los corrigieron. Cuando se les preguntaba, los docentes solían estimar que dos correctores no se separarían en más de 10 puntos. En realidad, las notas de un mismo examen podían repartirse en 35 a 40 puntos, y en uno de los dos exámenes, 22 de los 142 docentes no le dieron el aprobado (Starch y Elliott, 1912). Al año siguiente repitieron la experiencia en geometría: las notas estaban aún más dispersas que en inglés. Su conclusión interpela directamente al profesorado de matemáticas: no hay razón para pensar que un examen de matemáticas se corrija con más precisión que cualquier otro (Starch y Elliott, 1913).</p>
+<p>Casi un siglo después, Hunter Brimi (2011) retomó la pregunta con 90 docentes de secundaria que corrigieron la misma redacción. Entre los 73 que puntuaron sobre 100, las notas fueron de 50 a 96. En letras, el mismo texto recibió 10 A, 18 B, 30 C, 9 D y 6 F.</p>
+<figure>
+  <img src="/pablo-correa-prieto-correction-meme-copie-es.png" width="1800" height="945" loading="lazy" decoding="async" alt="Gráfico de barras: de 73 docentes que corrigieron la misma redacción, 10 pusieron A, 18 B, 30 C, 9 D y 6 F; sobre 100, las notas fueron de 50 a 96">
+  <figcaption>El mismo examen, 73 docentes: notas de la A a la F. Datos: Brimi (2011).<br><small>© Pablo Correa Prieto, 2026 — <a href="/es/reutilizacion-figuras">CC BY 4.0</a></small></figcaption>
+</figure>
+<h2><span class="n">2.</span>El orden de los exámenes y la duración de la sesión cuentan</h2>
+<p>Hablaba del cansancio al final del montón. Klein y El (2003) dieron las mismas 31 redacciones de alumnos de séptimo curso a 60 profesoras, en tres órdenes distintos. A medida que avanzaban en el montón, las notas subían poco a poco, hasta superar las de correctores especializados; entre los primeros y los últimos exámenes, la diferencia rondaba el 10 %. Los autores relacionan esta deriva con las sesiones largas de corrección sin pausa.</p>
+<p>El orden actúa también de otra forma: docentes en formación puntuaron más bajo dos redacciones medias cuando seguían a cinco buenas que cuando seguían a cinco malas (Hales y Tokar, 1975, citados en Meadows y Billington, 2005). La misma revisión menciona, sin embargo, un estudio sobre la corrección de exámenes que no encuentra un efecto importante del momento en que se corrige cada examen. El efecto no es siempre el mismo; pero nuestra nota depende en parte de lo que acabamos de leer.</p>
+<p>A esto se suma lo que cualquier docente conoce: un criterio aplicado con más manga ancha en el trigésimo examen que en el tercero, una errata en un enunciado que solo vemos cuando ya hemos devuelto los exámenes. Nada de esto es una falta profesional. Es el funcionamiento normal de un corrector humano.</p>
+<h2><span class="n">3.</span>Lo que dicen los primeros estudios sobre la IA</h2>
+<p>Frente a esta referencia, los grandes modelos de lenguaje no son ni perfectos ni inútiles. Sobre 1710 respuestas cortas de alumnos de 5 a 16 años en ciencias e historia, que había que juzgar como correctas o incorrectas, GPT-4 alcanzó un acuerdo de 0,70 (kappa de Cohen) con el profesorado, frente a 0,75 entre los propios docentes (Henkel et al., 2024). Sobre 20 redacciones de alumnos de 7.º y 8.º curso, puntuadas por 37 docentes según diez criterios, el mejor modelo probado obtuvo una correlación de 0,74 con las notas del profesorado; pero puntuaba con más generosidad y captaba peor la calidad del contenido (Seßler et al., 2025). En los comentarios escritos sobre textos de alumnos, evaluadores humanos formados lo hicieron mejor que ChatGPT 3.5 en todas las categorías salvo una, la adecuación a los criterios (Steiss et al., 2024).</p>
+<p>Mi lectura de estos resultados: la IA todavía no es un corrector fiable por sí sola, sobre todo cuando hay que juzgar el fondo de un texto. Pero la distancia con un corrector humano es mucho menor de lo que parece cuando se la compara con la perfección.</p>
+<h2><span class="n">4.</span>Una segunda mirada, no un corrector automático</h2>
+<p>Por eso la veo como una segunda mirada. El docente corrige; la herramienta propone una nota o un comentario en paralelo; solo se revisan los exámenes en los que ambos discrepan. Ofqual, el organismo que regula exámenes y titulaciones en Inglaterra, describe exactamente este dispositivo (la IA puntúa en paralelo al corrector humano y las discrepancias señalan una respuesta que revisar) y señala que evita el efecto de anclaje. Recuerda también que una nota determinada únicamente por la IA no es conforme a su normativa (Williamson, 2026).</p>
+<figure>
+  <img src="/pablo-correa-prieto-correction-second-regard-es.png" width="1800" height="945" loading="lazy" decoding="async" alt="Esquema: un examen anonimizado lo corrige el docente y, en paralelo, lo puntúa la IA; si las dos notas coinciden, se valida; si no, el docente lo revisa y decide">
+  <figcaption>La segunda mirada: la IA puntúa en paralelo, el docente revisa las discrepancias y decide.<br><small>© Pablo Correa Prieto, 2026 — <a href="/es/reutilizacion-figuras">CC BY 4.0</a></small></figcaption>
+</figure>
+<p>Lo que espero de ella es que la herramienta recupere parte de lo que el cansancio o el orden de los exámenes nos hacen pasar por alto. Es una hipótesis: que yo sepa, ningún estudio ha medido todavía, en el aula, cuántos errores de corrección evita una segunda mirada así.</p>
+<p>Dos condiciones no se negocian. La primera, la protección de datos. Una ficha de Eduvaud, el portal educativo del cantón de Vaud, dirigida a la secundaria postobligatoria, lo resume en una frase: no transmitir nunca datos personales o sensibles a través de herramientas de IA en línea y, en caso de duda, usar las herramientas que ofrece el cantón (<cite>IA et protection des données</cite>, 2024). En la práctica: exámenes anonimizados, sin nombre ni dato que permita identificar al alumno. La segunda: la decisión es del docente. La herramienta señala; no decide.</p>
+<h2>La buena pregunta</h2>
+<p>La pregunta útil no es, por tanto, «¿corrige la IA sin errores?». Ningún corrector lo consigue. Es más bien: ¿se equivoca menos el docente que corrige con una segunda mirada que el docente que corrige solo? Es una pregunta empírica, y merece ponerse a prueba en nuestras aulas, con nuestros exámenes y nuestros criterios.</p>
+<h2>Hablemos</h2>
+<p>¿Ya corrigen con una segunda mirada, humana o no? ¿Han comparado alguna vez sus notas con las de un colega sobre los mismos exámenes? Estaré encantado de conversar. Mis datos de contacto: <a href="/es/">pablocorreaprieto.ch</a></p>
+<p class="ai-note">Texto redactado con ayuda de una IA, revisado y validado por el autor.</p>
+</div>
+<section class="refs" aria-labelledby="refs-title">
+<h2 id="refs-title">Referencias</h2>
+<ol>
+<li>Brimi, H. M. (2011). Reliability of grading high school work in English. <i>Practical Assessment, Research &amp; Evaluation, 16</i>(17). <a href="https://eric.ed.gov/?id=EJ954940" rel="noopener">https://eric.ed.gov/?id=EJ954940</a></li>
+<li>Henkel, O., Hills, L., Boxer, A., Roberts, B. y Levonian, Z. (2024). Can large language models make the grade? An empirical study evaluating LLMs ability to mark short answer questions in K-12 education. En <i>Proceedings of the Eleventh ACM Conference on Learning @ Scale</i> (pp. 300–304). ACM. <a href="https://doi.org/10.1145/3657604.3664693" rel="noopener">https://doi.org/10.1145/3657604.3664693</a></li>
+<li><i>IA et protection des données</i> [Ficha]. (2024). Portail Eduvaud, Direction générale de l’enseignement postobligatoire. <a href="https://www.eduvaud.ch/wp-content/uploads/2025/08/IA_enseignants_exam-vjuillet2025.pdf" rel="noopener">https://www.eduvaud.ch/wp-content/uploads/2025/08/IA_enseignants_exam-vjuillet2025.pdf</a></li>
+<li>Klein, J. F. y El, L. P. (2003). Impairment of teacher efficiency during extended sessions of test correction. <i>European Journal of Teacher Education, 26</i>(3), 379–392. <a href="https://doi.org/10.1080/0261976032000128201" rel="noopener">https://doi.org/10.1080/0261976032000128201</a></li>
+<li>Meadows, M. y Billington, L. (2005). <i>A review of the literature on marking reliability</i> [Informe para la National Assessment Agency]. <a href="https://filestore.aqa.org.uk/content/research/CERP_RP_MM_01052005.pdf" rel="noopener">https://filestore.aqa.org.uk/content/research/CERP_RP_MM_01052005.pdf</a></li>
+<li>Seßler, K., Fürstenberg, M., Bühler, B. y Kasneci, E. (2025). Can AI grade your essays? A comparative analysis of large language models and teacher ratings in multidimensional essay scoring. En <i>Proceedings of the 15th International Learning Analytics and Knowledge Conference (LAK ’25)</i> (pp. 462–472). ACM. <a href="https://doi.org/10.1145/3706468.3706527" rel="noopener">https://doi.org/10.1145/3706468.3706527</a></li>
+<li>Starch, D. y Elliott, E. C. (1912). Reliability of the grading of high-school work in English. <i>The School Review, 20</i>(7), 442–457. <a href="https://doi.org/10.1086/435971" rel="noopener">https://doi.org/10.1086/435971</a></li>
+<li>Starch, D. y Elliott, E. C. (1913). Reliability of grading work in mathematics. <i>The School Review, 21</i>(4), 254–259. <a href="https://doi.org/10.1086/436086" rel="noopener">https://doi.org/10.1086/436086</a></li>
+<li>Steiss, J., Tate, T., Graham, S., Cruz, J., Hebert, M., Wang, J., Moon, Y., Tseng, W., Warschauer, M. y Olson, C. B. (2024). Comparing the quality of human and ChatGPT feedback of students’ writing. <i>Learning and Instruction, 91</i>, Artículo 101894. <a href="https://doi.org/10.1016/j.learninstruc.2024.101894" rel="noopener">https://doi.org/10.1016/j.learninstruc.2024.101894</a></li>
+<li>Williamson, J. (2026). <i>Principles of AI use in marking</i> [Documento de trabajo]. Ofqual. <a href="https://www.gov.uk/government/publications/principles-of-ai-use-in-marking/principles-of-ai-use-in-marking" rel="noopener">https://www.gov.uk/government/publications/principles-of-ai-use-in-marking</a></li>
+</ol>
+</section>
+</article>
+<aside class="about" aria-label="Sobre el autor">
+  <p class="label">Sobre el autor</p>
+  <p>Pablo Correa Prieto es maestro de primaria con reconocimiento CDIP (3H–8H) y docente sustituto en las escuelas del cantón de Vaud. Paralelamente cursa un máster en investigación en educación (UNIR): educación digital e IA en la escuela.</p>
+  <ul><li><a href="/es/">Perfil y contacto</a></li><li><a href="/es/investigacion">Investigación</a></li><li><a href="/es/articulos">Todos los artículos</a></li></ul>
+</aside>
+</main>
+
+<footer>
+  <span>© 2026 Pablo Correa Prieto · <a href="/es/">pablocorreaprieto.ch</a></span>
+  <span>Actualizado en septiembre de 2026</span>
+</footer>
+</body>
+</html>
