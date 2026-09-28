@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="945" viewBox="0 0 1800 945" lang="en">
+<defs>
+<style>
+@font-face{font-family:'Source Serif 4'; src:url(../../title-card/fonts/source-serif-4-latin-opsz-normal.woff2) format('woff2'); font-weight:200 900}
+@font-face{font-family:'IBM Plex Sans'; src:url(../../title-card/fonts/ibm-plex-sans-latin-400-normal.woff2) format('woff2'); font-weight:400}
+@font-face{font-family:'IBM Plex Sans'; src:url(../../title-card/fonts/ibm-plex-sans-latin-500-normal.woff2) format('woff2'); font-weight:500}
+@font-face{font-family:'IBM Plex Sans'; src:url(../../title-card/fonts/ibm-plex-sans-latin-600-normal.woff2) format('woff2'); font-weight:600}
+.serif{font-variation-settings:'opsz' 60}
+</style>
+<marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M1,1 L10,6 L1,11" fill="none" stroke="#264A6E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+<rect width="1800" height="945" fill="#FAFAF8"/>
+<text x="115" y="111" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="25" font-weight="600" fill="#264A6E" text-anchor="start" letter-spacing="4" data-maxw="1570">LEARNING · PUBLISHED DATA</text>
+<text class="serif" x="112" y="228" font-family="'Source Serif 4', Georgia, serif" font-size="76" font-weight="450" fill="#1C2128" letter-spacing="-1.5" data-maxw="1570">Doing better is not learning better<tspan fill="#B8492A">.</tspan></text>
+<text x="115" y="290" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#5B626C" text-anchor="start" data-maxw="1570">Change in grades compared with students without AI, high-school mathematics (Bastani et al., 2025)</text>
+<rect x="115" y="326" width="22" height="22" rx="4" fill="#2F6DB0"/>
+<text x="149" y="344" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="24" font-weight="400" fill="#1C2128" text-anchor="start">During practice, with the tool</text>
+<rect x="635" y="326" width="22" height="22" rx="4" fill="#B8492A"/>
+<text x="669" y="344" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="24" font-weight="400" fill="#1C2128" text-anchor="start">On the exam, without the tool</text>
+<text x="115" y="408" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="26" font-weight="600" fill="#1C2128" text-anchor="start" data-maxw="640">Open access to GPT-4</text>
+<text x="139" y="452" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="24" font-weight="400" fill="#5B626C" text-anchor="start" data-maxw="560">During practice</text>
+<path d="M820,424 L1050.0,424 Q1060.0,424 1060.0,434 L1060.0,452 Q1060.0,462 1050.0,462 L820,462 Z" fill="#2F6DB0"/>
+<text x="1074.0" y="453" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="26" font-weight="600" fill="#1C2128" text-anchor="start">+48%</text>
+<text x="139" y="504" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="24" font-weight="400" fill="#5B626C" text-anchor="start" data-maxw="560">On the exam</text>
+<path d="M820,476 L745.0,476 Q735.0,476 735.0,486 L735.0,504 Q735.0,514 745.0,514 L820,514 Z" fill="#B8492A"/>
+<text x="723.0" y="505" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="26" font-weight="600" fill="#1C2128" text-anchor="end">−17%</text>
+<text x="115" y="558" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="26" font-weight="600" fill="#1C2128" text-anchor="start" data-maxw="640">GPT-4 tutor: hints, not answers</text>
+<text x="139" y="602" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="24" font-weight="400" fill="#5B626C" text-anchor="start" data-maxw="560">During practice</text>
+<path d="M820,574 L1445.0,574 Q1455.0,574 1455.0,584 L1455.0,602 Q1455.0,612 1445.0,612 L820,612 Z" fill="#2F6DB0"/>
+<text x="1469.0" y="603" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="26" font-weight="600" fill="#1C2128" text-anchor="start">+127%</text>
+<text x="139" y="654" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="24" font-weight="400" fill="#5B626C" text-anchor="start" data-maxw="560">On the exam</text>
+<text x="836" y="654" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="24" font-weight="500" fill="#1C2128" text-anchor="start">no significant difference</text>
+<line x1="820" y1="378" x2="820" y2="670" stroke="#5B626C" stroke-width="2"/>
+<text x="820" y="696" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#5B626C" text-anchor="middle">group without AI</text>
+<text x="115" y="752" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="19" font-weight="400" fill="#5B626C" text-anchor="start" data-maxw="1570">Data: Bastani, H. et al. (2025). Generative AI without guardrails can harm learning. PNAS, 122(26), e2422633122.</text>
+<text x="115" y="780" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="19" font-weight="400" fill="#5B626C" text-anchor="start" data-maxw="1570">Nearly 1,000 students at a high school in Turkey. Chart: Pablo Correa Prieto.</text>
+<line x1="115" y1="795" x2="1685" y2="795" stroke="#E2E3DF" stroke-width="2"/>
+<text x="115" y="855" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="28"><tspan font-weight="600" fill="#1C2128">Pablo Correa Prieto</tspan><tspan fill="#5B626C"> · teacher and education researcher</tspan></text>
+<text x="1685" y="854" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#264A6E" text-anchor="end" letter-spacing="3">PABLOCORREAPRIETO.CH</text>
+<text x="1685" y="919" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="17" font-weight="400" fill="#6C737C" text-anchor="end">Pablo Correa Prieto · 2026 · CC BY 4.0</text>
+</svg>

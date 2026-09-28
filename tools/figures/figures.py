@@ -221,8 +221,9 @@ def fig_ia_examen(lang, T):
     ly = 344
     b.append(f'<rect x="{L}" y="{ly - 18}" width="22" height="22" rx="4" fill="{C["blue"]}"/>')
     b.append(t(L + 34, ly, escape(T['leg1']), size=24, fill=C['ink']))
-    b.append(f'<rect x="{L + 520}" y="{ly - 18}" width="22" height="22" rx="4" fill="{C["mark"]}"/>')
-    b.append(t(L + 554, ly, escape(T['leg2']), size=24, fill=C['ink']))
+    l2 = T.get('leg2x', 520)
+    b.append(f'<rect x="{L + l2}" y="{ly - 18}" width="22" height="22" rx="4" fill="{C["mark"]}"/>')
+    b.append(t(L + l2 + 34, ly, escape(T['leg2']), size=24, fill=C['ink']))
     rows = [
         (T['arm1'], None, None),
         (T['r_practice'], 48, 'blue'),
@@ -242,7 +243,7 @@ def fig_ia_examen(lang, T):
             b.append(t(zero + 16, y + 28, escape(T['ns']), size=24, weight=500, fill=C['ink']))
         else:
             b.append(hbar(zero, y, v * scale, bh, C[col]))
-            lab = ('+' if v > 0 else '−') + f'{abs(v)} %'
+            lab = ('+' if v > 0 else '−') + (f'{abs(v)}%' if lang == 'en' else f'{abs(v)} %')
             if v > 0:
                 b.append(t(zero + v * scale + 14, y + 29, lab, size=26, weight=600))
             else:
@@ -330,6 +331,10 @@ def fr_min(v):
     return f'{v:.1f}'.replace('.', ',') + ' min'
 
 
+def en_min(v):
+    return f'{v:.1f} min'
+
+
 TEXT = {
     'fr': {
         'correction-meme-copie': dict(
@@ -372,7 +377,7 @@ TEXT = {
             h2='Exigence des tâches mathématiques', s2='Stein, Grover et Henningsen (1996)',
             l2=['Mémorisation', 'Procédures sans liens', 'Procédures avec liens', 'Faire des mathématiques'],
             axis='Exigence croissante',
-            source=['Niveaux traduits par l’auteur. Sources : Webb (1999), Research Monograph No. 18 ; Stein, Grover & Henningsen (1996), American',
+            source=['Niveaux traduits par l’auteur. Sources : Webb (1999), Research Monograph No. 18 ; Stein, Grover et Henningsen (1996), American',
                     'Educational Research Journal, 33(2). « Procédures sans / avec liens » : sans / avec liens aux concepts. Schéma : Pablo Correa Prieto.'],
         ),
         'effort-ia-examen': dict(
@@ -395,7 +400,7 @@ TEXT = {
             h2='Confier à l’outil, sous contrôle', s2='L’effort n’est qu’un moyen',
             l2=['Mettre en forme', 'Générer des exercices d’entraînement en plus', 'Reformuler une consigne au bon niveau', 'Donner des indices plutôt que des réponses'],
             note='La même tâche peut changer de colonne selon l’objectif visé.',
-            source=['Proposition de l’auteur, d’après Bjork & Bjork (2011) et Bastani et al. (2025). Schéma : Pablo Correa Prieto.'],
+            source=['Proposition de l’auteur, d’après Bjork et Bjork (2011) et Bastani et al. (2025). Schéma : Pablo Correa Prieto.'],
         ),
         'preparer-temps-gagne': dict(
             kicker='Préparer · données publiées',
@@ -415,6 +420,179 @@ TEXT = {
             c2=('Vérifier', [['L’objectif du PER', 'en cours'], ['Le niveau d’exigence', 'pour la classe'], ['L’exactitude des', 'réponses et données']]),
             c3=('Adapter', ['À la classe et à ce', 'que le titulaire a', 'déjà construit.']),
             source=['Proposition de l’auteur, d’après le Plan d’études romand et les recommandations de la CIIP (2025). Schéma : Pablo Correa Prieto.'],
+        ),
+    },
+
+    'en': {
+        'correction-meme-copie': dict(
+            kicker='Assessment · published data',
+            title='Same paper, 73 teachers.',
+            sub=['Letter grades given to the same student essay'],
+            stat1='50 to 96',
+            stat1_label=['marks out of 100 given to this', 'same paper by 73 teachers'],
+            stat2='A to F',
+            stat2_label=['every letter on the scale,', 'for one and the same text'],
+            source=['Data: Brimi, H. M. (2011). Reliability of grading high school work in English. Practical Assessment, Research & Evaluation, 16(17).',
+                    'Chart: Pablo Correa Prieto.'],
+        ),
+        'correction-second-regard': dict(
+            kicker='Assessment · proposal',
+            title='A second reader, not a marker.',
+            b1_label='Paper', b1=['Anonymised,', 'no name'],
+            b2_label='Teacher', b2=['Marks it', 'as usual'],
+            b3_label='AI, in parallel', b3=['Suggests a mark', 'or a comment'],
+            b4_label='Compare', b4=['Do the two', 'marks agree?'],
+            b5_label='Yes', b5=['The mark is', 'confirmed'],
+            b6_label='No', b6=['The teacher', 'reviews, decides'],
+            source=['After the parallel-marking set-up described by Ofqual (Williamson, 2026). The final decision stays with the teacher.',
+                    'Diagram: Pablo Correa Prieto.'],
+        ),
+        'items-trois-questions': dict(
+            kicker='Judging an item · three questions',
+            title='Correct does not mean aligned.',
+            c1=('Alignment', ['Does the item target the', 'stated PER objective?']),
+            c2=('Cognitive demand', ['What level of thinking', 'does it really require?']),
+            c3=('Quality', ['Is it correct, clear, clue-free,', 'with a single right answer?']),
+            note='An item can pass one of these questions and fail the other two.',
+            source=['Framework of Pablo Correa Prieto’s study in preparation (OSF project osf.io/b653h). Diagram: Pablo Correa Prieto.'],
+        ),
+        'items-exigence-cognitive': dict(
+            kicker='Cognitive demand · two published frameworks',
+            title='From recall to reasoning.',
+            h1='Depth of knowledge', s1='Webb (1999)',
+            l1=['Recall', 'Skill/concept', 'Strategic thinking', 'Extended thinking'],
+            h2='Demands of mathematical tasks', s2='Stein, Grover and Henningsen (1996)',
+            l2=['Memorisation', 'Procedures without connections', 'Procedures with connections', 'Doing mathematics'],
+            axis='Increasing demand',
+            source=['Sources: Webb (1999), Research Monograph No. 18; Stein, Grover & Henningsen (1996), American Educational Research Journal,',
+                    '33(2). “Procedures without / with connections”: connections to concepts. Diagram: Pablo Correa Prieto.'],
+        ),
+        'effort-ia-examen': dict(
+            kicker='Learning · published data',
+            title='Doing better is not learning better.',
+            sub=['Change in grades compared with students without AI, high-school mathematics (Bastani et al., 2025)'],
+            leg1='During practice, with the tool', leg2='On the exam, without the tool',
+            arm1='Open access to GPT-4', arm2='GPT-4 tutor: hints, not answers',
+            r_practice='During practice', r_exam='On the exam',
+            ns='no significant difference',
+            zero='group without AI',
+            source=['Data: Bastani, H. et al. (2025). Generative AI without guardrails can harm learning. PNAS, 122(26), e2422633122.',
+                    'Nearly 1,000 students at a high school in Turkey. Chart: Pablo Correa Prieto.'],
+        ),
+        'effort-garder-confier': dict(
+            kicker='Learning · proposal',
+            title='Where is the useful effort?',
+            h1='Keep demanding', s1='The effort is the learning itself',
+            l1=['Recalling without help', 'Producing an answer before checking it', 'Explaining in one’s own words', 'A first attempt at a problem'],
+            h2='Hand to the tool, under control', s2='The effort is only a means',
+            l2=['Formatting', 'Generating extra practice exercises', 'Rewording instructions at the right level', 'Giving hints rather than answers'],
+            note='The same task can switch columns depending on the objective.',
+            source=['Author’s proposal, based on Bjork & Bjork (2011) and Bastani et al. (2025). Diagram: Pablo Correa Prieto.'],
+        ),
+        'preparer-temps-gagne': dict(
+            kicker='Preparing · published data',
+            title='25 minutes less per week.',
+            sub=['Weekly lesson-preparation time, science teachers, England'],
+            r1=['Without an AI tool', '(comparison group)'], r2=['With ChatGPT', 'and a user guide'],
+            fmt=en_min,
+            diff='−25.3 min (−31%)',
+            quality=['Quality of resources: no difference found by an expert panel who did not know which ones had been made with ChatGPT.'],
+            source=['Data: Roy, P. et al. (2024). ChatGPT in lesson preparation: A Teacher Choices trial. EEF / NFER. 259 teachers, 68 schools;',
+                    'time self-reported by teachers. Chart: Pablo Correa Prieto.'],
+        ),
+        'preparer-verifier': dict(
+            kicker='Preparing · proposal',
+            title='The real work: checking.',
+            c1=('Generate', ['A few seconds:', 'exercises, variants,', 'instructions.']),
+            c2=('Check', [['The PER objective', 'being taught'], ['The level of demand', 'for the class'], ['Accuracy of the', 'answers and data']]),
+            c3=('Adapt', ['To the class and to', 'what the regular', 'teacher has built.']),
+            source=['Author’s proposal, based on the Plan d’études romand and the CIIP recommendations (2025). Diagram: Pablo Correa Prieto.'],
+        ),
+    },
+    'es': {
+        'correction-meme-copie': dict(
+            kicker='Evaluación · datos publicados',
+            title='El mismo examen, 73 docentes.',
+            sub=['Notas en letras que recibió la misma redacción de un alumno'],
+            stat1='50 a 96',
+            stat1_label=['notas sobre 100 que dieron', '73 docentes a este mismo examen'],
+            stat2='A a F',
+            stat2_label=['todas las letras de la escala', 'para un único y mismo texto'],
+            source=['Datos: Brimi, H. M. (2011). Reliability of grading high school work in English. Practical Assessment, Research & Evaluation, 16(17).',
+                    'Gráfico: Pablo Correa Prieto.'],
+        ),
+        'correction-second-regard': dict(
+            kicker='Evaluación · propuesta',
+            title='Una segunda mirada, no un corrector.',
+            b1_label='Examen', b1=['Anonimizado,', 'sin nombre'],
+            b2_label='Docente', b2=['Corrige', 'como siempre'],
+            b3_label='IA, en paralelo', b3=['Propone una nota', 'o un comentario'],
+            b4_label='Comparar', b4=['¿Coinciden', 'las dos?'],
+            b5_label='Sí', b5=['La nota', 'se valida'],
+            b6_label='No', b6=['El docente', 'revisa y decide'],
+            source=['Según el dispositivo de puntuación en paralelo descrito por Ofqual (Williamson, 2026). La decisión final es del docente.',
+                    'Esquema: Pablo Correa Prieto.'],
+        ),
+        'items-trois-questions': dict(
+            kicker='Juzgar un ítem · tres preguntas',
+            title='Correcto no significa alineado.',
+            c1=('Alineación', ['¿Apunta el ítem al objetivo', 'del PER anunciado?']),
+            c2=('Demanda cognitiva', ['¿Qué nivel de reflexión', 'pide realmente?']),
+            c3=('Calidad', ['¿Es correcto, claro, sin pistas,', 'con una sola respuesta correcta?']),
+            note='Un ítem puede superar una de estas preguntas y fallar las otras dos.',
+            source=['Marco del estudio en preparación de Pablo Correa Prieto (proyecto OSF osf.io/b653h). Esquema: Pablo Correa Prieto.'],
+        ),
+        'items-exigence-cognitive': dict(
+            kicker='Demanda cognitiva · dos marcos publicados',
+            title='Del recuerdo al razonamiento.',
+            h1='Profundidad de conocimiento', s1='Webb (1999)',
+            l1=['Recuerdo', 'Habilidad o concepto', 'Pensamiento estratégico', 'Pensamiento extendido'],
+            h2='Demanda de las tareas matemáticas', s2='Stein, Grover y Henningsen (1996)',
+            l2=['Memorización', 'Procedimientos sin conexiones', 'Procedimientos con conexiones', 'Hacer matemáticas'],
+            axis='Demanda creciente',
+            source=['Niveles traducidos por el autor. Fuentes: Webb (1999), Research Monograph No. 18; Stein, Grover y Henningsen (1996), American',
+                    'Educational Research Journal, 33(2). «Procedimientos sin / con conexiones»: con los conceptos. Esquema: Pablo Correa Prieto.'],
+        ),
+        'effort-ia-examen': dict(
+            kicker='Aprender · datos publicados',
+            title='Rendir más no es aprender más.',
+            sub=['Diferencia de notas respecto a los alumnos sin IA, matemáticas en un instituto (Bastani et al., 2025)'],
+            leg1='Durante los ejercicios, con la herramienta', leg2='En el examen, sin la herramienta', leg2x=640,
+            arm1='Acceso libre a GPT-4', arm2='Tutor GPT-4: pistas, no respuestas',
+            r_practice='Durante los ejercicios', r_exam='En el examen',
+            ns='diferencia no significativa',
+            zero='grupo sin IA',
+            source=['Datos: Bastani, H. et al. (2025). Generative AI without guardrails can harm learning. PNAS, 122(26), e2422633122.',
+                    'Cerca de 1000 alumnos de un instituto de Turquía. Gráfico: Pablo Correa Prieto.'],
+        ),
+        'effort-garder-confier': dict(
+            kicker='Aprender · propuesta',
+            title='¿Dónde está el esfuerzo útil?',
+            h1='Mantener exigente', s1='El esfuerzo es el aprendizaje buscado',
+            l1=['Recordar sin ayuda', 'Producir la respuesta antes de comprobarla', 'Explicar con las propias palabras', 'Hacer un primer intento ante un problema'],
+            h2='Confiar a la herramienta, con control', s2='El esfuerzo es solo un medio',
+            l2=['Dar formato', 'Generar ejercicios de práctica adicionales', 'Reformular una consigna al nivel adecuado', 'Dar pistas en lugar de respuestas'],
+            note='La misma tarea puede cambiar de columna según el objetivo.',
+            source=['Propuesta del autor, a partir de Bjork y Bjork (2011) y Bastani et al. (2025). Esquema: Pablo Correa Prieto.'],
+        ),
+        'preparer-temps-gagne': dict(
+            kicker='Preparar · datos publicados',
+            title='25 minutos menos por semana.',
+            sub=['Tiempo semanal de preparación de clases, docentes de ciencias, Inglaterra'],
+            r1=['Sin herramienta de IA', '(grupo de comparación)'], r2=['Con ChatGPT', 'y una guía de uso'],
+            fmt=fr_min,
+            diff='−25,3 min (−31 %)',
+            quality=['Calidad de los recursos: sin diferencias según un panel de expertos que no sabía cuáles se habían hecho con ChatGPT.'],
+            source=['Datos: Roy, P. et al. (2024). ChatGPT in lesson preparation: A Teacher Choices trial. EEF / NFER. 259 docentes, 68 centros;',
+                    'tiempo declarado por los docentes. Gráfico: Pablo Correa Prieto.'],
+        ),
+        'preparer-verifier': dict(
+            kicker='Preparar · propuesta',
+            title='El verdadero trabajo: verificar.',
+            c1=('Generar', ['Unos segundos:', 'ejercicios, variantes,', 'consignas.']),
+            c2=('Verificar', [['El objetivo del PER', 'en curso'], ['El nivel de exigencia', 'para la clase'], ['La exactitud de', 'respuestas y datos']]),
+            c3=('Adaptar', ['A la clase y a lo', 'que el titular ya', 'ha construido.']),
+            source=['Propuesta del autor, a partir del Plan d’études romand y de las recomendaciones de la CIIP (2025). Esquema: Pablo Correa Prieto.'],
         ),
     },
 }
