@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="945" viewBox="0 0 1800 945" lang="en">
+<defs>
+<style>
+@font-face{font-family:'Source Serif 4'; src:url(../../title-card/fonts/source-serif-4-latin-opsz-normal.woff2) format('woff2'); font-weight:200 900}
+@font-face{font-family:'IBM Plex Sans'; src:url(../../title-card/fonts/ibm-plex-sans-latin-400-normal.woff2) format('woff2'); font-weight:400}
+@font-face{font-family:'IBM Plex Sans'; src:url(../../title-card/fonts/ibm-plex-sans-latin-500-normal.woff2) format('woff2'); font-weight:500}
+@font-face{font-family:'IBM Plex Sans'; src:url(../../title-card/fonts/ibm-plex-sans-latin-600-normal.woff2) format('woff2'); font-weight:600}
+.serif{font-variation-settings:'opsz' 60}
+</style>
+<marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M1,1 L10,6 L1,11" fill="none" stroke="#264A6E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+<rect width="1800" height="945" fill="#FAFAF8"/>
+<text x="115" y="111" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="25" font-weight="600" fill="#264A6E" text-anchor="start" letter-spacing="4" data-maxw="1570">MEASUREMENT · PUBLISHED DATA</text>
+<text class="serif" x="112" y="228" font-family="'Source Serif 4', Georgia, serif" font-size="76" font-weight="450" fill="#1C2128" letter-spacing="-1.5" data-maxw="1570">Correlations between self-reports<tspan fill="#B8492A">.</tspan></text>
+<text x="115" y="288" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#5B626C" text-anchor="start" data-maxw="1570">What the correlations cited in support of acceptance models actually measure</text>
+<text x="115" y="340" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="27" font-weight="500" fill="#1C2128" text-anchor="start" data-maxw="1570">Perceived usefulness ↔ self-predicted future use</text>
+<path d="M115,356 L955.0,356 Q965.0,356 965.0,366 L965.0,384 Q965.0,394 955.0,394 L115,394 Z" fill="#2F6DB0"/>
+<text x="983.0" y="385" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="30" font-weight="600" fill="#1C2128" text-anchor="start">.85</text>
+<text x="115" y="426" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="22" font-weight="400" fill="#5B626C" text-anchor="start" data-maxw="1180">Davis (1989). Two answers from the same person, in the same questionnaire.</text>
+<text x="115" y="466" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="27" font-weight="500" fill="#1C2128" text-anchor="start" data-maxw="1570">Perceived usefulness ↔ self-reported use</text>
+<path d="M115,482 L735.0,482 Q745.0,482 745.0,492 L745.0,510 Q745.0,520 735.0,520 L115,520 Z" fill="#2F6DB0"/>
+<text x="763.0" y="511" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="30" font-weight="600" fill="#1C2128" text-anchor="start">.63</text>
+<text x="115" y="552" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="22" font-weight="400" fill="#5B626C" text-anchor="start" data-maxw="1180">Davis (1989). Also self-reported.</text>
+<text x="115" y="592" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="27" font-weight="500" fill="#1C2128" text-anchor="start" data-maxw="1570">Self-reported use ↔ logged use</text>
+<path d="M115,608 L485.0,608 Q495.0,608 495.0,618 L495.0,636 Q495.0,646 485.0,646 L115,646 Z" fill="#B8492A"/>
+<text x="513.0" y="637" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="30" font-weight="600" fill="#1C2128" text-anchor="start">.38</text>
+<text x="115" y="678" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="22" font-weight="400" fill="#5B626C" text-anchor="start" data-maxw="1180">Parry et al. (2021). Meta-analysis of 44 studies, N = 52,007. Only 6% of mean self-reported</text>
+<text x="115" y="707" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="22" font-weight="400" fill="#5B626C" text-anchor="start" data-maxw="1180">estimates fall within 5% of the logged mean.</text>
+<text x="115" y="752" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="19" font-weight="400" fill="#5B626C" text-anchor="start" data-maxw="1570">Data: Davis, F. D. (1989). MIS Quarterly, 13(3), 319–340; Parry, D. A. et al. (2021).</text>
+<text x="115" y="780" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="19" font-weight="400" fill="#5B626C" text-anchor="start" data-maxw="1570">Nature Human Behaviour, 5(11), 1535–1547. Chart: Pablo Correa Prieto.</text>
+<line x1="115" y1="795" x2="1685" y2="795" stroke="#E2E3DF" stroke-width="2"/>
+<text x="115" y="855" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="28"><tspan font-weight="600" fill="#1C2128">Pablo Correa Prieto</tspan><tspan fill="#5B626C"> · teacher and education researcher</tspan></text>
+<text x="1685" y="854" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#264A6E" text-anchor="end" letter-spacing="3">PABLOCORREAPRIETO.CH</text>
+<text x="1685" y="919" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="17" font-weight="400" fill="#6C737C" text-anchor="end">Pablo Correa Prieto · 2026 · CC BY 4.0</text>
+</svg>

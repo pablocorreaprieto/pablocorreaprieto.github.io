@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="945" viewBox="0 0 1800 945" lang="en">
+<defs>
+<style>
+@font-face{font-family:'Source Serif 4'; src:url(../../title-card/fonts/source-serif-4-latin-opsz-normal.woff2) format('woff2'); font-weight:200 900}
+@font-face{font-family:'IBM Plex Sans'; src:url(../../title-card/fonts/ibm-plex-sans-latin-400-normal.woff2) format('woff2'); font-weight:400}
+@font-face{font-family:'IBM Plex Sans'; src:url(../../title-card/fonts/ibm-plex-sans-latin-500-normal.woff2) format('woff2'); font-weight:500}
+@font-face{font-family:'IBM Plex Sans'; src:url(../../title-card/fonts/ibm-plex-sans-latin-600-normal.woff2) format('woff2'); font-weight:600}
+.serif{font-variation-settings:'opsz' 60}
+</style>
+<marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M1,1 L10,6 L1,11" fill="none" stroke="#264A6E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+<rect width="1800" height="945" fill="#FAFAF8"/>
+<text x="115" y="111" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="25" font-weight="600" fill="#264A6E" text-anchor="start" letter-spacing="4" data-maxw="1570">FEEDBACK · PUBLISHED DATA</text>
+<text class="serif" x="112" y="228" font-family="'Source Serif 4', Georgia, serif" font-size="76" font-weight="450" fill="#1C2128" letter-spacing="-1.5" data-maxw="1570">Useful, but not enough to pass on<tspan fill="#B8492A">.</tspan></text>
+<text x="115" y="290" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#5B626C" text-anchor="start" data-maxw="1570">Feedback judged useful for revision by 89 student teachers, blind to its source</text>
+<text x="115" y="410" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="26" font-weight="400" fill="#1C2128" text-anchor="start" data-maxw="745">Expert feedback,</text>
+<text x="115" y="444" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="26" font-weight="400" fill="#1C2128" text-anchor="start" data-maxw="745">judged useful for revision</text>
+<path d="M900,390 L1523.6,390 Q1533.6,390 1533.6,400 L1533.6,426 Q1533.6,436 1523.6,436 L900,436 Z" fill="#2F6DB0"/>
+<text x="1551.6" y="424" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="30" font-weight="600" fill="#1C2128" text-anchor="start">88%</text>
+<text x="115" y="506" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="26" font-weight="400" fill="#1C2128" text-anchor="start" data-maxw="745">Language-model feedback,</text>
+<text x="115" y="540" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="26" font-weight="400" fill="#1C2128" text-anchor="start" data-maxw="745">judged useful for revision</text>
+<path d="M900,486 L1314.8,486 Q1324.8,486 1324.8,496 L1324.8,522 Q1324.8,532 1314.8,532 L900,532 Z" fill="#2F6DB0"/>
+<text x="1342.8" y="520" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="30" font-weight="600" fill="#1C2128" text-anchor="start">59%</text>
+<text x="115" y="602" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="26" font-weight="400" fill="#1C2128" text-anchor="start" data-maxw="745">Model feedback the rater chooses</text>
+<text x="115" y="636" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="26" font-weight="400" fill="#1C2128" text-anchor="start" data-maxw="745">to pass on to the student</text>
+<path d="M900,582 L1055.6,582 Q1065.6,582 1065.6,592 L1065.6,618 Q1065.6,628 1055.6,628 L900,628 Z" fill="#B8492A"/>
+<text x="1083.6" y="616" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="30" font-weight="600" fill="#1C2128" text-anchor="start">23%</text>
+<text x="115" y="752" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="19" font-weight="400" fill="#5B626C" text-anchor="start" data-maxw="1570">Data: Jansen, T. et al. (2024). Comparing generative AI and expert feedback to students’ writing.</text>
+<text x="115" y="780" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="19" font-weight="400" fill="#5B626C" text-anchor="start" data-maxw="1570">Psychologie in Erziehung und Unterricht, 71(2), 80–92. Chart: Pablo Correa Prieto.</text>
+<line x1="115" y1="795" x2="1685" y2="795" stroke="#E2E3DF" stroke-width="2"/>
+<text x="115" y="855" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="28"><tspan font-weight="600" fill="#1C2128">Pablo Correa Prieto</tspan><tspan fill="#5B626C"> · teacher and education researcher</tspan></text>
+<text x="1685" y="854" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#264A6E" text-anchor="end" letter-spacing="3">PABLOCORREAPRIETO.CH</text>
+<text x="1685" y="919" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="17" font-weight="400" fill="#6C737C" text-anchor="end">Pablo Correa Prieto · 2026 · CC BY 4.0</text>
+</svg>

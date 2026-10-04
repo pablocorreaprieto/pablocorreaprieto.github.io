@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="945" viewBox="0 0 1800 945" lang="en">
+<defs>
+<style>
+@font-face{font-family:'Source Serif 4'; src:url(../../title-card/fonts/source-serif-4-latin-opsz-normal.woff2) format('woff2'); font-weight:200 900}
+@font-face{font-family:'IBM Plex Sans'; src:url(../../title-card/fonts/ibm-plex-sans-latin-400-normal.woff2) format('woff2'); font-weight:400}
+@font-face{font-family:'IBM Plex Sans'; src:url(../../title-card/fonts/ibm-plex-sans-latin-500-normal.woff2) format('woff2'); font-weight:500}
+@font-face{font-family:'IBM Plex Sans'; src:url(../../title-card/fonts/ibm-plex-sans-latin-600-normal.woff2) format('woff2'); font-weight:600}
+.serif{font-variation-settings:'opsz' 60}
+</style>
+<marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M1,1 L10,6 L1,11" fill="none" stroke="#264A6E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+<rect width="1800" height="945" fill="#E8EDF2"/>
+<text x="115" y="111" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="25" font-weight="600" fill="#264A6E" text-anchor="start" letter-spacing="4" data-maxw="1570">DETECTION · ANALYSIS</text>
+<text class="serif" x="112" y="228" font-family="'Source Serif 4', Georgia, serif" font-size="76" font-weight="450" fill="#1C2128" letter-spacing="-1.5" data-maxw="1570">A probability is not proof<tspan fill="#B8492A">.</tspan></text>
+<rect x="115" y="322" width="740" height="282" rx="6" fill="#FFFFFF" stroke="#E2E3DF" stroke-width="2"/>
+<text x="145" y="366" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#264A6E" text-anchor="start" letter-spacing="3" data-maxw="680">WHAT A DETECTOR PRODUCES</text>
+<text class="serif" x="145" y="410" font-family="'Source Serif 4', Georgia, serif" font-size="34" font-weight="450" fill="#1C2128" data-maxw="680">A probability</text>
+<text class="serif" x="145" y="452" font-family="'Source Serif 4', Georgia, serif" font-size="34" font-weight="450" fill="#1C2128" data-maxw="680">About a text</text>
+<text class="serif" x="145" y="494" font-family="'Source Serif 4', Georgia, serif" font-size="34" font-weight="450" fill="#1C2128" data-maxw="680">Without separating its</text>
+<text class="serif" x="145" y="536" font-family="'Source Serif 4', Georgia, serif" font-size="34" font-weight="450" fill="#1C2128" data-maxw="680">own mistakes</text>
+<rect x="945" y="322" width="740" height="282" rx="6" fill="#FFFFFF" stroke="#B8492A" stroke-width="2"/>
+<text x="975" y="366" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#264A6E" text-anchor="start" letter-spacing="3" data-maxw="680">WHAT A DECISION REQUIRES</text>
+<text class="serif" x="975" y="410" font-family="'Source Serif 4', Georgia, serif" font-size="34" font-weight="450" fill="#1C2128" data-maxw="680">Enough certainty</text>
+<text class="serif" x="975" y="452" font-family="'Source Serif 4', Georgia, serif" font-size="34" font-weight="450" fill="#1C2128" data-maxw="680">About a person</text>
+<text class="serif" x="975" y="494" font-family="'Source Serif 4', Georgia, serif" font-size="34" font-weight="450" fill="#1C2128" data-maxw="680">and about an act</text>
+<text class="serif" x="975" y="536" font-family="'Source Serif 4', Georgia, serif" font-size="34" font-weight="450" fill="#1C2128" data-maxw="680">That the student</text>
+<text class="serif" x="975" y="578" font-family="'Source Serif 4', Georgia, serif" font-size="34" font-weight="450" fill="#1C2128" data-maxw="680">can answer</text>
+<text x="115" y="664" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="27" font-weight="500" fill="#1C2128" text-anchor="start" data-maxw="1570">Nothing in the tool’s output separates</text>
+<text x="115" y="700" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="27" font-weight="500" fill="#1C2128" text-anchor="start" data-maxw="1570">a correct flag from a mistaken one.</text>
+<text x="115" y="752" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="19" font-weight="400" fill="#5B626C" text-anchor="start" data-maxw="1570">Author’s analysis, drawing on Weber-Wulff et al. (2023), Van Vlasselaer et al. (2026) and the CIIP (2025)</text>
+<text x="115" y="780" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="19" font-weight="400" fill="#5B626C" text-anchor="start" data-maxw="1570">recommendations. Diagram: Pablo Correa Prieto.</text>
+<line x1="115" y1="795" x2="1685" y2="795" stroke="#E2E3DF" stroke-width="2"/>
+<text x="115" y="855" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="28"><tspan font-weight="600" fill="#1C2128">Pablo Correa Prieto</tspan><tspan fill="#5B626C"> · teacher and education researcher</tspan></text>
+<text x="1685" y="854" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#264A6E" text-anchor="end" letter-spacing="3">PABLOCORREAPRIETO.CH</text>
+<text x="1685" y="919" font-family="'IBM Plex Sans', Helvetica, Arial, sans-serif" font-size="17" font-weight="400" fill="#6C737C" text-anchor="end">Pablo Correa Prieto · 2026 · CC BY 4.0</text>
+</svg>
