@@ -315,6 +315,92 @@ def fig_verifier(lang, T):
     return frame(T['lang'], T['kicker'], T['title'], '\n'.join(b), T['source'])
 
 
+def fig_detect_exactitude(lang, T):
+    """Weber-Wulff et al. (2023): mean accuracy of 14 detectors by document class (binary approach)."""
+    b = [lines(L, 290, T['sub'], size=28, fill=C['muted'], maxw=R - L)]
+    x0, scale, bh, step = 840, 7.8, 40, 58
+    y = 356
+    for label, v, col in T['rows']:
+        b.append(t(L, y + 29, escape(label), size=26, maxw=x0 - L - 40))
+        b.append(hbar(x0, y, v * scale, bh, C[col]))
+        b.append(t(x0 + v * scale + 16, y + 30, escape(T['pct'].format(v)), size=26, weight=600))
+        y += step
+    return frame(T['lang'], T['kicker'], T['title'], '\n'.join(b), T['source'])
+
+
+def fig_detect_decision(lang, T):
+    """What a detector outputs versus what a decision requires."""
+    b = [box(L, 322, 740, 282, T['c1_label'], T['c1']),
+         box(945, 322, 740, 282, T['c2_label'], T['c2'], emph=True)]
+    b.append(lines(L, 664, T['note'], size=27, weight=500, lh=1.35, maxw=R - L))
+    return frame(T['lang'], T['kicker'], T['title'], '\n'.join(b), T['source'], bg='soft')
+
+
+def fig_acc_correlations(lang, T):
+    """Davis (1989) and Parry et al. (2021): what the correlations are actually between."""
+    b = [lines(L, 288, T['sub'], size=28, fill=C['muted'], maxw=R - L)]
+    scale, bh = 1000, 38
+    y = 340
+    for label, v, disp, note, col in T['rows']:
+        b.append(t(L, y, escape(label), size=27, weight=500, maxw=R - L))
+        b.append(hbar(L, y + 16, v * scale, bh, C[col]))
+        b.append(t(L + v * scale + 18, y + 45, escape(disp), size=30, weight=600))
+        b.append(lines(L, y + 86, note, size=22, fill=C['muted'], lh=1.3, maxw=1180))
+        y += 126
+    return frame(T['lang'], T['kicker'], T['title'], '\n'.join(b), T['source'])
+
+
+def fig_acc_chaine(lang, T):
+    """Where the validation of acceptance models stops."""
+    w, gap, y, h = 350, 55, 390, 120
+    xs = [L + i * (w + gap) for i in range(4)]
+    b = [lines(L, 290, T['sub'], size=28, fill=C['muted'], maxw=R - L)]
+    for i, (x, rows) in enumerate(zip(xs, T['boxes'])):
+        b.append(box(x, y, w, h, None, rows, emph=(i == 3)))
+    for i in range(3):
+        b.append(arrow(xs[i] + w + 6, y + h / 2, xs[i + 1] - 6, y + h / 2))
+    by = y + h + 38
+    b.append(f'<path d="M{xs[0]},{by} L{xs[0]},{by + 14} L{xs[2] + w},{by + 14} L{xs[2] + w},{by}" '
+             f'fill="none" stroke="{C["rule"]}" stroke-width="2"/>')
+    b.append(f'<path d="M{xs[3]},{by} L{xs[3]},{by + 14} L{xs[3] + w},{by + 14} L{xs[3] + w},{by}" '
+             f'fill="none" stroke="{C["mark"]}" stroke-width="2"/>')
+    b.append(lines((xs[0] + xs[2] + w) / 2, by + 58, T['brace1'], size=26, fill=C['muted'],
+                   anchor='middle', maxw=1040))
+    b.append(lines(xs[3] + w / 2, by + 58, T['brace2'], size=26, weight=600, fill=C['mark'],
+                   anchor='middle', maxw=w + 80))
+    return frame(T['lang'], T['kicker'], T['title'], '\n'.join(b), T['source'])
+
+
+def fig_fb_information(lang, T):
+    """Wisniewski et al. (2020): effect size by the information content of the feedback."""
+    base, scale, bw = 665, 320, 170
+    xs = [375, 815, 1255]
+    b = [lines(L, 288, T['sub'], size=28, fill=C['muted'], maxw=R - L)]
+    ry = round(base - 0.48 * scale)
+    b.append(f'<line x1="{L}" y1="{ry}" x2="{R}" y2="{ry}" stroke="{C["muted"]}" stroke-width="2" '
+             f'stroke-dasharray="7 7"/>')
+    b.append(t(R, ry - 14, escape(T['ref']), size=22, fill=C['muted'], anchor='end'))
+    b.append(f'<line x1="{L}" y1="{base}" x2="{R}" y2="{base}" stroke="{C["rule"]}" stroke-width="2"/>')
+    for x, (label, v, disp) in zip(xs, T['bars']):
+        b.append(column_bar(x, base, bw, round(v * scale), C['blue']))
+        b.append(t(x + bw / 2, base - v * scale - 18, escape(disp), size=34, weight=600, anchor='middle'))
+        b.append(lines(x + bw / 2, base + 42, label, size=23, fill=C['muted'], anchor='middle', maxw=430))
+    return frame(T['lang'], T['kicker'], T['title'], '\n'.join(b), T['source'])
+
+
+def fig_fb_ia_expert(lang, T):
+    """Jansen et al. (2024): feedback judged useful for revision, raters blind to the source."""
+    b = [lines(L, 290, T['sub'], size=28, fill=C['muted'], maxw=R - L)]
+    x0, scale, bh, step = 900, 7.2, 46, 96
+    y = 390
+    for label, v, col in T['rows']:
+        b.append(lines(L, y + 20, label, size=26, lh=1.3, maxw=x0 - L - 40))
+        b.append(hbar(x0, y, v * scale, bh, C[col]))
+        b.append(t(x0 + v * scale + 18, y + 34, escape(T['pct'].format(v)), size=30, weight=600))
+        y += step
+    return frame(T['lang'], T['kicker'], T['title'], '\n'.join(b), T['source'])
+
+
 FIGS = {
     'correction-meme-copie': fig_meme_copie,
     'correction-second-regard': fig_second_regard,
@@ -324,6 +410,12 @@ FIGS = {
     'effort-garder-confier': fig_garder_confier,
     'preparer-temps-gagne': fig_temps_gagne,
     'preparer-verifier': fig_verifier,
+    'detecteurs-exactitude': fig_detect_exactitude,
+    'detecteurs-decision': fig_detect_decision,
+    'acceptation-correlations': fig_acc_correlations,
+    'acceptation-chaine': fig_acc_chaine,
+    'feedback-information': fig_fb_information,
+    'feedback-ia-expert': fig_fb_ia_expert,
 }
 
 
@@ -337,6 +429,78 @@ def en_min(v):
 
 TEXT = {
     'fr': {
+        'detecteurs-exactitude': dict(
+            kicker='Détection · données publiées',
+            title='Ce que les détecteurs réussissent, et où ils échouent.',
+            sub=['Exactitude moyenne de quatorze outils de détection selon le type de document, approche binaire'],
+            pct='{} %',
+            rows=[('Texte écrit par un humain', 94, 'blue'),
+                  ('Texte traduit automatiquement', 69, 'blue'),
+                  ('Texte généré par IA (série 1)', 63, 'blue'),
+                  ('Texte généré par IA (série 2)', 70, 'blue'),
+                  ('Texte d\u2019IA retouché à la main', 30, 'mark'),
+                  ('Texte d\u2019IA passé par un paraphraseur', 15, 'mark')],
+            source=['Données : Weber-Wulff, D. et al. (2023). Testing of detection tools for AI-generated text.',
+                    'International Journal for Educational Integrity, 19(1), 26. Graphique : Pablo Correa Prieto.'],
+        ),
+        'detecteurs-decision': dict(
+            kicker='Détection · analyse',
+            title='Une probabilité n\u2019est pas une preuve.',
+            c1_label='Ce qu\u2019un détecteur produit',
+            c1=['Une probabilité', 'Portant sur un texte', 'Sans distinguer ses', 'propres erreurs'],
+            c2_label='Ce qu\u2019une décision exige',
+            c2=['Une certitude suffisante', 'Portant sur une personne', 'et sur un acte', 'À laquelle l\u2019élève', 'puisse répondre'],
+            note=['Aucune information dans la sortie de l\u2019outil ne distingue',
+                  'le signalement juste du signalement erroné.'],
+            source=['Analyse de l\u2019auteur, à partir de Weber-Wulff et al. (2023), Van Vlasselaer et al. (2026) et des recommandations',
+                    'de la CIIP (2025). Schéma : Pablo Correa Prieto.'],
+        ),
+        'acceptation-correlations': dict(
+            kicker='Mesure · données publiées',
+            title='Des corrélations entre déclarations.',
+            sub=['Ce que mesurent réellement les corrélations citées à l\u2019appui des modèles d\u2019acceptation'],
+            rows=[('Utilité perçue ↔ usage futur auto-prédit', 0.85, '0,85',
+                   ['Davis (1989). Deux réponses de la même personne, dans le même questionnaire.'], 'blue'),
+                  ('Utilité perçue ↔ usage déclaré', 0.63, '0,63',
+                   ['Davis (1989). Également déclaratif.'], 'blue'),
+                  ('Usage déclaré ↔ usage enregistré', 0.38, '0,38',
+                   ['Parry et al. (2021). Méta-analyse de 44 études, N = 52 007. Seules 6 % des estimations',
+                    'déclarées moyennes tombent à moins de 5 % de la moyenne enregistrée.'], 'mark')],
+            source=['Données : Davis, F. D. (1989). MIS Quarterly, 13(3), 319–340 ; Parry, D. A. et al. (2021).',
+                    'Nature Human Behaviour, 5(11), 1535–1547. Graphique : Pablo Correa Prieto.'],
+        ),
+        'acceptation-chaine': dict(
+            kicker='Mesure · analyse',
+            title='Où s\u2019arrête la validation.',
+            sub=['De l\u2019attitude au comportement : ce que les modèles d\u2019acceptation couvrent réellement'],
+            boxes=[['Attitude'], ['Intention'], ['Usage déclaré'], ['Usage enregistré']],
+            brace1=['ce que valident les modèles d\u2019acceptation'],
+            brace2=['ce qu\u2019on veut', 'savoir'],
+            source=['Analyse de l\u2019auteur, à partir de Davis (1989), Straub et al. (1995) et Parry et al. (2021).',
+                    'Schéma : Pablo Correa Prieto.'],
+        ),
+        'feedback-information': dict(
+            kicker='Feedback · données publiées',
+            title='L\u2019effet suit l\u2019information.',
+            sub=['Taille d\u2019effet d\u2019un retour selon ce qu\u2019il contient (435 études, k = 994)'],
+            ref='effet global 0,48',
+            bars=[(['Renforcer ou sanctionner'], 0.24, '0,24'),
+                  (['Retour correctif'], 0.46, '0,46'),
+                  (['Retour à haute densité d\u2019information'], 0.99, '0,99')],
+            source=['Données : Wisniewski, B., Zierer, K. et Hattie, J. (2020). The power of feedback revisited.',
+                    'Frontiers in Psychology, 10, 3087. Graphique : Pablo Correa Prieto.'],
+        ),
+        'feedback-ia-expert': dict(
+            kicker='Feedback · données publiées',
+            title='Utile, mais pas au point d\u2019être transmis.',
+            sub=['Retours jugés utiles pour la révision par 89 futurs enseignants, la source leur étant inconnue'],
+            pct='{} %',
+            rows=[(['Retour d\u2019un expert,', 'jugé utile pour la révision'], 88, 'blue'),
+                  (['Retour d\u2019un modèle de langage,', 'jugé utile pour la révision'], 59, 'blue'),
+                  (['Retour du modèle que l\u2019évaluateur', 'choisit de transmettre à l\u2019élève'], 23, 'mark')],
+            source=['Données : Jansen, T. et al. (2024). Comparing generative AI and expert feedback to students\u2019 writing.',
+                    'Psychologie in Erziehung und Unterricht, 71(2), 80–92. Graphique : Pablo Correa Prieto.'],
+        ),
         'correction-meme-copie': dict(
             kicker='Évaluation · données publiées',
             title='Une même copie, 73 enseignants.',
