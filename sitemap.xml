@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://pablocorreaprieto.ch/</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-10-04</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/"/>
@@ -13,7 +13,7 @@
   </url>
   <url>
     <loc>https://pablocorreaprieto.ch/en/</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-10-04</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/"/>
@@ -24,7 +24,7 @@
   </url>
   <url>
     <loc>https://pablocorreaprieto.ch/es/</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-10-04</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/"/>
@@ -254,7 +254,7 @@
   </url>
   <url>
     <loc>https://pablocorreaprieto.ch/articles</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-10-04</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/articles"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/articles"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/articulos"/>
@@ -267,7 +267,7 @@
   </url>
   <url>
     <loc>https://pablocorreaprieto.ch/en/articles</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-10-04</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/articles"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/articles"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/articulos"/>
@@ -280,7 +280,7 @@
   </url>
   <url>
     <loc>https://pablocorreaprieto.ch/es/articulos</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-10-04</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/articles"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/articles"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/articulos"/>
@@ -314,5 +314,104 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/figure-reuse"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/reutilizacion-figuras"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/reutilisation-figures"/>
+  </url>
+  <url>
+    <loc>https://pablocorreaprieto.ch/detecteurs-ia-fiabilite-decision</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/detecteurs-ia-fiabilite-decision"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/ai-detectors-reliability-decision"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/detectores-ia-fiabilidad-decision"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/detecteurs-ia-fiabilite-decision"/>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-detecteurs-titre-fr.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-detecteurs-exactitude-fr.png</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-detecteurs-decision-fr.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pablocorreaprieto.ch/en/ai-detectors-reliability-decision</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/detecteurs-ia-fiabilite-decision"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/ai-detectors-reliability-decision"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/detectores-ia-fiabilidad-decision"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/detecteurs-ia-fiabilite-decision"/>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-detecteurs-titre-en.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-detecteurs-exactitude-en.png</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-detecteurs-decision-en.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pablocorreaprieto.ch/es/detectores-ia-fiabilidad-decision</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/detecteurs-ia-fiabilite-decision"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/ai-detectors-reliability-decision"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/detectores-ia-fiabilidad-decision"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/detecteurs-ia-fiabilite-decision"/>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-detecteurs-titre-es.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-detecteurs-exactitude-es.png</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-detecteurs-decision-es.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pablocorreaprieto.ch/commentaire-note-feedback-ia</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/commentaire-note-feedback-ia"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/comments-grades-ai-feedback"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/comentario-nota-feedback-ia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/commentaire-note-feedback-ia"/>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-feedback-titre-fr.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-feedback-information-fr.png</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-feedback-ia-expert-fr.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pablocorreaprieto.ch/en/comments-grades-ai-feedback</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/commentaire-note-feedback-ia"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/comments-grades-ai-feedback"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/comentario-nota-feedback-ia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/commentaire-note-feedback-ia"/>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-feedback-titre-en.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-feedback-information-en.png</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-feedback-ia-expert-en.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pablocorreaprieto.ch/es/comentario-nota-feedback-ia</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/commentaire-note-feedback-ia"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/comments-grades-ai-feedback"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/comentario-nota-feedback-ia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/commentaire-note-feedback-ia"/>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-feedback-titre-es.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-feedback-information-es.png</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-feedback-ia-expert-es.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pablocorreaprieto.ch/acceptation-usage-ia-enseignants</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/acceptation-usage-ia-enseignants"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/acceptance-is-not-use-teachers-ai"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/aceptacion-no-es-uso-docentes-ia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/acceptation-usage-ia-enseignants"/>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-acceptation-titre-fr.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-acceptation-correlations-fr.png</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-acceptation-chaine-fr.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pablocorreaprieto.ch/en/acceptance-is-not-use-teachers-ai</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/acceptation-usage-ia-enseignants"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/acceptance-is-not-use-teachers-ai"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/aceptacion-no-es-uso-docentes-ia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/acceptation-usage-ia-enseignants"/>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-acceptation-titre-en.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-acceptation-correlations-en.png</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-acceptation-chaine-en.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pablocorreaprieto.ch/es/aceptacion-no-es-uso-docentes-ia</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/acceptation-usage-ia-enseignants"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/acceptance-is-not-use-teachers-ai"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/aceptacion-no-es-uso-docentes-ia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/acceptation-usage-ia-enseignants"/>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-acceptation-titre-es.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-acceptation-correlations-es.png</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-acceptation-chaine-es.png</image:loc></image:image>
   </url>
 </urlset>

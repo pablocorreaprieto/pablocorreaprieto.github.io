@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Détecter l’IA dans une copie : pourquoi la fiabilité n’est pas la bonne question — Pablo Correa Prieto</title>
+<meta name="description" content="Les détecteurs de texte IA se sont améliorés. Pour Pablo Correa Prieto, la fiabilité n’est pas la bonne question quand une décision touche un élève.">
+<meta name="author" content="Pablo Correa Prieto">
+<meta name="robots" content="max-image-preview:large">
+<link rel="canonical" href="https://pablocorreaprieto.ch/detecteurs-ia-fiabilite-decision">
+<link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/detecteurs-ia-fiabilite-decision">
+<link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/ai-detectors-reliability-decision">
+<link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/detectores-ia-fiabilidad-decision">
+<link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/detecteurs-ia-fiabilite-decision">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Détecter l’IA dans une copie : pourquoi la fiabilité n’est pas la bonne question">
+<meta property="og:description" content="Les détecteurs de texte IA se sont améliorés. Pour Pablo Correa Prieto, la fiabilité n’est pas la bonne question quand une décision touche un élève.">
+<meta property="og:url" content="https://pablocorreaprieto.ch/detecteurs-ia-fiabilite-decision">
+<meta property="og:site_name" content="Pablo Correa Prieto">
+<meta property="og:locale" content="fr_CH">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:image" content="https://pablocorreaprieto.ch/pablo-correa-prieto-detecteurs-titre-fr.jpg">
+<meta property="og:image:width" content="1800">
+<meta property="og:image:height" content="945">
+<meta property="og:image:alt" content="Carte de titre « La fiabilité n’est pas la question. », avec le nom Pablo Correa Prieto et l’adresse pablocorreaprieto.ch">
+<meta property="article:published_time" content="2026-10-04">
+<meta property="article:modified_time" content="2026-10-04">
+<meta property="article:author" content="https://pablocorreaprieto.ch/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#1C2128">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --ground:#FAFAF8; --ink:#1C2128; --muted:#5B626C; --faint:#6C737C;
+    --rule:#E2E3DF; --accent:#264A6E; --accent-soft:#E8EDF2; --mark:#B8492A;
+    --serif:"Source Serif 4", Georgia, "Times New Roman", serif;
+    --sans:"IBM Plex Sans", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ground:#15181C; --ink:#E7E8E6; --muted:#A3A9B1; --faint:#7C838C;
+      --rule:#2A2F35; --accent:#9DB9D8; --accent-soft:#1E2833; --mark:#E07A5A;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#15181C; --ink:#E7E8E6; --muted:#A3A9B1; --faint:#7C838C;
+    --rule:#2A2F35; --accent:#9DB9D8; --accent-soft:#1E2833; --mark:#E07A5A;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{background:var(--ground); color:var(--ink); font-family:var(--sans); font-size:16px; line-height:1.6; margin:0; padding-inline:24px}
+  a{color:var(--accent); text-decoration:none; border-bottom:1px solid color-mix(in srgb, var(--accent) 35%, transparent)}
+  a:hover{border-bottom-color:var(--accent)}
+  a:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:2px}
+
+  .topbar{max-width:1040px; margin-inline:auto; display:flex; justify-content:space-between; align-items:center; gap:16px; padding-top:28px}
+  .brand{font-family:var(--serif); font-weight:500; font-size:1.375rem; line-height:1; letter-spacing:-0.01em; color:var(--ink); border:0; white-space:nowrap}
+  .brand .dot{color:var(--mark)}
+  .tb{display:inline-flex; border:1px solid var(--rule); border-radius:4px; overflow:hidden}
+  .tb a{display:inline-flex; align-items:center; font:500 .75rem/1 var(--sans); letter-spacing:.08em; padding:7px 11px; color:var(--muted); border:0}
+  .tb a:hover{color:var(--ink)}
+  .tb a[aria-current="page"]{background:var(--accent-soft); color:var(--ink)}
+
+  .doc{max-width:720px; margin-inline:auto; padding-block:52px 64px}
+  .crumbs{font-size:.8125rem; color:var(--faint); margin:0 0 30px}
+  .crumbs a{color:var(--muted); border-bottom-color:var(--rule)}
+  .kicker{font-size:.75rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin:0 0 14px}
+  h1{font-family:var(--serif); font-weight:500; font-size:clamp(2rem, 1.35rem + 2.6vw, 2.75rem); line-height:1.12; letter-spacing:-0.01em; margin:0; text-wrap:balance}
+  .subtitle{font-family:var(--serif); font-size:1.25rem; line-height:1.45; color:var(--muted); margin:14px 0 0; text-wrap:pretty}
+  .byline{font-size:.875rem; color:var(--muted); margin:18px 0 0}
+
+  figure{margin:36px 0}
+  figure img{display:block; width:100%; height:auto; border-radius:4px; border:1px solid var(--rule)}
+  .prose .ai-note{font-family:var(--sans); font-size:.875rem; color:var(--muted); margin-top:2.2em; padding-top:14px; border-top:1px solid var(--rule)}
+  figcaption{font-family:var(--sans); font-size:.8125rem; line-height:1.5; color:var(--muted); margin-top:8px}
+  .prose ul.list{margin:0 0 1.05em; padding-left:1.1em}
+  .prose ul.list li{margin:0 0 .45em}
+  .refs{margin-top:2.4em; padding-top:18px; border-top:1px solid var(--rule); font-family:var(--sans)}
+  .refs h2{font-size:.75rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin:0 0 14px}
+  .refs ol{list-style:none; margin:0; padding:0; display:grid; gap:10px; font-size:.875rem; line-height:1.55; color:var(--muted)}
+  .refs li{padding-left:1.6em; text-indent:-1.6em; overflow-wrap:anywhere}
+  .refs a{border-bottom-color:transparent}
+
+  .prose{font-family:var(--serif); font-size:1.1875rem; line-height:1.65}
+  .prose p{margin:0 0 1.05em; text-wrap:pretty}
+  .prose h2{font-family:var(--serif); font-weight:500; font-size:1.5rem; line-height:1.25; margin:1.9em 0 .55em; text-wrap:balance}
+  .prose h2 .n{color:var(--mark); margin-right:.3em}
+
+  .sec{margin-top:40px}
+  .sec h2{font-size:.75rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin:0 0 16px; padding-bottom:10px; border-bottom:1px solid var(--rule)}
+  .sec p{margin:0 0 12px; max-width:64ch}
+  .sec .lead{font-family:var(--serif); font-size:1.1875rem; line-height:1.6}
+  ol.dims{list-style:none; margin:0; padding:0; display:grid; gap:14px; counter-reset:d}
+  ol.dims li{counter-increment:d; display:grid; grid-template-columns:28px 1fr; gap:6px 10px; align-items:baseline}
+  ol.dims li::before{content:counter(d); font-family:var(--serif); font-size:1.375rem; color:var(--mark); line-height:1}
+  ol.dims b{font-weight:600}
+  ul.tags{list-style:none; padding:0; margin:0; display:flex; flex-wrap:wrap; gap:8px}
+  ul.tags li{font-size:.8125rem; padding:4px 10px; border-radius:3px; border:1px solid var(--rule)}
+
+  .pub{padding:24px 26px; background:var(--accent-soft); border-radius:4px}
+  .pub .kind{font-size:.6875rem; font-weight:600; letter-spacing:.09em; text-transform:uppercase; color:var(--accent); margin:0 0 8px}
+  .pub h2{font-family:var(--serif); font-style:italic; font-weight:500; font-size:1.5rem; line-height:1.3; margin:0 0 14px; text-transform:none; letter-spacing:0; color:var(--ink); border:0; padding:0}
+  .pub dl{display:grid; grid-template-columns:max-content 1fr; gap:6px 18px; margin:0 0 14px; font-size:.9375rem}
+  .pub dt{color:var(--muted)}
+  .pub dd{margin:0}
+  .pub p{margin:0 0 10px; max-width:64ch}
+  .pub .cite{font-size:.875rem; color:var(--muted)}
+  .pub.prep{background:transparent; border:1px solid var(--rule)}
+  .pub.prep h2{font-style:normal; font-size:1.1875rem}
+  ul.links{list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:8px 22px}
+
+  .about{margin-top:56px; padding:22px 24px; border:1px solid var(--rule); border-radius:4px; font-size:.9375rem}
+  .about .label{font-size:.6875rem; font-weight:600; letter-spacing:.09em; text-transform:uppercase; color:var(--faint); margin:0 0 8px}
+  .about p{margin:0 0 10px}
+  .about ul{list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:6px 20px}
+
+  footer{max-width:1040px; margin-inline:auto; padding:20px 0 36px; border-top:1px solid var(--rule); display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; font-size:.8125rem; color:var(--faint)}
+
+  @media (max-width:520px){
+    body{padding-inline:16px}
+    .topbar{padding-top:20px}
+    .brand{font-size:1.1875rem}
+    .doc{padding-block:36px 48px}
+    .prose{font-size:1.125rem}
+    .pub{padding:18px}
+    .pub dl{grid-template-columns:1fr; gap:0}
+    .pub dd{margin-bottom:6px}
+  }
+  @media print{
+    :root{--ground:#fff; --ink:#000; --muted:#444; --faint:#666; --rule:#ccc; --accent:#1f3d5c; --accent-soft:#f1f3f6}
+    body{padding:0}
+    .topbar, .crumbs, footer{display:none}
+    a{border:0; color:inherit}
+  }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://pablocorreaprieto.ch/detecteurs-ia-fiabilite-decision#article",
+   "headline": "Détecter l’IA dans une copie : pourquoi la fiabilité n’est pas la bonne question",
+   "description": "Les détecteurs de texte IA se sont améliorés. Pour Pablo Correa Prieto, la fiabilité n’est pas la bonne question quand une décision touche un élève.",
+   "inLanguage": "fr",
+   "datePublished": "2026-10-04",
+   "dateModified": "2026-10-04",
+   "author": {
+    "@id": "https://pablocorreaprieto.ch/#person"
+   },
+   "publisher": {
+    "@id": "https://pablocorreaprieto.ch/#person"
+   },
+   "mainEntityOfPage": "https://pablocorreaprieto.ch/detecteurs-ia-fiabilite-decision",
+   "url": "https://pablocorreaprieto.ch/detecteurs-ia-fiabilite-decision",
+   "image": [
+    {
+     "@type": "ImageObject",
+     "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-detecteurs-titre-fr.jpg",
+     "contentUrl": "https://pablocorreaprieto.ch/pablo-correa-prieto-detecteurs-titre-fr.jpg",
+     "url": "https://pablocorreaprieto.ch/pablo-correa-prieto-detecteurs-titre-fr.jpg",
+     "width": 1800,
+     "height": 945,
+     "caption": "Détecter l’IA dans une copie : pourquoi la fiabilité n’est pas la bonne question.",
+     "creator": {
+      "@id": "https://pablocorreaprieto.ch/#person"
+     },
+     "creditText": "Pablo Correa Prieto",
+     "copyrightNotice": "© 2026 Pablo Correa Prieto",
+     "description": "Carte de titre « La fiabilité n’est pas la question. », avec le nom Pablo Correa Prieto et l’adresse pablocorreaprieto.ch",
+     "license": "https://creativecommons.org/licenses/by/4.0/",
+     "acquireLicensePage": "https://pablocorreaprieto.ch/reutilisation-figures"
+    },
+    {
+     "@type": "ImageObject",
+     "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-detecteurs-exactitude-fr.png",
+     "contentUrl": "https://pablocorreaprieto.ch/pablo-correa-prieto-detecteurs-exactitude-fr.png",
+     "url": "https://pablocorreaprieto.ch/pablo-correa-prieto-detecteurs-exactitude-fr.png",
+     "width": 1800,
+     "height": 945,
+     "caption": "Exactitude moyenne de quatorze détecteurs selon le type de document, approche binaire. Données : Weber-Wulff et al. (2023).",
+     "creator": {
+      "@id": "https://pablocorreaprieto.ch/#person"
+     },
+     "creditText": "Pablo Correa Prieto",
+     "copyrightNotice": "© 2026 Pablo Correa Prieto",
+     "description": "Diagramme en barres : exactitude moyenne de quatorze détecteurs par type de document, de 94 % sur les textes humains à 15 % sur un texte d’IA passé par un paraphraseur automatique",
+     "license": "https://creativecommons.org/licenses/by/4.0/",
+     "acquireLicensePage": "https://pablocorreaprieto.ch/reutilisation-figures"
+    },
+    {
+     "@type": "ImageObject",
+     "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-detecteurs-decision-fr.png",
+     "contentUrl": "https://pablocorreaprieto.ch/pablo-correa-prieto-detecteurs-decision-fr.png",
+     "url": "https://pablocorreaprieto.ch/pablo-correa-prieto-detecteurs-decision-fr.png",
+     "width": 1800,
+     "height": 945,
+     "caption": "Pourquoi la sortie d’un détecteur ne se convertit pas en décision.",
+     "creator": {
+      "@id": "https://pablocorreaprieto.ch/#person"
+     },
+     "creditText": "Pablo Correa Prieto",
+     "copyrightNotice": "© 2026 Pablo Correa Prieto",
+     "description": "Deux colonnes comparant ce qu’un détecteur produit (une probabilité, portant sur un texte, sans distinguer ses propres erreurs, non réfutable par l’élève) et ce qu’une décision exige",
+     "license": "https://creativecommons.org/licenses/by/4.0/",
+     "acquireLicensePage": "https://pablocorreaprieto.ch/reutilisation-figures"
+    }
+   ],
+   "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://pablocorreaprieto.ch/#website",
+    "name": "Pablo Correa Prieto",
+    "url": "https://pablocorreaprieto.ch/"
+   },
+   "workTranslation": [
+    {
+     "@id": "https://pablocorreaprieto.ch/en/ai-detectors-reliability-decision#article"
+    },
+    {
+     "@id": "https://pablocorreaprieto.ch/es/detectores-ia-fiabilidad-decision#article"
+    }
+   ]
+  },
+  {
+   "@type": "Person",
+   "@id": "https://pablocorreaprieto.ch/#person",
+   "name": "Pablo Correa Prieto",
+   "givenName": "Pablo",
+   "familyName": "Correa Prieto",
+   "url": "https://pablocorreaprieto.ch/",
+   "image": "https://pablocorreaprieto.ch/pablo-correa-prieto.jpg",
+   "sameAs": [
+    "https://www.linkedin.com/in/pablocorreaprieto",
+    "https://scholar.google.com/citations?user=N2vtvGcAAAAJ",
+    "https://github.com/pablocorreaprieto",
+    "https://orcid.org/0009-0009-1844-7453",
+    "https://osf.io/skvn4",
+    "https://universidadinternacionaldelarioja.academia.edu/PabloCorreaPrieto",
+    "https://www.researchgate.net/profile/Pablo-Correa-Prieto",
+    "https://www.wikidata.org/wiki/Q141533563"
+   ],
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "ORCID",
+    "value": "0009-0009-1844-7453",
+    "url": "https://orcid.org/0009-0009-1844-7453"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Accueil",
+     "item": "https://pablocorreaprieto.ch/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Articles",
+     "item": "https://pablocorreaprieto.ch/articles"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Détecter l’IA dans une copie : pourquoi la fiabilité n’est pas la bonne question",
+     "item": "https://pablocorreaprieto.ch/detecteurs-ia-fiabilite-decision"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<div class="topbar">
+  <a class="brand" href="/" aria-label="Pablo Correa Prieto – Accueil">pablo correa prieto<span class="dot">.</span></a>
+  <nav class="tb" aria-label="Langue">
+    <a href="/detecteurs-ia-fiabilite-decision" hreflang="fr" lang="fr" aria-label="Français" aria-current="page">FR</a>
+    <a href="/en/ai-detectors-reliability-decision" hreflang="en" lang="en" aria-label="English">EN</a>
+    <a href="/es/detectores-ia-fiabilidad-decision" hreflang="es" lang="es" aria-label="Español">ES</a>
+  </nav>
+</div>
+
+<main class="doc">
+<p class="crumbs"><a href="/">Accueil</a> / <a href="/articles">Articles</a></p>
+<article>
+<header>
+  <p class="kicker">Article · L’IA et l’évaluation</p>
+  <h1>Détecter l’IA dans une copie : pourquoi la fiabilité n’est pas la bonne question</h1>
+  <p class="byline">Pablo Correa Prieto · <time datetime="2026-10-04">4 octobre 2026</time></p>
+</header>
+<figure>
+  <img src="/pablo-correa-prieto-detecteurs-titre-fr.jpg" width="1800" height="945" fetchpriority="high" alt="Carte de titre « La fiabilité n’est pas la question. », avec le nom Pablo Correa Prieto et l’adresse pablocorreaprieto.ch">
+  <figcaption>Détecter l’IA dans une copie : pourquoi la fiabilité n’est pas la bonne question.<br><small>© Pablo Correa Prieto, 2026 — <a href="/reutilisation-figures">CC BY 4.0</a></small></figcaption>
+</figure>
+<div class="prose">
+<p>Un texte arrive qui ne ressemble pas à l’élève. Le vocabulaire est trop sûr, les phrases trop régulières, et l’enseignant a le sentiment, difficile à formuler, que ce n’est pas lui qui l’a écrit. Le réflexe est de chercher un outil qui tranchera. C’est ce réflexe que je voudrais discuter, non pas parce que les détecteurs seraient mauvais, puisqu’ils se sont nettement améliorés, mais à cause de la nature de leur réponse.</p>
+<h2><span class="n">1.</span>Ce que les outils ont montré entre 2023 et 2024</h2>
+<p>OpenAI a publié son propre classificateur le 31 janvier 2023, puis l’a retiré le 20 juillet de la même année, en indiquant sur la page même la raison : une exactitude trop faible. Les chiffres annoncés par l’entreprise méritent d’être rappelés. L’outil identifiait correctement 26 % des textes produits par une IA, et signalait à tort 9 % des textes écrits par des humains (OpenAI, 2023).</p>
+<p>La même année, une équipe internationale a testé quatorze outils de détection sur cinquante-quatre cas préparés pour l’occasion (Weber-Wulff et al., 2023). Aucun n’atteignait 80 % d’exactitude. En approche binaire, l’exactitude moyenne tombait à 30 % sur un texte d’IA retouché à la main et à 15 % sur un texte d’IA passé par un paraphraseur automatique. Le taux moyen de fausse accusation était de 2,4 % sur des textes humains, montait à 11,1 % sur des textes traduits automatiquement, et atteignait 50 % pour un outil en particulier. La conclusion des auteurs est explicite : ces systèmes ne devraient pas être utilisés en contexte académique.</p>
+<figure>
+  <img src="/pablo-correa-prieto-detecteurs-exactitude-fr.png" width="1800" height="945" loading="lazy" decoding="async" alt="Diagramme en barres : exactitude moyenne de quatorze détecteurs par type de document, de 94 % sur les textes humains à 15 % sur un texte d’IA passé par un paraphraseur automatique">
+  <figcaption>Exactitude moyenne de quatorze détecteurs selon le type de document, approche binaire. Données : Weber-Wulff et al. (2023).<br><small>© Pablo Correa Prieto, 2026 — <a href="/reutilisation-figures">CC BY 4.0</a></small></figcaption>
+</figure>
+<p>Un texte paru la même année dans <i>Patterns</i>, présenté par la revue comme une opinion et non comme un article de recherche, ajoutait une inégalité. Sept détecteurs appliqués à 91 essais écrits par des candidats non anglophones en signalaient en moyenne environ 61 % comme produits par une IA, contre environ 5 % pour des essais d’élèves américains (Liang et al., 2023). Demander à un modèle de reformuler ces mêmes essais dans une langue plus idiomatique faisait tomber le taux à environ 12 %.</p>
+<p>Un an plus tard, une autre équipe montrait que des manipulations très simples suffisent à faire chuter la détection (Perkins et al., 2024). L’exactitude moyenne passait de 39,5 % sur du contenu d’IA non modifié à 22,1 % après manipulation. Les techniques les plus efficaces étaient, dans l’ordre, l’ajout de fautes d’orthographe, l’augmentation de l’irrégularité du texte, puis la paraphrase.</p>
+<h2><span class="n">2.</span>Mais la situation a changé, et il faut le dire</h2>
+<p>S’arrêter là serait commode et malhonnête. Une étude de 2026 a testé quatre détecteurs sur 160 documents dont l’origine était connue (Van Vlasselaer et al., 2026). Les quatre outils ont classé correctement 100 % des textes humains, et les auteurs notent que les faux positifs sont désormais rares, contrairement à ce que montraient les travaux antérieurs. Sur des textes hybrides ou retouchés pour paraître humains, l’outil le plus performant atteignait 92,5 % d’exactitude.</p>
+<p>Autrement dit, l’argument « les détecteurs se trompent trop » est en train de se périmer. Ne citer que les travaux de 2023 serait choisir ses sources. Et pourtant les mêmes auteurs concluent que ces outils ne devraient pas servir de preuve unique dans une décision à fort enjeu. C’est cette conclusion qui m’intéresse, parce qu’elle ne dépend pas du niveau de performance atteint.</p>
+<h2><span class="n">3.</span>Un bon détecteur ne règle pas le problème</h2>
+<p>Un détecteur produit une probabilité portant sur un texte. Une décision disciplinaire porte sur une personne et sur un acte. Entre les deux, il manque quelque chose que l’outil ne peut pas fournir, quelle que soit son exactitude.</p>
+<p>Le raisonnement est simple, et c’est un raisonnement, pas un résultat d’étude. Supposons un outil excellent, qui ne se trompe que très rarement sur un texte humain. Appliqué à une série de copies dont une petite partie seulement a été produite par une IA, il produira malgré tout quelques signalements erronés. Le problème n’est pas leur nombre. C’est qu’aucune information dans la sortie de l’outil ne distingue le signalement juste du signalement erroné. C’est précisément ce que signifie une probabilité.</p>
+<p>Du côté de l’élève, la situation est pire. À qui on demande de prouver qu’il a écrit son texte, un élève honnête n’a rien à produire. Il n’existe pas de preuve d’absence. La charge de la preuve se retrouve du mauvais côté, sur la personne la moins outillée pour y répondre.</p>
+<p>Les recommandations romandes disent la même chose en une phrase : les outils de détection, basés eux aussi sur des méthodes probabilistes, ne sont pas en mesure d’évaluer de manière fiable si une IA générative a été utilisée (CIIP, 2025).</p>
+<figure>
+  <img src="/pablo-correa-prieto-detecteurs-decision-fr.png" width="1800" height="945" loading="lazy" decoding="async" alt="Deux colonnes comparant ce qu’un détecteur produit (une probabilité, portant sur un texte, sans distinguer ses propres erreurs, non réfutable par l’élève) et ce qu’une décision exige">
+  <figcaption>Pourquoi la sortie d’un détecteur ne se convertit pas en décision.<br><small>© Pablo Correa Prieto, 2026 — <a href="/reutilisation-figures">CC BY 4.0</a></small></figcaption>
+</figure>
+<h2><span class="n">4.</span>Déplacer la question plutôt que la trancher</h2>
+<p>Si la détection ne peut pas fonder une décision, il faut concevoir les tâches pour que la question se pose autrement. Trois pistes me paraissent solides.</p>
+<ul class="list">
+<li><b>Nommer les règles avant, pas après.</b> La CIIP propose un contrat pédagogique entre l’enseignant et les élèves, qui définit les usages admis, la transparence attendue et ce qui constitue une tricherie. Une règle énoncée à l’avance n’a pas besoin d’un détecteur pour être appliquée.</li>
+<li><b>Évaluer ce qui se vérifie.</b> Non pas « ce texte a-t-il été écrit par une IA ? », mais « cet élève maîtrise-t-il ce qu’il a rendu ? ». La directive sur les évaluations certificatives de la HEP Vaud prévoit un mécanisme de ce type : le jury peut convoquer l’étudiant pour un oral portant sur un bref extrait de son propre travail, choisi par le jury, et conclut en principe à l’échec si l’étudiant ne démontre pas la cohérence et l’exactitude de cet extrait (HEP Vaud, 2025). La question devient vérifiable, et l’élève peut y répondre.</li>
+<li><b>Déplacer le poids vers le processus.</b> C’est la recommandation explicite de la CIIP pour l’évaluation : recentrer sur la démarche plutôt que sur le seul produit fini, et accepter que dans un travail à domicile, interdire l’outil est impossible.</li>
+</ul>
+<p>Aucune de ces pistes n’est confortable. Elles demandent plus de temps qu’un bouton qui renvoie un pourcentage. Mais elles portent sur des questions auxquelles un élève peut répondre, ce qui n’est pas le cas de la première.</p>
+<h2>Échangeons</h2>
+<p>Comment traitez-vous, dans votre établissement, le texte qui ne ressemble pas à l’élève ? Je serai heureux d’en discuter. Mes coordonnées : <a href="/">pablocorreaprieto.ch</a></p>
+<p class="ai-note">Texte rédigé avec l’aide d’une IA, relu et validé par l’auteur.</p>
+</div>
+<section class="refs" aria-labelledby="refs-title">
+<h2 id="refs-title">Références</h2>
+<ol>
+<li>CIIP. (2025). <i>Intelligence artificielle générative – IAG : recommandations pour une utilisation réfléchie et mesurée dans l’enseignement</i>. Conférence intercantonale de l’instruction publique de la Suisse romande et du Tessin. <a href="https://www.ciip.ch/files/1050/Documents/IRDP/Recommandations_IAG_19-03-2025_V10.pdf" rel="noopener">https://www.ciip.ch/files/1050/Documents/IRDP/Recommandations_IAG_19-03-2025_V10.pdf</a></li>
+<li>HEP Vaud. (2025). <i>Directive 05_05 : Évaluations certificatives</i> (état au 21 novembre 2025). Haute école pédagogique du canton de Vaud. <a href="https://www.hepl.ch/files/live/sites/files-site/files/comite-direction/directives/directive-05-05-evaluations-certificatives-5dec23.pdf" rel="noopener">https://www.hepl.ch/files/live/sites/files-site/files/comite-direction/directives/directive-05-05-evaluations-certificatives-5dec23.pdf</a></li>
+<li>Liang, W., Yuksekgonul, M., Mao, Y., Wu, E. et Zou, J. (2023). GPT detectors are biased against non-native English writers [opinion]. <i>Patterns, 4</i>(7), Article 100779. <a href="https://doi.org/10.1016/j.patter.2023.100779" rel="noopener">https://doi.org/10.1016/j.patter.2023.100779</a></li>
+<li>OpenAI. (2023, 31 janvier). <i>New AI classifier for indicating AI-written text</i>. <a href="https://openai.com/index/new-ai-classifier-for-indicating-ai-written-text/" rel="noopener">https://openai.com/index/new-ai-classifier-for-indicating-ai-written-text/</a></li>
+<li>Perkins, M., Roe, J., Vu, B. H., Postma, D., Hickerson, D., McGaughran, J. et Khuat, H. Q. (2024). Simple techniques to bypass GenAI text detectors: Implications for inclusive education. <i>International Journal of Educational Technology in Higher Education, 21</i>, Article 53. <a href="https://doi.org/10.1186/s41239-024-00487-w" rel="noopener">https://doi.org/10.1186/s41239-024-00487-w</a></li>
+<li>Van Vlasselaer, M., Van Droogenbroeck, F. et Spruyt, B. (2026). Who wrote this? Evaluating the reliability of AI detection tools in higher education. <i>International Journal for Educational Integrity, 22</i>(1), Article 16. <a href="https://doi.org/10.1007/s40979-026-00226-w" rel="noopener">https://doi.org/10.1007/s40979-026-00226-w</a></li>
+<li>Weber-Wulff, D., Anohina-Naumeca, A., Bjelobaba, S., Foltýnek, T., Guerrero-Dib, J., Popoola, O., Šigut, P. et Waddington, L. (2023). Testing of detection tools for AI-generated text. <i>International Journal for Educational Integrity, 19</i>(1), Article 26. <a href="https://doi.org/10.1007/s40979-023-00146-z" rel="noopener">https://doi.org/10.1007/s40979-023-00146-z</a></li>
+</ol>
+</section>
+</article>
+<aside class="about" aria-label="L’auteur">
+  <p class="label">L’auteur</p>
+  <p>Pablo Correa Prieto est enseignant primaire reconnu par la CDIP (3H–8H) et remplaçant dans les écoles vaudoises. En parallèle, il suit un master en recherche en éducation (UNIR) : numérique et IA à l’école.</p>
+  <ul><li><a href="/">Profil et coordonnées</a></li><li><a href="/recherche">Recherche</a></li><li><a href="/articles">Tous les articles</a></li></ul>
+</aside>
+</main>
+
+<footer>
+  <span>© 2026 Pablo Correa Prieto · <a href="/">pablocorreaprieto.ch</a></span>
+  <span>Mis à jour en octobre 2026</span>
+</footer>
+</body>
+</html>
