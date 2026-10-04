@@ -4,3 +4,4 @@ exclude:
   - README.md
   - CLAUDE.md
   - tools/
+  - docs/
