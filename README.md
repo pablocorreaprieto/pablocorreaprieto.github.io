@@ -16,6 +16,9 @@ French is the default language at the root; English lives in `/en/`, Spanish in 
 | Article: three questions for an item (28 Sept 2026) | `items-evaluation-trois-questions.html` | `en/assessment-items-three-questions.html` | `es/items-evaluacion-tres-preguntas.html` |
 | Article: protect the effort (28 Sept 2026) | `ia-proteger-effort-apprendre.html` | `en/ai-protect-effort-learning.html` | `es/ia-proteger-esfuerzo-aprender.html` |
 | Article: preparing with AI, checking (28 Sept 2026) | `remplacant-preparer-ia-verifier.html` | `en/substitute-teacher-ai-check-first.html` | `es/sustituto-preparar-ia-verificar.html` |
+| Article: detecting AI in student work (4 Oct 2026) | `detecteurs-ia-fiabilite-decision.html` | `en/ai-detectors-reliability-decision.html` | `es/detectores-ia-fiabilidad-decision.html` |
+| Article: feedback, the information not the grade (4 Oct 2026) | `commentaire-note-feedback-ia.html` | `en/comments-grades-ai-feedback.html` | `es/comentario-nota-feedback-ia.html` |
+| Article: acceptance is not use (4 Oct 2026) | `acceptation-usage-ia-enseignants.html` | `en/acceptance-is-not-use-teachers-ai.html` | `es/aceptacion-no-es-uso-docentes-ia.html` |
 | Articles index | `articles.html` | `en/articles.html` | `es/articulos.html` |
 | Figure reuse (licence) | `reutilisation-figures.html` | `en/figure-reuse.html` | `es/reutilizacion-figuras.html` |
 
