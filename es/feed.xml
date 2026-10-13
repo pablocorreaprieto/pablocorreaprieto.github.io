@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
+  <title>Artículos — Pablo Correa Prieto</title>
+  <subtitle>Artículos de Pablo Correa Prieto sobre la inteligencia artificial en el trabajo docente.</subtitle>
+  <id>https://pablocorreaprieto.ch/es/articulos</id>
+  <link rel="self" type="application/atom+xml" href="https://pablocorreaprieto.ch/es/feed.xml"/>
+  <link rel="alternate" type="text/html" href="https://pablocorreaprieto.ch/es/articulos"/>
+  <updated>2026-10-04T00:00:00+02:00</updated>
+  <author>
+    <name>Pablo Correa Prieto</name>
+    <uri>https://pablocorreaprieto.ch/</uri>
+  </author>
+  <rights>© 2026 Pablo Correa Prieto</rights>
+  <entry>
+    <title>Detectar la IA en un trabajo: por qué la fiabilidad no es la cuestión</title>
+    <link rel="alternate" type="text/html" href="https://pablocorreaprieto.ch/es/detectores-ia-fiabilidad-decision"/>
+    <id>https://pablocorreaprieto.ch/es/detectores-ia-fiabilidad-decision</id>
+    <published>2026-10-04T00:00:00+02:00</published>
+    <updated>2026-10-04T00:00:00+02:00</updated>
+    <summary>Los detectores han mejorado, y eso no resuelve nada: una probabilidad sobre un texto no fundamenta una decisión sobre un alumno.</summary>
+  </entry>
+  <entry>
+    <title>Lo que hace trabajar a una devolución: la información, no la nota</title>
+    <link rel="alternate" type="text/html" href="https://pablocorreaprieto.ch/es/comentario-nota-feedback-ia"/>
+    <id>https://pablocorreaprieto.ch/es/comentario-nota-feedback-ia</id>
+    <published>2026-10-04T00:00:00+02:00</published>
+    <updated>2026-10-04T00:00:00+02:00</updated>
+    <summary>Más del 38 % de los efectos del feedback son negativos. Lo que marca la diferencia es la información, no la nota.</summary>
+  </entry>
+  <entry>
+    <title>La aceptación no es el uso: qué miden las encuestas sobre la IA en la escuela</title>
+    <link rel="alternate" type="text/html" href="https://pablocorreaprieto.ch/es/aceptacion-no-es-uso-docentes-ia"/>
+    <id>https://pablocorreaprieto.ch/es/aceptacion-no-es-uso-docentes-ia</id>
+    <published>2026-10-04T00:00:00+02:00</published>
+    <updated>2026-10-04T00:00:00+02:00</updated>
+    <summary>Las encuestas de aceptación miden una intención validada contra una declaración. El uso declarado sigue mal al uso registrado.</summary>
+  </entry>
+  <entry>
+    <title>Corregir con IA: compararla con nuestros errores reales, no con la perfección</title>
+    <link rel="alternate" type="text/html" href="https://pablocorreaprieto.ch/es/ia-correccion-segunda-mirada"/>
+    <id>https://pablocorreaprieto.ch/es/ia-correccion-segunda-mirada</id>
+    <published>2026-09-28T00:00:00+02:00</published>
+    <updated>2026-09-28T00:00:00+02:00</updated>
+    <summary>Un siglo de investigación sobre la corrección humana, y lo que implica para usar la IA como segunda mirada.</summary>
+  </entry>
+  <entry>
+    <title>Un ítem correcto no siempre está alineado: tres preguntas para juzgar un ítem de evaluación</title>
+    <link rel="alternate" type="text/html" href="https://pablocorreaprieto.ch/es/items-evaluacion-tres-preguntas"/>
+    <id>https://pablocorreaprieto.ch/es/items-evaluacion-tres-preguntas</id>
+    <published>2026-09-28T00:00:00+02:00</published>
+    <updated>2026-09-28T00:00:00+02:00</updated>
+    <summary>Alineación, demanda cognitiva, calidad: tres preguntas distintas para juzgar un ítem frente al PER.</summary>
+  </entry>
+  <entry>
+    <title>Proteger el esfuerzo que hace aprender: qué confiar a la IA y qué mantener exigente</title>
+    <link rel="alternate" type="text/html" href="https://pablocorreaprieto.ch/es/ia-proteger-esfuerzo-aprender"/>
+    <id>https://pablocorreaprieto.ch/es/ia-proteger-esfuerzo-aprender</id>
+    <published>2026-09-28T00:00:00+02:00</published>
+    <updated>2026-09-28T00:00:00+02:00</updated>
+    <summary>Dificultades deseables y primeros estudios sobre la IA en el aula: lo que el esfuerzo aporta al aprendizaje.</summary>
+  </entry>
+  <entry>
+    <title>Preparar rápido con IA: el verdadero trabajo es verificar</title>
+    <link rel="alternate" type="text/html" href="https://pablocorreaprieto.ch/es/sustituto-preparar-ia-verificar"/>
+    <id>https://pablocorreaprieto.ch/es/sustituto-preparar-ia-verificar</id>
+    <published>2026-09-28T00:00:00+02:00</published>
+    <updated>2026-09-28T00:00:00+02:00</updated>
+    <summary>La IA ahorra tiempo de preparación; el verdadero trabajo es verificar el objetivo, el nivel de exigencia y la exactitud.</summary>
+  </entry>
+  <entry>
+    <title>Lo que la IA cambia de verdad para el docente que prepara y evalúa</title>
+    <link rel="alternate" type="text/html" href="https://pablocorreaprieto.ch/es/ia-docente-preparar-evaluar"/>
+    <id>https://pablocorreaprieto.ch/es/ia-docente-preparar-evaluar</id>
+    <published>2026-09-24T00:00:00+02:00</published>
+    <updated>2026-09-24T00:00:00+02:00</updated>
+    <summary>Preparar, evaluar, aprender: tres desplazamientos que la IA provoca en el trabajo docente.</summary>
+  </entry>
+</feed>
