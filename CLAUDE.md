@@ -76,6 +76,10 @@ For every image:
 - An articles index page per language (`/articles`, `/en/articles`, `/es/articulos`), each article shown with its cover. Add every new article there and to the home pages’ Articles section.
 - Non-site files (docs, `tools/`) are kept off the published site by `_config.yml` `exclude` (GitHub Pages runs Jekyll; there is no `.nojekyll`). Add any new non-site file or folder there.
 - `sitemap.xml`: every page with its hreflang alternates and its images (`<image:image><image:loc>` only; the other image tags are deprecated). Update `<lastmod>` for every page you change. Referenced in `robots.txt`.
+- **Fonts are self-hosted**: `assets/fonts/` (variable WOFF2) + `assets/fonts.css`, preloaded from every page. Never reintroduce Google Fonts links; regeneration steps are in `tools/fonts.md`.
+- **Atom feeds** `/feed.xml`, `/en/feed.xml`, `/es/feed.xml` are hand-maintained. For every new article: add an entry (title, link, id, published/updated, summary) to all three feeds and bump each feed's top-level `<updated>`.
+- **Figures gallery** `/figures`, `/en/figures`, `/es/figuras`: every article figure with its caption, credit and a link to its article, plus one `ImageObject` each in the page JSON-LD. Add every new figure to all three pages.
+- **"À lire ensuite / Read next / Para seguir leyendo"**: each article ends with a `<nav class="next">` linking two related articles. When adding an article, give it two links and add it where it fits in the existing articles' navs.
 
 ## Profiles
 
@@ -104,6 +108,7 @@ HAL: none for now. Any other profile only after Pablo confirms its URL.
 - [ ] Every image: name in filename, credit line, alt, figcaption, embedded metadata
 - [ ] JSON-LD is valid JSON with the fields above
 - [ ] Sitemap includes the new pages and their images; `<lastmod>` updated
+- [ ] New article added to the three `feed.xml` files; new figures added to the three Figures pages; "Read next" links set
 - [ ] Every internal link resolves to a file
 - [ ] Meta descriptions ≤ 160 characters
 - [ ] Every citation verified, or flagged `[SOURCE À VÉRIFIER]`
