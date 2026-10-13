@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Figures — Pablo Correa Prieto</title>
+<meta name="description" content="All of Pablo Correa Prieto’s original figures on AI in education, reusable under the CC BY 4.0 licence, with their captions and source articles.">
+<meta name="author" content="Pablo Correa Prieto">
+<meta name="robots" content="max-image-preview:large">
+<link rel="canonical" href="https://pablocorreaprieto.ch/en/figures">
+<link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/figures">
+<link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/figures">
+<link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/figuras">
+<link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/figures">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Figures — Pablo Correa Prieto">
+<meta property="og:description" content="All of Pablo Correa Prieto’s original figures on AI in education, reusable under the CC BY 4.0 licence, with their captions and source articles.">
+<meta property="og:url" content="https://pablocorreaprieto.ch/en/figures">
+<meta property="og:site_name" content="Pablo Correa Prieto">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://pablocorreaprieto.ch/pablo-correa-prieto-detecteurs-exactitude-en.png">
+<meta property="og:image:width" content="1800">
+<meta property="og:image:height" content="945">
+<meta property="og:image:alt" content="Bar chart: mean accuracy of fourteen detectors by document type, from 94% on human-written text to 15% on AI text run through an automatic paraphraser">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" type="application/atom+xml" href="/en/feed.xml" title="Articles — Pablo Correa Prieto">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#FAFAF8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1C2128" media="(prefers-color-scheme: dark)">
+<link rel="preload" href="/assets/fonts/source-serif-4-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/ibm-plex-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/fonts.css">
+<style>
+  :root{
+    --ground:#FAFAF8; --ink:#1C2128; --muted:#5B626C; --faint:#6C737C;
+    --rule:#E2E3DF; --accent:#264A6E; --accent-soft:#E8EDF2; --mark:#B8492A;
+    --serif:"Source Serif 4", Georgia, "Times New Roman", serif;
+    --sans:"IBM Plex Sans", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ground:#15181C; --ink:#E7E8E6; --muted:#A3A9B1; --faint:#7C838C;
+      --rule:#2A2F35; --accent:#9DB9D8; --accent-soft:#1E2833; --mark:#E07A5A;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#15181C; --ink:#E7E8E6; --muted:#A3A9B1; --faint:#7C838C;
+    --rule:#2A2F35; --accent:#9DB9D8; --accent-soft:#1E2833; --mark:#E07A5A;
+  }
+  *{box-sizing:border-box}
+  .skip{position:absolute; left:-9999px; top:0; z-index:10; background:var(--ground); color:var(--ink); padding:10px 14px; border:1px solid var(--rule); border-radius:0 0 4px 0; border-bottom-color:var(--rule)}
+  .skip:focus{left:0}
+  html{-webkit-text-size-adjust:100%}
+  body{background:var(--ground); color:var(--ink); font-family:var(--sans); font-size:16px; line-height:1.6; margin:0; padding-inline:24px}
+  a{color:var(--accent); text-decoration:none; border-bottom:1px solid color-mix(in srgb, var(--accent) 35%, transparent)}
+  a:hover{border-bottom-color:var(--accent)}
+  a:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:2px}
+
+  .topbar{max-width:1040px; margin-inline:auto; display:flex; justify-content:space-between; align-items:center; gap:16px; padding-top:28px}
+  .brand{font-family:var(--serif); font-weight:500; font-size:1.375rem; line-height:1; letter-spacing:-0.01em; color:var(--ink); border:0; white-space:nowrap}
+  .brand .dot{color:var(--mark)}
+  .tb{display:inline-flex; border:1px solid var(--rule); border-radius:4px; overflow:hidden}
+  .tb a{display:inline-flex; align-items:center; font:500 .75rem/1 var(--sans); letter-spacing:.08em; padding:7px 11px; color:var(--muted); border:0}
+  .tb a:hover{color:var(--ink)}
+  .tb a[aria-current="page"]{background:var(--accent-soft); color:var(--ink)}
+
+  .doc{max-width:720px; margin-inline:auto; padding-block:52px 64px}
+  .crumbs{font-size:.8125rem; color:var(--faint); margin:0 0 30px}
+  .crumbs a{color:var(--muted); border-bottom-color:var(--rule)}
+  .kicker{font-size:.75rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin:0 0 14px}
+  h1{font-family:var(--serif); font-weight:500; font-size:clamp(2rem, 1.35rem + 2.6vw, 2.75rem); line-height:1.12; letter-spacing:-0.01em; margin:0; text-wrap:balance}
+
+  figure{margin:36px 0}
+  figure img{display:block; width:100%; height:auto; border-radius:4px; border:1px solid var(--rule)}
+  figcaption{font-family:var(--sans); font-size:.8125rem; line-height:1.5; color:var(--muted); margin-top:8px}
+
+  .sec{margin-top:40px}
+  .sec p{margin:0 0 12px; max-width:64ch}
+  .sec .lead{font-family:var(--serif); font-size:1.1875rem; line-height:1.6}
+
+  .gal{margin-top:52px; padding-top:28px; border-top:1px solid var(--rule)}
+  .gal h2{font-family:var(--serif); font-weight:500; font-size:1.375rem; line-height:1.3; margin:0 0 4px; text-wrap:balance}
+  .gal h2 a{color:var(--ink); border-bottom-color:color-mix(in srgb, var(--ink) 25%, transparent)}
+  .gal h2 a:hover{border-bottom-color:var(--ink)}
+  .gal .meta{font-size:.8125rem; color:var(--faint); margin:0}
+  .gal figure{margin:24px 0 34px}
+  .gal figure:last-child{margin-bottom:6px}
+
+  footer{max-width:1040px; margin-inline:auto; padding:20px 0 36px; border-top:1px solid var(--rule); display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; font-size:.8125rem; color:var(--faint)}
+
+  @media (max-width:520px){
+    body{padding-inline:16px}
+    .topbar{padding-top:20px}
+    .brand{font-size:1.1875rem}
+    .doc{padding-block:36px 48px}
+  }
+  @media print{
+    :root{--ground:#fff; --ink:#000; --muted:#444; --faint:#666; --rule:#ccc; --accent:#1f3d5c; --accent-soft:#f1f3f6}
+    body{padding:0}
+    .topbar, .crumbs, footer{display:none}
+    a{border:0; color:inherit}
+  }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": [
+    "CollectionPage",
+    "ImageGallery"
+   ],
+   "@id": "https://pablocorreaprieto.ch/en/figures#page",
+   "url": "https://pablocorreaprieto.ch/en/figures",
+   "name": "Figures — Pablo Correa Prieto",
+   "description": "All of Pablo Correa Prieto’s original figures on AI in education, reusable under the CC BY 4.0 licence, with their captions and source articles.",
+   "inLanguage": "en",
+   "dateModified": "2026-10-13",
+   "author": {
+    "@id": "https://pablocorreaprieto.ch/#person"
+   },
+   "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": 15,
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+       "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-detecteurs-exactitude-en.png"
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+       "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-detecteurs-decision-en.png"
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+       "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-feedback-information-en.png"
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+       "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-feedback-ia-expert-en.png"
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+       "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-acceptation-correlations-en.png"
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 6,
+      "item": {
+       "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-acceptation-chaine-en.png"
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 7,
+      "item": {
+       "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-correction-meme-copie-en.png"
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 8,
+      "item": {
+       "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-correction-second-regard-en.png"
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 9,
+      "item": {
+       "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-items-trois-questions-en.png"
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 10,
+      "item": {
+       "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-items-exigence-cognitive-en.png"
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 11,
+      "item": {
+       "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-effort-ia-examen-en.png"
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 12,
+      "item": {
+       "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-effort-garder-confier-en.png"
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 13,
+      "item": {
+       "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-preparer-temps-gagne-en.png"
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 14,
+      "item": {
+       "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-preparer-verifier-en.png"
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 15,
+      "item": {
+       "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-ia-enseignant-deplacements-en.jpg"
+      }
+     }
+    ]
+   },
+   "hasPart": [
+    {
+     "@type": "ImageObject",
+     "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-detecteurs-exactitude-en.png",
+     "contentUrl": "https://pablocorreaprieto.ch/pablo-correa-prieto-detecteurs-exactitude-en.png",
+     "url": "https://pablocorreaprieto.ch/pablo-correa-prieto-detecteurs-exactitude-en.png",
+     "width": 1800,
+     "height": 945,
+     "caption": "Mean accuracy of fourteen detectors by document type, binary approach. Data: Weber-Wulff et al. (2023).",
+     "description": "Bar chart: mean accuracy of fourteen detectors by document type, from 94% on human-written text to 15% on AI text run through an automatic paraphraser",
+     "creator": {
+      "@id": "https://pablocorreaprieto.ch/#person"
+     },
+     "creditText": "Pablo Correa Prieto",
+     "copyrightNotice": "© 2026 Pablo Correa Prieto",
+     "license": "https://creativecommons.org/licenses/by/4.0/",
+     "acquireLicensePage": "https://pablocorreaprieto.ch/en/figure-reuse"
+    },
+    {
+     "@type": "ImageObject",
+     "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-detecteurs-decision-en.png",
+     "contentUrl": "https://pablocorreaprieto.ch/pablo-correa-prieto-detecteurs-decision-en.png",
+     "url": "https://pablocorreaprieto.ch/pablo-correa-prieto-detecteurs-decision-en.png",
+     "width": 1800,
+     "height": 945,
+     "caption": "Why a detector’s output does not convert into a decision.",
+     "description": "Two columns comparing what a detector produces (a probability, about a text, without separating its own mistakes) and what a decision requires",
+     "creator": {
+      "@id": "https://pablocorreaprieto.ch/#person"
+     },
+     "creditText": "Pablo Correa Prieto",
+     "copyrightNotice": "© 2026 Pablo Correa Prieto",
+     "license": "https://creativecommons.org/licenses/by/4.0/",
+     "acquireLicensePage": "https://pablocorreaprieto.ch/en/figure-reuse"
+    },
+    {
+     "@type": "ImageObject",
+     "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-feedback-information-en.png",
+     "contentUrl": "https://pablocorreaprieto.ch/pablo-correa-prieto-feedback-information-en.png",
+     "url": "https://pablocorreaprieto.ch/pablo-correa-prieto-feedback-information-en.png",
+     "width": 1800,
+     "height": 945,
+     "caption": "The more information a response carries, the larger its effect. Data: Wisniewski et al. (2020).",
+     "description": "Bar chart: effect size of a response by its content, 0.24 for reinforcement or punishment, 0.46 for corrective feedback and 0.99 for high-information feedback",
+     "creator": {
+      "@id": "https://pablocorreaprieto.ch/#person"
+     },
+     "creditText": "Pablo Correa Prieto",
+     "copyrightNotice": "© 2026 Pablo Correa Prieto",
+     "license": "https://creativecommons.org/licenses/by/4.0/",
+     "acquireLicensePage": "https://pablocorreaprieto.ch/en/figure-reuse"
+    },
+    {
+     "@type": "ImageObject",
+     "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-feedback-ia-expert-en.png",
+     "contentUrl": "https://pablocorreaprieto.ch/pablo-correa-prieto-feedback-ia-expert-en.png",
+     "url": "https://pablocorreaprieto.ch/pablo-correa-prieto-feedback-ia-expert-en.png",
+     "width": 1800,
+     "height": 945,
+     "caption": "Feedback judged useful for revision, raters blind to the source. Data: Jansen et al. (2024).",
+     "description": "Bar chart: expert feedback judged useful for revision in 88% of texts, language-model feedback in 59%, and passed on to the student in 23% of cases",
+     "creator": {
+      "@id": "https://pablocorreaprieto.ch/#person"
+     },
+     "creditText": "Pablo Correa Prieto",
+     "copyrightNotice": "© 2026 Pablo Correa Prieto",
+     "license": "https://creativecommons.org/licenses/by/4.0/",
+     "acquireLicensePage": "https://pablocorreaprieto.ch/en/figure-reuse"
+    },
+    {
+     "@type": "ImageObject",
+     "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-acceptation-correlations-en.png",
+     "contentUrl": "https://pablocorreaprieto.ch/pablo-correa-prieto-acceptation-correlations-en.png",
+     "url": "https://pablocorreaprieto.ch/pablo-correa-prieto-acceptation-correlations-en.png",
+     "width": 1800,
+     "height": 945,
+     "caption": "The correlations the model rests on are between self-reports. Data: Davis (1989) and Parry et al. (2021).",
+     "description": "Bar chart comparing three correlations: .85 between perceived usefulness and self-predicted future use, .63 between perceived usefulness and self-reported use, and .38 between self-reported use and logged use",
+     "creator": {
+      "@id": "https://pablocorreaprieto.ch/#person"
+     },
+     "creditText": "Pablo Correa Prieto",
+     "copyrightNotice": "© 2026 Pablo Correa Prieto",
+     "license": "https://creativecommons.org/licenses/by/4.0/",
+     "acquireLicensePage": "https://pablocorreaprieto.ch/en/figure-reuse"
+    },
+    {
+     "@type": "ImageObject",
+     "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-acceptation-chaine-en.png",
+     "contentUrl": "https://pablocorreaprieto.ch/pablo-correa-prieto-acceptation-chaine-en.png",
+     "url": "https://pablocorreaprieto.ch/pablo-correa-prieto-acceptation-chaine-en.png",
+     "width": 1800,
+     "height": 945,
+     "caption": "Where the validation of acceptance models stops.",
+     "description": "A four-link chain from attitude to logged use, with a bracket showing that model validation covers the first three links and stops before the last",
+     "creator": {
+      "@id": "https://pablocorreaprieto.ch/#person"
+     },
+     "creditText": "Pablo Correa Prieto",
+     "copyrightNotice": "© 2026 Pablo Correa Prieto",
+     "license": "https://creativecommons.org/licenses/by/4.0/",
+     "acquireLicensePage": "https://pablocorreaprieto.ch/en/figure-reuse"
+    },
+    {
+     "@type": "ImageObject",
+     "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-correction-meme-copie-en.png",
+     "contentUrl": "https://pablocorreaprieto.ch/pablo-correa-prieto-correction-meme-copie-en.png",
+     "url": "https://pablocorreaprieto.ch/pablo-correa-prieto-correction-meme-copie-en.png",
+     "width": 1800,
+     "height": 945,
+     "caption": "Same paper, 73 teachers: grades from A to F. Data: Brimi (2011).",
+     "description": "Bar chart: of 73 teachers who marked the same essay, 10 gave an A, 18 a B, 30 a C, 9 a D and 6 an F; out of 100, marks ranged from 50 to 96",
+     "creator": {
+      "@id": "https://pablocorreaprieto.ch/#person"
+     },
+     "creditText": "Pablo Correa Prieto",
+     "copyrightNotice": "© 2026 Pablo Correa Prieto",
+     "license": "https://creativecommons.org/licenses/by/4.0/",
+     "acquireLicensePage": "https://pablocorreaprieto.ch/en/figure-reuse"
+    },
+    {
+     "@type": "ImageObject",
+     "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-correction-second-regard-en.png",
+     "contentUrl": "https://pablocorreaprieto.ch/pablo-correa-prieto-correction-second-regard-en.png",
+     "url": "https://pablocorreaprieto.ch/pablo-correa-prieto-correction-second-regard-en.png",
+     "width": 1800,
+     "height": 945,
+     "caption": "The second reader: AI marks in parallel, the teacher reviews the disagreements and decides.",
+     "description": "Diagram: an anonymised paper is marked by the teacher and, in parallel, by AI; if the two marks agree, the mark is confirmed; if not, the teacher reviews the paper and decides",
+     "creator": {
+      "@id": "https://pablocorreaprieto.ch/#person"
+     },
+     "creditText": "Pablo Correa Prieto",
+     "copyrightNotice": "© 2026 Pablo Correa Prieto",
+     "license": "https://creativecommons.org/licenses/by/4.0/",
+     "acquireLicensePage": "https://pablocorreaprieto.ch/en/figure-reuse"
+    },
+    {
+     "@type": "ImageObject",
+     "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-items-trois-questions-en.png",
+     "contentUrl": "https://pablocorreaprieto.ch/pablo-correa-prieto-items-trois-questions-en.png",
+     "url": "https://pablocorreaprieto.ch/pablo-correa-prieto-items-trois-questions-en.png",
+     "width": 1800,
+     "height": 945,
+     "caption": "Three separate questions for judging an assessment item.",
+     "description": "Three numbered columns, “Alignment”, “Cognitive demand” and “Quality”, each with the question to ask about the item",
+     "creator": {
+      "@id": "https://pablocorreaprieto.ch/#person"
+     },
+     "creditText": "Pablo Correa Prieto",
+     "copyrightNotice": "© 2026 Pablo Correa Prieto",
+     "license": "https://creativecommons.org/licenses/by/4.0/",
+     "acquireLicensePage": "https://pablocorreaprieto.ch/en/figure-reuse"
+    },
+    {
+     "@type": "ImageObject",
+     "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-items-exigence-cognitive-en.png",
+     "contentUrl": "https://pablocorreaprieto.ch/pablo-correa-prieto-items-exigence-cognitive-en.png",
+     "url": "https://pablocorreaprieto.ch/pablo-correa-prieto-items-exigence-cognitive-en.png",
+     "width": 1800,
+     "height": 945,
+     "caption": "Two published frameworks for describing cognitive demand, from recall to reasoning.",
+     "description": "Two four-level scales of cognitive demand: Webb’s (recall, skill/concept, strategic thinking, extended thinking) and Stein, Grover and Henningsen’s (memorisation, procedures without connections, procedures with connections, doing mathematics)",
+     "creator": {
+      "@id": "https://pablocorreaprieto.ch/#person"
+     },
+     "creditText": "Pablo Correa Prieto",
+     "copyrightNotice": "© 2026 Pablo Correa Prieto",
+     "license": "https://creativecommons.org/licenses/by/4.0/",
+     "acquireLicensePage": "https://pablocorreaprieto.ch/en/figure-reuse"
+    },
+    {
+     "@type": "ImageObject",
+     "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-effort-ia-examen-en.png",
+     "contentUrl": "https://pablocorreaprieto.ch/pablo-correa-prieto-effort-ia-examen-en.png",
+     "url": "https://pablocorreaprieto.ch/pablo-correa-prieto-effort-ia-examen-en.png",
+     "width": 1800,
+     "height": 945,
+     "caption": "Doing better during practice does not guarantee doing better on the exam. Data: Bastani et al. (2025).",
+     "description": "Bar chart: with open access to GPT-4, grades rose by 48% during practice but fell by 17% on the exam; with a tutor giving hints, they rose by 127% during practice, with no significant difference on the exam",
+     "creator": {
+      "@id": "https://pablocorreaprieto.ch/#person"
+     },
+     "creditText": "Pablo Correa Prieto",
+     "copyrightNotice": "© 2026 Pablo Correa Prieto",
+     "license": "https://creativecommons.org/licenses/by/4.0/",
+     "acquireLicensePage": "https://pablocorreaprieto.ch/en/figure-reuse"
+    },
+    {
+     "@type": "ImageObject",
+     "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-effort-garder-confier-en.png",
+     "contentUrl": "https://pablocorreaprieto.ch/pablo-correa-prieto-effort-garder-confier-en.png",
+     "url": "https://pablocorreaprieto.ch/pablo-correa-prieto-effort-garder-confier-en.png",
+     "width": 1800,
+     "height": 945,
+     "caption": "Where the useful effort lies: a proposal for sorting tasks.",
+     "description": "Two columns: what to keep demanding (recalling without help, producing an answer, explaining in one’s own words, a first attempt) and what can be handed to the tool under control (formatting, extra exercises, rewording instructions, hints rather than answers)",
+     "creator": {
+      "@id": "https://pablocorreaprieto.ch/#person"
+     },
+     "creditText": "Pablo Correa Prieto",
+     "copyrightNotice": "© 2026 Pablo Correa Prieto",
+     "license": "https://creativecommons.org/licenses/by/4.0/",
+     "acquireLicensePage": "https://pablocorreaprieto.ch/en/figure-reuse"
+    },
+    {
+     "@type": "ImageObject",
+     "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-preparer-temps-gagne-en.png",
+     "contentUrl": "https://pablocorreaprieto.ch/pablo-correa-prieto-preparer-temps-gagne-en.png",
+     "url": "https://pablocorreaprieto.ch/pablo-correa-prieto-preparer-temps-gagne-en.png",
+     "width": 1800,
+     "height": 945,
+     "caption": "The time saving measured in a controlled trial in England. Data: Roy et al. (2024).",
+     "description": "Bar chart: weekly preparation time of 81.5 minutes without an AI tool and 56.2 minutes with ChatGPT and a guide, 25.3 minutes less (−31%)",
+     "creator": {
+      "@id": "https://pablocorreaprieto.ch/#person"
+     },
+     "creditText": "Pablo Correa Prieto",
+     "copyrightNotice": "© 2026 Pablo Correa Prieto",
+     "license": "https://creativecommons.org/licenses/by/4.0/",
+     "acquireLicensePage": "https://pablocorreaprieto.ch/en/figure-reuse"
+    },
+    {
+     "@type": "ImageObject",
+     "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-preparer-verifier-en.png",
+     "contentUrl": "https://pablocorreaprieto.ch/pablo-correa-prieto-preparer-verifier-en.png",
+     "url": "https://pablocorreaprieto.ch/pablo-correa-prieto-preparer-verifier-en.png",
+     "width": 1800,
+     "height": 945,
+     "caption": "Check the objective, the level of demand and accuracy, then adapt to the class.",
+     "description": "Three numbered steps: generate, check (PER objective, level of demand, accuracy) and adapt to the class; the checking step is highlighted",
+     "creator": {
+      "@id": "https://pablocorreaprieto.ch/#person"
+     },
+     "creditText": "Pablo Correa Prieto",
+     "copyrightNotice": "© 2026 Pablo Correa Prieto",
+     "license": "https://creativecommons.org/licenses/by/4.0/",
+     "acquireLicensePage": "https://pablocorreaprieto.ch/en/figure-reuse"
+    },
+    {
+     "@type": "ImageObject",
+     "@id": "https://pablocorreaprieto.ch/pablo-correa-prieto-ia-enseignant-deplacements-en.jpg",
+     "contentUrl": "https://pablocorreaprieto.ch/pablo-correa-prieto-ia-enseignant-deplacements-en.jpg",
+     "url": "https://pablocorreaprieto.ch/pablo-correa-prieto-ia-enseignant-deplacements-en.jpg",
+     "width": 1800,
+     "height": 945,
+     "caption": "The three shifts at a glance.",
+     "description": "Three numbered columns, “Prepare”, “Assess” and “Learn”, each summed up in one sentence",
+     "creator": {
+      "@id": "https://pablocorreaprieto.ch/#person"
+     },
+     "creditText": "Pablo Correa Prieto",
+     "copyrightNotice": "© 2026 Pablo Correa Prieto",
+     "license": "https://creativecommons.org/licenses/by/4.0/",
+     "acquireLicensePage": "https://pablocorreaprieto.ch/en/figure-reuse"
+    }
+   ],
+   "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://pablocorreaprieto.ch/en/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Figures",
+      "item": "https://pablocorreaprieto.ch/en/figures"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://pablocorreaprieto.ch/#person",
+   "name": "Pablo Correa Prieto",
+   "url": "https://pablocorreaprieto.ch/"
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar">
+  <a class="brand" href="/en/" aria-label="Pablo Correa Prieto – Home">pablo correa prieto<span class="dot">.</span></a>
+  <nav class="tb" aria-label="Language">
+    <a href="/figures" hreflang="fr" lang="fr" aria-label="Français">FR</a>
+    <a href="/en/figures" hreflang="en" lang="en" aria-label="English" aria-current="page">EN</a>
+    <a href="/es/figuras" hreflang="es" lang="es" aria-label="Español">ES</a>
+  </nav>
+</div>
+
+<main id="main" class="doc">
+<p class="crumbs"><a href="/en/">Home</a> / Figures</p>
+<header>
+  <p class="kicker">Figures</p>
+  <h1>Figures</h1>
+</header>
+<section class="sec">
+  <p class="lead">The original figures published with my articles on artificial intelligence in education, gathered on one page. Each one can be reused under the CC BY 4.0 licence; the conditions and how to credit are on the <a href="/en/figure-reuse">Figure reuse</a> page.</p>
+</section>
+<section class="sec gal">
+<h2><a href="/en/ai-detectors-reliability-decision">Detecting AI in a student’s work: why reliability is not the question</a></h2>
+<p class="meta"><time datetime="2026-10-04">4 Oct 2026</time></p>
+<figure>
+  <img src="/pablo-correa-prieto-detecteurs-exactitude-en.png" width="1800" height="945" fetchpriority="high" alt="Bar chart: mean accuracy of fourteen detectors by document type, from 94% on human-written text to 15% on AI text run through an automatic paraphraser">
+  <figcaption>Mean accuracy of fourteen detectors by document type, binary approach. Data: Weber-Wulff et al. (2023).<br><small>© Pablo Correa Prieto, 2026 — <a href="/en/figure-reuse">CC BY 4.0</a></small></figcaption>
+</figure>
+<figure>
+  <img src="/pablo-correa-prieto-detecteurs-decision-en.png" width="1800" height="945" loading="lazy" decoding="async" alt="Two columns comparing what a detector produces (a probability, about a text, without separating its own mistakes) and what a decision requires">
+  <figcaption>Why a detector’s output does not convert into a decision.<br><small>© Pablo Correa Prieto, 2026 — <a href="/en/figure-reuse">CC BY 4.0</a></small></figcaption>
+</figure>
+</section>
+<section class="sec gal">
+<h2><a href="/en/comments-grades-ai-feedback">What makes a response work: the information, not the grade</a></h2>
+<p class="meta"><time datetime="2026-10-04">4 Oct 2026</time></p>
+<figure>
+  <img src="/pablo-correa-prieto-feedback-information-en.png" width="1800" height="945" loading="lazy" decoding="async" alt="Bar chart: effect size of a response by its content, 0.24 for reinforcement or punishment, 0.46 for corrective feedback and 0.99 for high-information feedback">
+  <figcaption>The more information a response carries, the larger its effect. Data: Wisniewski et al. (2020).<br><small>© Pablo Correa Prieto, 2026 — <a href="/en/figure-reuse">CC BY 4.0</a></small></figcaption>
+</figure>
+<figure>
+  <img src="/pablo-correa-prieto-feedback-ia-expert-en.png" width="1800" height="945" loading="lazy" decoding="async" alt="Bar chart: expert feedback judged useful for revision in 88% of texts, language-model feedback in 59%, and passed on to the student in 23% of cases">
+  <figcaption>Feedback judged useful for revision, raters blind to the source. Data: Jansen et al. (2024).<br><small>© Pablo Correa Prieto, 2026 — <a href="/en/figure-reuse">CC BY 4.0</a></small></figcaption>
+</figure>
+</section>
+<section class="sec gal">
+<h2><a href="/en/acceptance-is-not-use-teachers-ai">Acceptance is not use: what surveys on AI in schools actually measure</a></h2>
+<p class="meta"><time datetime="2026-10-04">4 Oct 2026</time></p>
+<figure>
+  <img src="/pablo-correa-prieto-acceptation-correlations-en.png" width="1800" height="945" loading="lazy" decoding="async" alt="Bar chart comparing three correlations: .85 between perceived usefulness and self-predicted future use, .63 between perceived usefulness and self-reported use, and .38 between self-reported use and logged use">
+  <figcaption>The correlations the model rests on are between self-reports. Data: Davis (1989) and Parry et al. (2021).<br><small>© Pablo Correa Prieto, 2026 — <a href="/en/figure-reuse">CC BY 4.0</a></small></figcaption>
+</figure>
+<figure>
+  <img src="/pablo-correa-prieto-acceptation-chaine-en.png" width="1800" height="945" loading="lazy" decoding="async" alt="A four-link chain from attitude to logged use, with a bracket showing that model validation covers the first three links and stops before the last">
+  <figcaption>Where the validation of acceptance models stops.<br><small>© Pablo Correa Prieto, 2026 — <a href="/en/figure-reuse">CC BY 4.0</a></small></figcaption>
+</figure>
+</section>
+<section class="sec gal">
+<h2><a href="/en/ai-marking-second-reader">Marking with AI: compare it with our real errors, not with perfection</a></h2>
+<p class="meta"><time datetime="2026-09-28">28 Sept 2026</time></p>
+<figure>
+  <img src="/pablo-correa-prieto-correction-meme-copie-en.png" width="1800" height="945" loading="lazy" decoding="async" alt="Bar chart: of 73 teachers who marked the same essay, 10 gave an A, 18 a B, 30 a C, 9 a D and 6 an F; out of 100, marks ranged from 50 to 96">
+  <figcaption>Same paper, 73 teachers: grades from A to F. Data: Brimi (2011).<br><small>© Pablo Correa Prieto, 2026 — <a href="/en/figure-reuse">CC BY 4.0</a></small></figcaption>
+</figure>
+<figure>
+  <img src="/pablo-correa-prieto-correction-second-regard-en.png" width="1800" height="945" loading="lazy" decoding="async" alt="Diagram: an anonymised paper is marked by the teacher and, in parallel, by AI; if the two marks agree, the mark is confirmed; if not, the teacher reviews the paper and decides">
+  <figcaption>The second reader: AI marks in parallel, the teacher reviews the disagreements and decides.<br><small>© Pablo Correa Prieto, 2026 — <a href="/en/figure-reuse">CC BY 4.0</a></small></figcaption>
+</figure>
+</section>
+<section class="sec gal">
+<h2><a href="/en/assessment-items-three-questions">A correct item is not necessarily aligned: three questions for judging an assessment item</a></h2>
+<p class="meta"><time datetime="2026-09-28">28 Sept 2026</time></p>
+<figure>
+  <img src="/pablo-correa-prieto-items-trois-questions-en.png" width="1800" height="945" loading="lazy" decoding="async" alt="Three numbered columns, “Alignment”, “Cognitive demand” and “Quality”, each with the question to ask about the item">
+  <figcaption>Three separate questions for judging an assessment item.<br><small>© Pablo Correa Prieto, 2026 — <a href="/en/figure-reuse">CC BY 4.0</a></small></figcaption>
+</figure>
+<figure>
+  <img src="/pablo-correa-prieto-items-exigence-cognitive-en.png" width="1800" height="945" loading="lazy" decoding="async" alt="Two four-level scales of cognitive demand: Webb’s (recall, skill/concept, strategic thinking, extended thinking) and Stein, Grover and Henningsen’s (memorisation, procedures without connections, procedures with connections, doing mathematics)">
+  <figcaption>Two published frameworks for describing cognitive demand, from recall to reasoning.<br><small>© Pablo Correa Prieto, 2026 — <a href="/en/figure-reuse">CC BY 4.0</a></small></figcaption>
+</figure>
+</section>
+<section class="sec gal">
+<h2><a href="/en/ai-protect-effort-learning">Protect the effort that makes learning happen: what to hand to AI, what to keep demanding</a></h2>
+<p class="meta"><time datetime="2026-09-28">28 Sept 2026</time></p>
+<figure>
+  <img src="/pablo-correa-prieto-effort-ia-examen-en.png" width="1800" height="945" loading="lazy" decoding="async" alt="Bar chart: with open access to GPT-4, grades rose by 48% during practice but fell by 17% on the exam; with a tutor giving hints, they rose by 127% during practice, with no significant difference on the exam">
+  <figcaption>Doing better during practice does not guarantee doing better on the exam. Data: Bastani et al. (2025).<br><small>© Pablo Correa Prieto, 2026 — <a href="/en/figure-reuse">CC BY 4.0</a></small></figcaption>
+</figure>
+<figure>
+  <img src="/pablo-correa-prieto-effort-garder-confier-en.png" width="1800" height="945" loading="lazy" decoding="async" alt="Two columns: what to keep demanding (recalling without help, producing an answer, explaining in one’s own words, a first attempt) and what can be handed to the tool under control (formatting, extra exercises, rewording instructions, hints rather than answers)">
+  <figcaption>Where the useful effort lies: a proposal for sorting tasks.<br><small>© Pablo Correa Prieto, 2026 — <a href="/en/figure-reuse">CC BY 4.0</a></small></figcaption>
+</figure>
+</section>
+<section class="sec gal">
+<h2><a href="/en/substitute-teacher-ai-check-first">Preparing fast with AI: the real work is checking</a></h2>
+<p class="meta"><time datetime="2026-09-28">28 Sept 2026</time></p>
+<figure>
+  <img src="/pablo-correa-prieto-preparer-temps-gagne-en.png" width="1800" height="945" loading="lazy" decoding="async" alt="Bar chart: weekly preparation time of 81.5 minutes without an AI tool and 56.2 minutes with ChatGPT and a guide, 25.3 minutes less (−31%)">
+  <figcaption>The time saving measured in a controlled trial in England. Data: Roy et al. (2024).<br><small>© Pablo Correa Prieto, 2026 — <a href="/en/figure-reuse">CC BY 4.0</a></small></figcaption>
+</figure>
+<figure>
+  <img src="/pablo-correa-prieto-preparer-verifier-en.png" width="1800" height="945" loading="lazy" decoding="async" alt="Three numbered steps: generate, check (PER objective, level of demand, accuracy) and adapt to the class; the checking step is highlighted">
+  <figcaption>Check the objective, the level of demand and accuracy, then adapt to the class.<br><small>© Pablo Correa Prieto, 2026 — <a href="/en/figure-reuse">CC BY 4.0</a></small></figcaption>
+</figure>
+</section>
+<section class="sec gal">
+<h2><a href="/en/ai-teachers-prepare-assess">What AI really changes for teachers who prepare and assess</a></h2>
+<p class="meta"><time datetime="2026-09-24">24 Sept 2026</time></p>
+<figure>
+  <img src="/pablo-correa-prieto-ia-enseignant-deplacements-en.jpg" width="1800" height="945" loading="lazy" decoding="async" alt="Three numbered columns, “Prepare”, “Assess” and “Learn”, each summed up in one sentence">
+  <figcaption>The three shifts at a glance.<br><small>© Pablo Correa Prieto, 2026 — <a href="/en/figure-reuse">CC BY 4.0</a></small></figcaption>
+</figure>
+</section>
+</main>
+
+<footer>
+  <span>© 2026 Pablo Correa Prieto · <a href="/en/">pablocorreaprieto.ch</a></span>
+  <span>Updated October 2026</span>
+</footer>
+</body>
+</html>
