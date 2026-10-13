@@ -1,6 +1,6 @@
 # pablocorreaprieto.ch
 
-Personal site of Pablo Correa Prieto. Hand-written static HTML served by GitHub Pages from `main`, on the custom domain in `CNAME`. No build step: each page is a self-contained `.html` file with its own inline CSS and JSON-LD.
+Personal site of Pablo Correa Prieto. Hand-written static HTML served by GitHub Pages from `main`, on the custom domain in `CNAME`. No build step: each page is a self-contained `.html` file with its own inline CSS and JSON-LD. The only shared assets are the self-hosted fonts (`assets/fonts/` + `assets/fonts.css`, see `tools/fonts.md`).
 
 ## Structure
 
@@ -16,14 +16,22 @@ French is the default language at the root; English lives in `/en/`, Spanish in 
 | Article: three questions for an item (28 Sept 2026) | `items-evaluation-trois-questions.html` | `en/assessment-items-three-questions.html` | `es/items-evaluacion-tres-preguntas.html` |
 | Article: protect the effort (28 Sept 2026) | `ia-proteger-effort-apprendre.html` | `en/ai-protect-effort-learning.html` | `es/ia-proteger-esfuerzo-aprender.html` |
 | Article: preparing with AI, checking (28 Sept 2026) | `remplacant-preparer-ia-verifier.html` | `en/substitute-teacher-ai-check-first.html` | `es/sustituto-preparar-ia-verificar.html` |
+| Article: acceptance is not use (4 Oct 2026) | `acceptation-usage-ia-enseignants.html` | `en/acceptance-is-not-use-teachers-ai.html` | `es/aceptacion-no-es-uso-docentes-ia.html` |
+| Article: information, not the grade (4 Oct 2026) | `commentaire-note-feedback-ia.html` | `en/comments-grades-ai-feedback.html` | `es/comentario-nota-feedback-ia.html` |
+| Article: AI detectors and decisions (4 Oct 2026) | `detecteurs-ia-fiabilite-decision.html` | `en/ai-detectors-reliability-decision.html` | `es/detectores-ia-fiabilidad-decision.html` |
 | Articles index | `articles.html` | `en/articles.html` | `es/articulos.html` |
+| Figures gallery | `figures.html` | `en/figures.html` | `es/figuras.html` |
 | Figure reuse (licence) | `reutilisation-figures.html` | `en/figure-reuse.html` | `es/reutilizacion-figuras.html` |
+| Atom feed | `feed.xml` | `en/feed.xml` | `es/feed.xml` |
 
 Other files:
 
 - `404.html` – trilingual “page not found”, served by GitHub Pages for any unknown URL.
 - `sitemap.xml` – every page with its language alternates and images.
 - `robots.txt`, `CNAME`, `google…html` (Search Console verification – do not delete).
+- `assets/fonts/`, `assets/fonts.css` – self-hosted variable fonts (Source Serif 4, IBM Plex Sans). No Google Fonts requests.
+- `feed.xml`, `en/feed.xml`, `es/feed.xml` – hand-maintained Atom feeds, one entry per article; every page links its language's feed.
+- `llms.txt` – short machine-readable site overview.
 - `favicon.*`, `apple-touch-icon.png` – icons.
 - `logo-mark.svg` – the wordmark shown on the home pages, loaded with `<svg><use href="/logo-mark.svg#m"/></svg>` so it inherits the page’s text colour (light, dark and print). External `<use>` does not work when a page is opened as a local file; preview with a local server (`python3 -m http.server`) instead.
 - `pablo-correa-prieto-*.jpg`, `pablo-correa-prieto-*.png` – article covers (JPG) and figures (PNG), one per language.
@@ -43,7 +51,13 @@ When you change a page:
 When you add a page, also:
 
 1. Create all three language versions.
-2. In each version’s `<head>`: `canonical`, the four `hreflang` alternates (fr, en, es, x-default → FR), `og:*` tags and JSON-LD.
+2. In each version’s `<head>`: `canonical`, the four `hreflang` alternates (fr, en, es, x-default → FR), `og:*` tags, the Atom feed link and JSON-LD.
 3. Update the FR/EN/ES switcher in each version to point at its siblings.
 4. Add three `<url>` entries to `sitemap.xml`, each listing all alternates and its images.
 5. Link to it from the relevant home pages.
+
+When you add an article, also:
+
+1. Add an entry to `feed.xml`, `en/feed.xml` and `es/feed.xml`, and bump each feed’s top-level `<updated>`.
+2. Add its figures (with captions and credit) to `figures.html`, `en/figures.html` and `es/figuras.html`, including their `ImageObject` entries in those pages’ JSON-LD.
+3. Add two “Read next” links at the end of the new article and link to it from related existing articles.

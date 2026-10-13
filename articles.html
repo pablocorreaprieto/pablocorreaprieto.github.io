@@ -20,19 +20,21 @@
 <meta property="og:locale" content="fr_CH">
 <meta property="og:locale:alternate" content="en_GB">
 <meta property="og:locale:alternate" content="es_ES">
-<meta property="og:image" content="https://pablocorreaprieto.ch/pablo-correa-prieto-correction-titre-fr.jpg">
+<meta property="og:image" content="https://pablocorreaprieto.ch/pablo-correa-prieto-detecteurs-titre-fr.jpg">
 <meta property="og:image:width" content="1800">
 <meta property="og:image:height" content="945">
-<meta property="og:image:alt" content="Carte de titre « Nos vraies erreurs, pas la perfection. », avec le nom Pablo Correa Prieto et l’adresse pablocorreaprieto.ch">
+<meta property="og:image:alt" content="Carte de titre « La fiabilité n’est pas la question. », avec le nom Pablo Correa Prieto et l’adresse pablocorreaprieto.ch">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" type="application/atom+xml" href="/feed.xml" title="Articles — Pablo Correa Prieto">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<meta name="theme-color" content="#1C2128">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<meta name="theme-color" content="#FAFAF8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1C2128" media="(prefers-color-scheme: dark)">
+<link rel="preload" href="/assets/fonts/source-serif-4-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/ibm-plex-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/fonts.css">
 <style>
   :root{
     --ground:#FAFAF8; --ink:#1C2128; --muted:#5B626C; --faint:#6C737C;
@@ -51,6 +53,8 @@
     --rule:#2A2F35; --accent:#9DB9D8; --accent-soft:#1E2833; --mark:#E07A5A;
   }
   *{box-sizing:border-box}
+  .skip{position:absolute; left:-9999px; top:0; z-index:10; background:var(--ground); color:var(--ink); padding:10px 14px; border:1px solid var(--rule); border-radius:0 0 4px 0; border-bottom-color:var(--rule)}
+  .skip:focus{left:0}
   html{-webkit-text-size-adjust:100%}
   body{background:var(--ground); color:var(--ink); font-family:var(--sans); font-size:16px; line-height:1.6; margin:0; padding-inline:24px}
   a{color:var(--accent); text-decoration:none; border-bottom:1px solid color-mix(in srgb, var(--accent) 35%, transparent)}
@@ -140,7 +144,7 @@
    "name": "Articles — Pablo Correa Prieto",
    "description": "Articles de Pablo Correa Prieto sur l’intelligence artificielle dans le travail enseignant : préparer, évaluer, apprendre.",
    "inLanguage": "fr",
-   "dateModified": "2026-09-28",
+   "dateModified": "2026-10-13",
    "about": {
     "@id": "https://pablocorreaprieto.ch/#person"
    },
@@ -150,33 +154,48 @@
      {
       "@type": "ListItem",
       "position": 1,
-      "url": "https://pablocorreaprieto.ch/ia-correction-second-regard"
+      "url": "https://pablocorreaprieto.ch/detecteurs-ia-fiabilite-decision"
      },
      {
       "@type": "ListItem",
       "position": 2,
-      "url": "https://pablocorreaprieto.ch/items-evaluation-trois-questions"
+      "url": "https://pablocorreaprieto.ch/commentaire-note-feedback-ia"
      },
      {
       "@type": "ListItem",
       "position": 3,
-      "url": "https://pablocorreaprieto.ch/ia-proteger-effort-apprendre"
+      "url": "https://pablocorreaprieto.ch/acceptation-usage-ia-enseignants"
      },
      {
       "@type": "ListItem",
       "position": 4,
-      "url": "https://pablocorreaprieto.ch/remplacant-preparer-ia-verifier"
+      "url": "https://pablocorreaprieto.ch/ia-correction-second-regard"
      },
      {
       "@type": "ListItem",
       "position": 5,
+      "url": "https://pablocorreaprieto.ch/items-evaluation-trois-questions"
+     },
+     {
+      "@type": "ListItem",
+      "position": 6,
+      "url": "https://pablocorreaprieto.ch/ia-proteger-effort-apprendre"
+     },
+     {
+      "@type": "ListItem",
+      "position": 7,
+      "url": "https://pablocorreaprieto.ch/remplacant-preparer-ia-verifier"
+     },
+     {
+      "@type": "ListItem",
+      "position": 8,
       "url": "https://pablocorreaprieto.ch/ia-enseignant-preparer-evaluer"
      }
     ]
    },
    "primaryImageOfPage": {
     "@type": "ImageObject",
-    "contentUrl": "https://pablocorreaprieto.ch/pablo-correa-prieto-correction-titre-fr.jpg",
+    "contentUrl": "https://pablocorreaprieto.ch/pablo-correa-prieto-detecteurs-titre-fr.jpg",
     "creator": {
      "@id": "https://pablocorreaprieto.ch/#person"
     },
@@ -214,6 +233,7 @@
 </script>
 </head>
 <body>
+<a class="skip" href="#main">Aller au contenu</a>
 <div class="topbar">
   <a class="brand" href="/" aria-label="Pablo Correa Prieto – Accueil">pablo correa prieto<span class="dot">.</span></a>
   <nav class="tb" aria-label="Langue">
@@ -223,7 +243,7 @@
   </nav>
 </div>
 
-<main class="doc">
+<main id="main" class="doc">
 <p class="crumbs"><a href="/">Accueil</a> / Articles</p>
 <header>
   <p class="kicker">Articles</p>
@@ -321,7 +341,7 @@
 
 <footer>
   <span>© 2026 Pablo Correa Prieto · <a href="/">pablocorreaprieto.ch</a></span>
-  <span>Mis à jour en septembre 2026</span>
+  <span>Mis à jour en octobre 2026</span>
 </footer>
 </body>
 </html>

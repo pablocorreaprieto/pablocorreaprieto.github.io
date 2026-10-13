@@ -25,17 +25,19 @@
 <meta property="og:image:height" content="945">
 <meta property="og:image:alt" content="Carte de titre « L’acceptation n’est pas l’usage. », avec le nom Pablo Correa Prieto et l’adresse pablocorreaprieto.ch">
 <meta property="article:published_time" content="2026-10-04">
-<meta property="article:modified_time" content="2026-10-04">
+<meta property="article:modified_time" content="2026-10-13">
 <meta property="article:author" content="https://pablocorreaprieto.ch/">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" type="application/atom+xml" href="/feed.xml" title="Articles — Pablo Correa Prieto">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<meta name="theme-color" content="#1C2128">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<meta name="theme-color" content="#FAFAF8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1C2128" media="(prefers-color-scheme: dark)">
+<link rel="preload" href="/assets/fonts/source-serif-4-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/ibm-plex-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/fonts.css">
 <style>
   :root{
     --ground:#FAFAF8; --ink:#1C2128; --muted:#5B626C; --faint:#6C737C;
@@ -54,6 +56,8 @@
     --rule:#2A2F35; --accent:#9DB9D8; --accent-soft:#1E2833; --mark:#E07A5A;
   }
   *{box-sizing:border-box}
+  .skip{position:absolute; left:-9999px; top:0; z-index:10; background:var(--ground); color:var(--ink); padding:10px 14px; border:1px solid var(--rule); border-radius:0 0 4px 0; border-bottom-color:var(--rule)}
+  .skip:focus{left:0}
   html{-webkit-text-size-adjust:100%}
   body{background:var(--ground); color:var(--ink); font-family:var(--sans); font-size:16px; line-height:1.6; margin:0; padding-inline:24px}
   a{color:var(--accent); text-decoration:none; border-bottom:1px solid color-mix(in srgb, var(--accent) 35%, transparent)}
@@ -120,6 +124,10 @@
   .about .label{font-size:.6875rem; font-weight:600; letter-spacing:.09em; text-transform:uppercase; color:var(--faint); margin:0 0 8px}
   .about p{margin:0 0 10px}
   .about ul{list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:6px 20px}
+  .next{margin-top:44px}
+  .next h2{font-size:.75rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin:0 0 12px; padding-bottom:10px; border-bottom:1px solid var(--rule)}
+  .next ul{list-style:none; margin:0; padding:0; display:grid; gap:10px}
+  .next li a{font-family:var(--serif); font-size:1.0625rem; line-height:1.45}
 
   footer{max-width:1040px; margin-inline:auto; padding:20px 0 36px; border-top:1px solid var(--rule); display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; font-size:.8125rem; color:var(--faint)}
 
@@ -151,7 +159,7 @@
    "description": "Les enquêtes d’acceptation mesurent une intention, validée contre une déclaration. Pablo Correa Prieto explique l’écart avec l’usage réel.",
    "inLanguage": "fr",
    "datePublished": "2026-10-04",
-   "dateModified": "2026-10-04",
+   "dateModified": "2026-10-13",
    "author": {
     "@id": "https://pablocorreaprieto.ch/#person"
    },
@@ -281,6 +289,7 @@
 </script>
 </head>
 <body>
+<a class="skip" href="#main">Aller au contenu</a>
 <div class="topbar">
   <a class="brand" href="/" aria-label="Pablo Correa Prieto – Accueil">pablo correa prieto<span class="dot">.</span></a>
   <nav class="tb" aria-label="Langue">
@@ -290,7 +299,7 @@
   </nav>
 </div>
 
-<main class="doc">
+<main id="main" class="doc">
 <p class="crumbs"><a href="/">Accueil</a> / <a href="/articles">Articles</a></p>
 <article>
 <header>
@@ -308,6 +317,10 @@
 <p>L’article fondateur de ce courant établit deux variables, l’utilité perçue et la facilité d’utilisation perçue, et les met en relation avec l’usage du système (Davis, 1989). Deux corrélations y sont rapportées : 0,63 entre l’utilité perçue et l’usage déclaré par les participants, et 0,85 entre l’utilité perçue et l’usage futur que les participants se prédisaient à eux-mêmes.</p>
 <p>C’est le second chiffre qui est passé à la postérité, cité comme la preuve que le modèle prédit l’usage. Il faut le lire pour ce qu’il est : une corrélation entre deux réponses données par la même personne dans le même questionnaire. Ce n’est pas une mesure de comportement, c’est la cohérence interne d’une déclaration.</p>
 <p>Le modèle unifié qui a suivi rapporte une variance expliquée de 69 % à 70 % (Venkatesh et al., 2003). Cette variance porte sur l’intention d’utiliser, et non sur l’usage. La distinction disparaît presque systématiquement dans les reprises.</p>
+<figure>
+  <img src="/pablo-correa-prieto-acceptation-chaine-fr.png" width="1800" height="945" loading="lazy" decoding="async" alt="Chaîne en quatre maillons, de l’attitude à l’usage enregistré, avec une accolade montrant que la validation des modèles couvre les trois premiers maillons et s’arrête avant le dernier">
+  <figcaption>Où s’arrête la validation des modèles d’acceptation.<br><small>© Pablo Correa Prieto, 2026 — <a href="/reutilisation-figures">CC BY 4.0</a></small></figcaption>
+</figure>
 <h2><span class="n">2.</span>L’écart entre ce qu’on déclare et ce qu’on fait</h2>
 <p>La question a été posée tôt, et dans la même littérature. Une étude parue dans <i>Management Science</i> soutient que l’usage déclaré et l’usage enregistré par la machine sont deux construits distincts et que, contre toute attente, ils ne semblent pas fortement reliés l’un à l’autre (Straub et al., 1995). Les mesures objectives montrent des liens nettement plus faibles avec les variables du modèle que les mesures déclarées. Les auteurs en tirent eux-mêmes la conséquence : la recherche qui confirme le modèle à partir de mesures subjectives pourrait être, selon leur mot, artefactuelle.</p>
 <p>Trente ans plus tard, une méta-analyse publiée dans <i>Nature Human Behaviour</i> a rassemblé les études qui comparent l’usage déclaré d’un média numérique à son usage enregistré (Parry et al., 2021). Sur 44 études et plus de 52 000 participants, la corrélation agrégée est de 0,38. La déclaration rend donc compte d’environ 14 % de la variance de l’usage réel. Plus parlant encore : seules 6 % des estimations déclarées moyennes tombaient à moins de 5 % de la moyenne enregistrée.</p>
@@ -342,6 +355,13 @@
 </ol>
 </section>
 </article>
+<nav class="next" aria-labelledby="next-title">
+  <h2 id="next-title">À lire ensuite</h2>
+  <ul>
+    <li><a href="/ia-enseignant-preparer-evaluer">Ce que l’IA change vraiment pour l’enseignant qui prépare et qui évalue</a></li>
+    <li><a href="/ia-proteger-effort-apprendre">Protéger l’effort qui fait apprendre : que confier à l’IA, que garder exigeant ?</a></li>
+  </ul>
+</nav>
 <aside class="about" aria-label="L’auteur">
   <p class="label">L’auteur</p>
   <p>Pablo Correa Prieto est enseignant primaire reconnu par la CDIP (3H–8H) et remplaçant dans les écoles vaudoises. En parallèle, il suit un master en recherche en éducation (UNIR) : numérique et IA à l’école.</p>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <title>Articles — Pablo Correa Prieto</title>
+  <subtitle>Articles by Pablo Correa Prieto on artificial intelligence in teachers’ work.</subtitle>
+  <id>https://pablocorreaprieto.ch/en/articles</id>
+  <link rel="self" type="application/atom+xml" href="https://pablocorreaprieto.ch/en/feed.xml"/>
+  <link rel="alternate" type="text/html" href="https://pablocorreaprieto.ch/en/articles"/>
+  <updated>2026-10-04T00:00:00+02:00</updated>
+  <author>
+    <name>Pablo Correa Prieto</name>
+    <uri>https://pablocorreaprieto.ch/</uri>
+  </author>
+  <rights>© 2026 Pablo Correa Prieto</rights>
+  <entry>
+    <title>Detecting AI in a student’s work: why reliability is not the question</title>
+    <link rel="alternate" type="text/html" href="https://pablocorreaprieto.ch/en/ai-detectors-reliability-decision"/>
+    <id>https://pablocorreaprieto.ch/en/ai-detectors-reliability-decision</id>
+    <published>2026-10-04T00:00:00+02:00</published>
+    <updated>2026-10-04T00:00:00+02:00</updated>
+    <summary>Detectors have improved, and that settles nothing: a probability about a text cannot ground a decision about a student.</summary>
+  </entry>
+  <entry>
+    <title>What makes a response work: the information, not the grade</title>
+    <link rel="alternate" type="text/html" href="https://pablocorreaprieto.ch/en/comments-grades-ai-feedback"/>
+    <id>https://pablocorreaprieto.ch/en/comments-grades-ai-feedback</id>
+    <published>2026-10-04T00:00:00+02:00</published>
+    <updated>2026-10-04T00:00:00+02:00</updated>
+    <summary>More than 38% of feedback effects are negative. What makes the difference is how much information is carried, not the grade.</summary>
+  </entry>
+  <entry>
+    <title>Acceptance is not use: what surveys on AI in schools actually measure</title>
+    <link rel="alternate" type="text/html" href="https://pablocorreaprieto.ch/en/acceptance-is-not-use-teachers-ai"/>
+    <id>https://pablocorreaprieto.ch/en/acceptance-is-not-use-teachers-ai</id>
+    <published>2026-10-04T00:00:00+02:00</published>
+    <updated>2026-10-04T00:00:00+02:00</updated>
+    <summary>Acceptance surveys measure an intention validated against a self-report. Self-reported use tracks logged use poorly.</summary>
+  </entry>
+  <entry>
+    <title>Marking with AI: compare it with our real errors, not with perfection</title>
+    <link rel="alternate" type="text/html" href="https://pablocorreaprieto.ch/en/ai-marking-second-reader"/>
+    <id>https://pablocorreaprieto.ch/en/ai-marking-second-reader</id>
+    <published>2026-09-28T00:00:00+02:00</published>
+    <updated>2026-09-28T00:00:00+02:00</updated>
+    <summary>A century of research on human marking, and what it means for using AI as a second reader.</summary>
+  </entry>
+  <entry>
+    <title>A correct item is not necessarily aligned: three questions for judging an assessment item</title>
+    <link rel="alternate" type="text/html" href="https://pablocorreaprieto.ch/en/assessment-items-three-questions"/>
+    <id>https://pablocorreaprieto.ch/en/assessment-items-three-questions</id>
+    <published>2026-09-28T00:00:00+02:00</published>
+    <updated>2026-09-28T00:00:00+02:00</updated>
+    <summary>Alignment, cognitive demand, quality: three separate questions for judging an item against the PER.</summary>
+  </entry>
+  <entry>
+    <title>Protect the effort that makes learning happen: what to hand to AI, what to keep demanding</title>
+    <link rel="alternate" type="text/html" href="https://pablocorreaprieto.ch/en/ai-protect-effort-learning"/>
+    <id>https://pablocorreaprieto.ch/en/ai-protect-effort-learning</id>
+    <published>2026-09-28T00:00:00+02:00</published>
+    <updated>2026-09-28T00:00:00+02:00</updated>
+    <summary>Desirable difficulties and the first studies on AI in class: what effort does for learning.</summary>
+  </entry>
+  <entry>
+    <title>Preparing fast with AI: the real work is checking</title>
+    <link rel="alternate" type="text/html" href="https://pablocorreaprieto.ch/en/substitute-teacher-ai-check-first"/>
+    <id>https://pablocorreaprieto.ch/en/substitute-teacher-ai-check-first</id>
+    <published>2026-09-28T00:00:00+02:00</published>
+    <updated>2026-09-28T00:00:00+02:00</updated>
+    <summary>AI saves preparation time; the real work is checking the objective, the level of demand and accuracy.</summary>
+  </entry>
+  <entry>
+    <title>What AI really changes for teachers who prepare and assess</title>
+    <link rel="alternate" type="text/html" href="https://pablocorreaprieto.ch/en/ai-teachers-prepare-assess"/>
+    <id>https://pablocorreaprieto.ch/en/ai-teachers-prepare-assess</id>
+    <published>2026-09-24T00:00:00+02:00</published>
+    <updated>2026-09-24T00:00:00+02:00</updated>
+    <summary>Prepare, assess, learn: three shifts AI brings to teachers’ work.</summary>
+  </entry>
+</feed>

@@ -25,17 +25,19 @@
 <meta property="og:image:height" content="945">
 <meta property="og:image:alt" content="Tarjeta de título «La aceptación no es el uso.», con el nombre Pablo Correa Prieto y la dirección pablocorreaprieto.ch">
 <meta property="article:published_time" content="2026-10-04">
-<meta property="article:modified_time" content="2026-10-04">
+<meta property="article:modified_time" content="2026-10-13">
 <meta property="article:author" content="https://pablocorreaprieto.ch/">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" type="application/atom+xml" href="/es/feed.xml" title="Artículos — Pablo Correa Prieto">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<meta name="theme-color" content="#1C2128">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<meta name="theme-color" content="#FAFAF8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1C2128" media="(prefers-color-scheme: dark)">
+<link rel="preload" href="/assets/fonts/source-serif-4-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/ibm-plex-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/fonts.css">
 <style>
   :root{
     --ground:#FAFAF8; --ink:#1C2128; --muted:#5B626C; --faint:#6C737C;
@@ -54,6 +56,8 @@
     --rule:#2A2F35; --accent:#9DB9D8; --accent-soft:#1E2833; --mark:#E07A5A;
   }
   *{box-sizing:border-box}
+  .skip{position:absolute; left:-9999px; top:0; z-index:10; background:var(--ground); color:var(--ink); padding:10px 14px; border:1px solid var(--rule); border-radius:0 0 4px 0; border-bottom-color:var(--rule)}
+  .skip:focus{left:0}
   html{-webkit-text-size-adjust:100%}
   body{background:var(--ground); color:var(--ink); font-family:var(--sans); font-size:16px; line-height:1.6; margin:0; padding-inline:24px}
   a{color:var(--accent); text-decoration:none; border-bottom:1px solid color-mix(in srgb, var(--accent) 35%, transparent)}
@@ -120,6 +124,10 @@
   .about .label{font-size:.6875rem; font-weight:600; letter-spacing:.09em; text-transform:uppercase; color:var(--faint); margin:0 0 8px}
   .about p{margin:0 0 10px}
   .about ul{list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:6px 20px}
+  .next{margin-top:44px}
+  .next h2{font-size:.75rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin:0 0 12px; padding-bottom:10px; border-bottom:1px solid var(--rule)}
+  .next ul{list-style:none; margin:0; padding:0; display:grid; gap:10px}
+  .next li a{font-family:var(--serif); font-size:1.0625rem; line-height:1.45}
 
   footer{max-width:1040px; margin-inline:auto; padding:20px 0 36px; border-top:1px solid var(--rule); display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; font-size:.8125rem; color:var(--faint)}
 
@@ -151,7 +159,7 @@
    "description": "Las encuestas de aceptación miden una intención, validada contra una declaración. Pablo Correa Prieto explica la distancia con el uso real.",
    "inLanguage": "es",
    "datePublished": "2026-10-04",
-   "dateModified": "2026-10-04",
+   "dateModified": "2026-10-13",
    "author": {
     "@id": "https://pablocorreaprieto.ch/#person"
    },
@@ -276,6 +284,7 @@
 </script>
 </head>
 <body>
+<a class="skip" href="#main">Ir al contenido</a>
 <div class="topbar">
   <a class="brand" href="/es/" aria-label="Pablo Correa Prieto – Inicio">pablo correa prieto<span class="dot">.</span></a>
   <nav class="tb" aria-label="Idioma">
@@ -285,7 +294,7 @@
   </nav>
 </div>
 
-<main class="doc">
+<main id="main" class="doc">
 <p class="crumbs"><a href="/es/">Inicio</a> / <a href="/es/articulos">Artículos</a></p>
 <article>
 <header>
@@ -303,6 +312,10 @@
 <p>El artículo fundacional de esta corriente establece dos variables, la utilidad percibida y la facilidad de uso percibida, y las relaciona con el uso del sistema (Davis, 1989). Se informan dos correlaciones: 0,63 entre la utilidad percibida y el uso declarado por los participantes, y 0,85 entre la utilidad percibida y el uso futuro que los participantes se predecían a sí mismos.</p>
 <p>Es la segunda cifra la que ha pasado a la posteridad, citada como prueba de que el modelo predice el uso. Conviene leerla por lo que es: una correlación entre dos respuestas dadas por la misma persona en el mismo cuestionario. No es una medida de comportamiento, es la coherencia interna de una declaración.</p>
 <p>El modelo unificado que vino después informa de una varianza explicada del 69 % al 70 % (Venkatesh et al., 2003). Esa varianza se refiere a la <i>intención</i> de usar, no al uso. La distinción desaparece casi sistemáticamente cuando el resultado se repite.</p>
+<figure>
+  <img src="/pablo-correa-prieto-acceptation-chaine-es.png" width="1800" height="945" loading="lazy" decoding="async" alt="Cadena de cuatro eslabones, de la actitud al uso registrado, con una llave que muestra que la validación de los modelos cubre los tres primeros y se detiene antes del último">
+  <figcaption>Dónde se detiene la validación de los modelos de aceptación.<br><small>© Pablo Correa Prieto, 2026 — <a href="/es/reutilizacion-figuras">CC BY 4.0</a></small></figcaption>
+</figure>
 <h2><span class="n">2.</span>La distancia entre lo que se declara y lo que se hace</h2>
 <p>La cuestión se planteó pronto, y dentro de la misma literatura. Un estudio publicado en <i>Management Science</i> sostiene que el uso declarado y el uso registrado por la máquina son dos constructos distintos y que, en contra de lo esperado, no parecen estar fuertemente relacionados entre sí (Straub et al., 1995). Las medidas objetivas muestran vínculos claramente más débiles con las variables del modelo que las medidas declaradas. Los propios autores extraen la consecuencia: la investigación que confirma el modelo a partir de medidas subjetivas podría ser, según su término, artefactual.</p>
 <p>Treinta años después, un metaanálisis publicado en <i>Nature Human Behaviour</i> reunió los estudios que comparan el uso declarado de un medio digital con su uso registrado (Parry et al., 2021). Sobre 44 estudios y más de 52 000 participantes, la correlación agregada es de 0,38. La declaración da cuenta, por tanto, de alrededor del 14 % de la varianza del uso real. Más elocuente aún: solo el 6 % de las estimaciones declaradas medias quedaban a menos del 5 % de la media registrada.</p>
@@ -337,6 +350,13 @@
 </ol>
 </section>
 </article>
+<nav class="next" aria-labelledby="next-title">
+  <h2 id="next-title">Para seguir leyendo</h2>
+  <ul>
+    <li><a href="/es/ia-docente-preparar-evaluar">Lo que la IA cambia de verdad para el docente que prepara y evalúa</a></li>
+    <li><a href="/es/ia-proteger-esfuerzo-aprender">Proteger el esfuerzo que hace aprender: qué confiar a la IA y qué mantener exigente</a></li>
+  </ul>
+</nav>
 <aside class="about" aria-label="Sobre el autor">
   <p class="label">Sobre el autor</p>
   <p>Pablo Correa Prieto es maestro de primaria con reconocimiento CDIP (3H–8H) y docente sustituto en las escuelas del cantón de Vaud. Paralelamente cursa un máster en investigación en educación (UNIR): educación digital e IA en la escuela.</p>
