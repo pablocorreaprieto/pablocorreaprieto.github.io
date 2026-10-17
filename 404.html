@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Page introuvable – Pablo Correa Prieto</title>
+<title>Page introuvable — Pablo Correa Prieto</title>
 <meta name="robots" content="noindex">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -47,6 +47,16 @@
   nav.site a[aria-current="page"]{color:var(--ink); font-weight:500}
   @media (max-width:640px){
     nav.site{order:3; width:100%; gap:2px 14px; padding-top:2px}
+  }
+  @media (pointer:coarse){
+    .crumbs a, nav.site a, .blk a, ul.tags a, ul.links a, figcaption a,
+    .about ul a, nav.next a, .langs a, .facts a{
+      display:inline-block; min-height:24px; line-height:1.55; padding-block:2px
+    }
+    /* every other link: grow the hit area with padding only, so links inside
+       flowing text still wrap normally */
+    a:not(.skip):not(.tb a){ padding-block:4px }
+    .brand{ display:inline-block; min-height:24px; padding-block:3px }
   }
   @media print{ nav.site{display:none} }
   .topbar{max-width:1040px; margin-inline:auto; display:flex; justify-content:space-between; align-items:center; gap:16px; padding-top:28px}
