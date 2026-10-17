@@ -185,6 +185,15 @@
   a:hover{border-bottom-color:var(--accent)}
   a:focus-visible, button:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:2px}
 
+  .topbar{flex-wrap:wrap}
+  nav.site{display:flex; flex-wrap:wrap; align-items:center; gap:2px 18px; font-size:.8125rem; margin-inline-end:auto}
+  nav.site a{color:var(--muted); border:0; padding:3px 0; white-space:nowrap}
+  nav.site a:hover{color:var(--ink)}
+  nav.site a[aria-current="page"]{color:var(--ink); font-weight:500}
+  @media (max-width:640px){
+    nav.site{order:3; width:100%; gap:2px 14px; padding-top:2px}
+  }
+  @media print{ nav.site{display:none} }
   .topbar{max-width:1040px; margin-inline:auto; display:flex; justify-content:flex-end; gap:8px; padding-top:28px}
   .tb{display:inline-flex; border:1px solid var(--rule); border-radius:4px; overflow:hidden}
   .tb button{font:500 .75rem/1 var(--sans); letter-spacing:.08em; padding:7px 11px; border:0; background:transparent; color:var(--muted); cursor:pointer}
@@ -206,6 +215,8 @@
   .avail .dot{flex:none; width:8px; height:8px; border-radius:50%; background:var(--ok); margin-top:6px}
   .avail strong{font-weight:500; display:block}
   .avail span.sub{color:var(--muted)}
+  .avail span.offer{display:block; margin-top:6px}
+  .avail span.offer a{border-bottom-color:color-mix(in srgb, var(--accent) 45%, transparent)}
   .blk{margin:28px 0 0; padding:22px 0 0; border-top:1px solid var(--rule); display:grid; gap:14px; font-size:.9375rem}
   .blk > div{display:grid; gap:2px}
   .blk a{word-break:break-word}
@@ -290,14 +301,20 @@
 </head>
 <body>
 <a class="skip" href="#main">Ir al contenido</a>
-<div class="topbar">
+<header class="topbar">
+  <nav class="site" aria-label="Secciones">
+    <a href="/es/investigacion">Investigación</a>
+    <a href="/es/formaciones">Formaciones</a>
+    <a href="/es/articulos">Artículos</a>
+    <a href="/es/publicaciones">Publicaciones</a>
+  </nav>
   <nav class="tb" aria-label="Idioma">
     <a href="/" hreflang="fr" lang="fr" aria-label="Français">FR</a>
     <a href="/en/" hreflang="en" lang="en" aria-label="English">EN</a>
     <a href="/es/" hreflang="es" lang="es" aria-label="Español" aria-current="page">ES</a>
   </nav>
   <div class="tb"><button type="button" id="btn-print" onclick="window.print()">IMPRIMIR / PDF</button></div>
-</div>
+</header>
 
 <div class="page">
   <aside class="id">
@@ -310,6 +327,7 @@
       <div>
         <strong>Disponible para sustituciones y puestos</strong>
         <span class="sub">Primaria y secundaria I · Lausana y alrededores</span>
+        <span class="sub offer"><a href="/es/formaciones">Formación en IA para equipos docentes</a></span>
       </div>
     </div>
 
@@ -492,13 +510,13 @@
       <p class="detail" style="margin-top:14px"><a href="/es/investigacion">Presentación del proyecto de investigación</a></p>
     </section>
 
+
     <section aria-labelledby="h-fia">
       <h2 id="h-fia">Formaciones</h2>
       <p>Imparto formación continua sobre IA generativa a equipos docentes en centros del cantón de Vaud y de la Suiza francófona. Tres formatos: una conferencia-taller de 90 minutos, un taller práctico de media jornada o un itinerario de tres sesiones que culmina en un marco de uso de la IA para el centro.</p>
       <p>Sin ninguna herramienta que vender: el contenido viene de las aulas de Vaud y de mis propios trabajos sobre IA y evaluación.</p>
       <p class="detail" style="margin-top:14px"><a href="/es/formaciones">Los tres formatos y cómo organizar una intervención</a></p>
     </section>
-
     <section aria-labelledby="h-pub">
       <h2 id="h-pub">Publicaciones</h2>
       <ol class="cv">

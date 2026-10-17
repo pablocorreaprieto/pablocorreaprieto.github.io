@@ -185,6 +185,15 @@
   a:hover{border-bottom-color:var(--accent)}
   a:focus-visible, button:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:2px}
 
+  .topbar{flex-wrap:wrap}
+  nav.site{display:flex; flex-wrap:wrap; align-items:center; gap:2px 18px; font-size:.8125rem; margin-inline-end:auto}
+  nav.site a{color:var(--muted); border:0; padding:3px 0; white-space:nowrap}
+  nav.site a:hover{color:var(--ink)}
+  nav.site a[aria-current="page"]{color:var(--ink); font-weight:500}
+  @media (max-width:640px){
+    nav.site{order:3; width:100%; gap:2px 14px; padding-top:2px}
+  }
+  @media print{ nav.site{display:none} }
   .topbar{max-width:1040px; margin-inline:auto; display:flex; justify-content:flex-end; gap:8px; padding-top:28px}
   .tb{display:inline-flex; border:1px solid var(--rule); border-radius:4px; overflow:hidden}
   .tb button{font:500 .75rem/1 var(--sans); letter-spacing:.08em; padding:7px 11px; border:0; background:transparent; color:var(--muted); cursor:pointer}
@@ -206,6 +215,8 @@
   .avail .dot{flex:none; width:8px; height:8px; border-radius:50%; background:var(--ok); margin-top:6px}
   .avail strong{font-weight:500; display:block}
   .avail span.sub{color:var(--muted)}
+  .avail span.offer{display:block; margin-top:6px}
+  .avail span.offer a{border-bottom-color:color-mix(in srgb, var(--accent) 45%, transparent)}
   .blk{margin:28px 0 0; padding:22px 0 0; border-top:1px solid var(--rule); display:grid; gap:14px; font-size:.9375rem}
   .blk > div{display:grid; gap:2px}
   .blk a{word-break:break-word}
@@ -290,14 +301,20 @@
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<div class="topbar">
+<header class="topbar">
+  <nav class="site" aria-label="Sections">
+    <a href="/en/research">Research</a>
+    <a href="/en/training">Training</a>
+    <a href="/en/articles">Articles</a>
+    <a href="/en/publications">Publications</a>
+  </nav>
   <nav class="tb" aria-label="Language">
     <a href="/" hreflang="fr" lang="fr" aria-label="Français">FR</a>
     <a href="/en/" hreflang="en" lang="en" aria-label="English" aria-current="page">EN</a>
     <a href="/es/" hreflang="es" lang="es" aria-label="Español">ES</a>
   </nav>
   <div class="tb"><button type="button" id="btn-print" onclick="window.print()">PRINT / PDF</button></div>
-</div>
+</header>
 
 <div class="page">
   <aside class="id">
@@ -310,6 +327,7 @@
       <div>
         <strong>Available for substitutions and posts</strong>
         <span class="sub">Primary and lower secondary · Lausanne area</span>
+        <span class="sub offer"><a href="/en/training">AI training for teaching teams</a></span>
       </div>
     </div>
 
@@ -492,13 +510,13 @@
       <p class="detail" style="margin-top:14px"><a href="/en/research">About the research project</a></p>
     </section>
 
+
     <section aria-labelledby="h-fia">
       <h2 id="h-fia">Training</h2>
       <p>I run professional development on generative AI for teaching teams in schools across the canton of Vaud and French-speaking Switzerland. Three formats: a 90-minute talk and workshop, a half-day hands-on workshop, or a three-session course producing an AI use policy for the school.</p>
       <p>No tool to sell: the content comes from Vaud classrooms and from my own work on AI and assessment.</p>
       <p class="detail" style="margin-top:14px"><a href="/en/training">The three formats and how to arrange a session</a></p>
     </section>
-
     <section aria-labelledby="h-pub">
       <h2 id="h-pub">Publications</h2>
       <ol class="cv">
