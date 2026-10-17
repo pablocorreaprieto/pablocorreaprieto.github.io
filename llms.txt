@@ -1,12 +1,13 @@
 # Pablo Correa Prieto
 
-> Personal site of Pablo Correa Prieto — primary teacher recognised by the CDIP (years 3H–8H), substitute teacher in the schools of the canton of Vaud, Switzerland, and master's student in education research methods (UNIR). Articles on artificial intelligence in teachers' work. French is the canonical language; English lives under /en/ and Spanish under /es/.
+> Personal site of Pablo Correa Prieto — primary teacher recognised by the CDIP (years 3H–8H), substitute teacher in the schools of the canton of Vaud, Switzerland, and master's student in education research methods (UNIR). Articles on artificial intelligence in teachers' work, and professional development on generative AI for schools in the canton of Vaud and French-speaking Switzerland. French is the canonical language; English lives under /en/ and Spanish under /es/.
 
 ## Pages
 
 - [Profil et CV (FR)](https://pablocorreaprieto.ch/): who Pablo Correa Prieto is, experience, education, contact
 - [Articles (FR)](https://pablocorreaprieto.ch/articles): all articles, with English at /en/articles and Spanish at /es/articulos
 - [Recherche](https://pablocorreaprieto.ch/recherche): the research project (AI-generated assessment items and the PER curriculum)
+- [Formations / Training](https://pablocorreaprieto.ch/formations): professional development on generative AI for teaching teams in the canton of Vaud and French-speaking Switzerland — three formats, English at /en/training and Spanish at /es/formaciones
 - [Publications](https://pablocorreaprieto.ch/publications): publications and works in preparation
 - [Figures](https://pablocorreaprieto.ch/figures): every original article figure, licensed CC BY 4.0
 - [Réutiliser les figures](https://pablocorreaprieto.ch/reutilisation-figures): how to reuse and credit the figures
