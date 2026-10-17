@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AI training for schools in the canton of Vaud – Pablo Correa Prieto</title>
+<meta name="description" content="Professional development on generative AI for teaching teams in the canton of Vaud and French-speaking Switzerland, by a practising teacher and researcher.">
+<meta name="author" content="Pablo Correa Prieto">
+<meta name="robots" content="max-image-preview:large">
+<link rel="canonical" href="https://pablocorreaprieto.ch/en/training">
+<link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/formations">
+<link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/training">
+<link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/formaciones">
+<link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/formations">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AI training for schools in the canton of Vaud">
+<meta property="og:description" content="Professional development on generative AI for teaching teams in the canton of Vaud and French-speaking Switzerland, by a practising teacher and researcher.">
+<meta property="og:url" content="https://pablocorreaprieto.ch/en/training">
+<meta property="og:site_name" content="Pablo Correa Prieto">
+<meta property="og:locale" content="en_GB">
+<meta property="og:locale:alternate" content="fr_CH">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:image" content="https://pablocorreaprieto.ch/pablo-correa-prieto-teacher.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Pablo Correa Prieto, teacher in the schools of the canton of Vaud">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" type="application/atom+xml" href="/en/feed.xml" title="Articles — Pablo Correa Prieto">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#FAFAF8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1C2128" media="(prefers-color-scheme: dark)">
+<link rel="preload" href="/assets/fonts/source-serif-4-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/ibm-plex-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/fonts.css">
+<style>
+  :root{
+    --ground:#FAFAF8; --ink:#1C2128; --muted:#5B626C; --faint:#6C737C;
+    --rule:#E2E3DF; --accent:#264A6E; --accent-soft:#E8EDF2; --ok:#2F6B4A; --mark:#B8492A;
+    --serif:"Source Serif 4", Georgia, "Times New Roman", serif;
+    --sans:"IBM Plex Sans", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ground:#15181C; --ink:#E7E8E6; --muted:#A3A9B1; --faint:#7C838C;
+      --rule:#2A2F35; --accent:#9DB9D8; --accent-soft:#1E2833; --ok:#8CC5A3; --mark:#E07A5A;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#15181C; --ink:#E7E8E6; --muted:#A3A9B1; --faint:#7C838C;
+    --rule:#2A2F35; --accent:#9DB9D8; --accent-soft:#1E2833; --ok:#8CC5A3; --mark:#E07A5A;
+  }
+  *{box-sizing:border-box}
+  .skip{position:absolute; left:-9999px; top:0; z-index:10; background:var(--ground); color:var(--ink); padding:10px 14px; border:1px solid var(--rule); border-radius:0 0 4px 0; border-bottom-color:var(--rule)}
+  .skip:focus{left:0}
+  html{-webkit-text-size-adjust:100%}
+  body{background:var(--ground); color:var(--ink); font-family:var(--sans); font-size:16px; line-height:1.6; margin:0; padding-inline:24px}
+  a{color:var(--accent); text-decoration:none; border-bottom:1px solid color-mix(in srgb, var(--accent) 35%, transparent)}
+  a:hover{border-bottom-color:var(--accent)}
+  a:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:2px}
+
+  .topbar{max-width:1040px; margin-inline:auto; display:flex; justify-content:space-between; align-items:center; gap:16px; padding-top:28px}
+  .brand{font-family:var(--serif); font-weight:500; font-size:1.375rem; line-height:1; letter-spacing:-0.01em; color:var(--ink); border:0; white-space:nowrap}
+  .brand .dot{color:var(--mark)}
+  .tb{display:inline-flex; border:1px solid var(--rule); border-radius:4px; overflow:hidden}
+  .tb a{display:inline-flex; align-items:center; font:500 .75rem/1 var(--sans); letter-spacing:.08em; padding:7px 11px; color:var(--muted); border:0}
+  .tb a:hover{color:var(--ink)}
+  .tb a[aria-current="page"]{background:var(--accent-soft); color:var(--ink)}
+
+  .doc{max-width:720px; margin-inline:auto; padding-block:52px 64px}
+  .crumbs{font-size:.8125rem; color:var(--faint); margin:0 0 30px}
+  .crumbs a{color:var(--muted); border-bottom-color:var(--rule)}
+  .kicker{font-size:.75rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin:0 0 14px}
+  h1{font-family:var(--serif); font-weight:500; font-size:clamp(2rem, 1.35rem + 2.6vw, 2.75rem); line-height:1.12; letter-spacing:-0.01em; margin:0; text-wrap:balance}
+  .subtitle{font-family:var(--serif); font-size:1.25rem; line-height:1.45; color:var(--muted); margin:14px 0 0; text-wrap:pretty}
+
+  figure{margin:36px 0}
+  figure img{display:block; width:100%; height:auto; border-radius:4px; border:1px solid var(--rule)}
+  figcaption{font-family:var(--sans); font-size:.8125rem; line-height:1.5; color:var(--muted); margin-top:8px}
+
+  .sec{margin-top:44px}
+  .sec h2{font-size:.75rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin:0 0 18px; padding-bottom:10px; border-bottom:1px solid var(--rule)}
+  .sec p{margin:0 0 12px; max-width:64ch}
+  .sec p:last-child{margin-bottom:0}
+  .sec .lead{font-family:var(--serif); font-size:1.1875rem; line-height:1.6}
+
+  .fmt{padding:24px 26px; border:1px solid var(--rule); border-radius:4px; margin:0 0 18px}
+  .fmt:last-child{margin-bottom:0}
+  .fmt .tag{font-size:.6875rem; font-weight:600; letter-spacing:.09em; text-transform:uppercase; color:var(--accent); margin:0 0 8px}
+  .fmt h3{font-family:var(--serif); font-weight:500; font-size:1.3125rem; line-height:1.3; margin:0 0 4px; text-wrap:balance}
+  .fmt .dur{font-size:.875rem; color:var(--muted); margin:0 0 12px}
+  .fmt p{margin:0 0 12px; font-size:.9375rem}
+  .fmt .sub-h{font-size:.6875rem; font-weight:600; letter-spacing:.09em; text-transform:uppercase; color:var(--faint); margin:14px 0 6px}
+  .fmt ul{margin:0; padding-left:18px; font-size:.9375rem; color:var(--muted)}
+  .fmt ul li{margin:3px 0}
+  .fmt.premium{background:var(--accent-soft); border-color:transparent}
+
+  ol.pillars{list-style:none; margin:0; padding:0; display:grid; gap:16px; counter-reset:p}
+  ol.pillars li{counter-increment:p; display:grid; grid-template-columns:28px 1fr; gap:6px 10px; align-items:baseline}
+  ol.pillars li::before{content:counter(p); font-family:var(--serif); font-size:1.375rem; color:var(--mark); line-height:1}
+  ol.pillars b{font-weight:600}
+  ol.pillars span{max-width:60ch}
+
+  dl.faq{margin:0}
+  dl.faq dt{font-weight:600; margin:18px 0 6px; max-width:62ch}
+  dl.faq dt:first-child{margin-top:0}
+  dl.faq dd{margin:0; color:var(--muted); max-width:64ch}
+
+  .data{padding:22px 24px; border-left:3px solid var(--ok); background:var(--accent-soft); border-radius:0 4px 4px 0}
+  .data p{margin:0 0 10px}
+  .data p:last-child{margin-bottom:0}
+
+  .cta{margin-top:44px; padding:26px 28px; border:1px solid var(--rule); border-radius:4px}
+  .cta h2{font-family:var(--serif); font-weight:500; font-size:1.5rem; line-height:1.25; margin:0 0 12px; text-transform:none; letter-spacing:0; color:var(--ink); border:0; padding:0}
+  .cta p{margin:0 0 12px; max-width:62ch}
+  .cta dl{display:grid; grid-template-columns:max-content 1fr; gap:8px 20px; margin:16px 0 0; font-size:.9375rem}
+  .cta dt{color:var(--muted)}
+  .cta dd{margin:0}
+
+  ul.tags{list-style:none; padding:0; margin:0; display:flex; flex-wrap:wrap; gap:8px}
+  ul.tags li{font-size:.8125rem; padding:4px 10px; border-radius:3px; border:1px solid var(--rule)}
+
+  .about{margin-top:48px; padding:22px 24px; border:1px solid var(--rule); border-radius:4px; font-size:.9375rem}
+  .about .label{font-size:.6875rem; font-weight:600; letter-spacing:.09em; text-transform:uppercase; color:var(--faint); margin:0 0 8px}
+  .about p{margin:0 0 10px}
+  .about ul{list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:6px 20px}
+
+  .about{display:grid; grid-template-columns:96px 1fr; gap:0 20px; align-items:start}
+  .about .label{grid-column:2}
+  .about p, .about ul{grid-column:2}
+  .about .shot{grid-column:1; grid-row:1 / span 3; display:block; width:96px; height:auto; aspect-ratio:4 / 5; object-fit:cover; border-radius:4px; background:var(--accent-soft)}
+  @media (max-width:520px){
+    .about{grid-template-columns:1fr}
+    .about .shot{grid-column:1; grid-row:auto; margin-bottom:14px}
+    .about .label, .about p, .about ul{grid-column:1}
+  }
+  footer{max-width:1040px; margin-inline:auto; padding:20px 0 36px; border-top:1px solid var(--rule); display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; font-size:.8125rem; color:var(--faint)}
+
+  @media (max-width:520px){
+    body{padding-inline:16px}
+    .topbar{padding-top:20px}
+    .brand{font-size:1.1875rem}
+    .doc{padding-block:36px 48px}
+    .fmt{padding:18px}
+    .cta{padding:20px}
+    .cta dl{grid-template-columns:1fr; gap:0}
+    .cta dd{margin-bottom:8px}
+  }
+  @media print{
+    :root{--ground:#fff; --ink:#000; --muted:#444; --faint:#666; --rule:#ccc; --accent:#1f3d5c; --accent-soft:#f1f3f6}
+    body{padding:0}
+    .topbar, .crumbs, footer{display:none}
+    a{border:0; color:inherit}
+    .fmt, .cta{break-inside:avoid}
+  }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://pablocorreaprieto.ch/en/training#page",
+   "url": "https://pablocorreaprieto.ch/en/training",
+   "name": "AI training for schools in the canton of Vaud – Pablo Correa Prieto",
+   "description": "Professional development on generative AI for teaching teams in the canton of Vaud and French-speaking Switzerland, by a practising teacher and researcher.",
+   "inLanguage": "en",
+   "dateModified": "2026-10-17",
+   "author": {
+    "@id": "https://pablocorreaprieto.ch/#person"
+   },
+   "about": {
+    "@id": "https://pablocorreaprieto.ch/en/training#service"
+   },
+   "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://pablocorreaprieto.ch/en/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Training",
+      "item": "https://pablocorreaprieto.ch/en/training"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "Service",
+   "@id": "https://pablocorreaprieto.ch/en/training#service",
+   "name": "Professional development on generative AI for teaching teams",
+   "serviceType": "Teacher professional development — generative artificial intelligence",
+   "description": "Professional development on generative AI in schools, for school leadership teams and teaching staff in the canton of Vaud and French-speaking Switzerland. Three formats: a 90-minute talk and workshop, a half-day hands-on workshop, and a three-session course producing a school-wide AI use policy.",
+   "url": "https://pablocorreaprieto.ch/en/training",
+   "inLanguage": "en",
+   "provider": {
+    "@id": "https://pablocorreaprieto.ch/#person"
+   },
+   "areaServed": [
+    {
+     "@type": "AdministrativeArea",
+     "name": "Canton of Vaud, Switzerland"
+    },
+    {
+     "@type": "Place",
+     "name": "French-speaking Switzerland"
+    }
+   ],
+   "audience": {
+    "@type": "Audience",
+    "audienceType": "School leadership teams, teaching staff, private schools, parent associations"
+   },
+   "about": [
+    "Artificial intelligence in education",
+    "Generative AI in schools",
+    "Teacher professional development",
+    "Educational assessment",
+    "Student data protection",
+    "Plan d’études romand"
+   ],
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Formats",
+    "itemListElement": [
+     {
+      "@type": "Offer",
+      "name": "Talk and workshop (90 minutes)",
+      "description": "A shared factual basis on generative AI, the Swiss institutional framework and classroom-ready uses. Designed for a staff meeting or the opening of a professional development day.",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Talk and workshop on AI in the classroom",
+       "provider": {
+        "@id": "https://pablocorreaprieto.ch/#person"
+       }
+      }
+     },
+     {
+      "@type": "Offer",
+      "name": "Hands-on workshop (half day)",
+      "description": "Groups by cycle. Each teacher reworks one of their own lesson sequences or assessments for a context where students have access to AI.",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Hands-on workshop on AI and assessment",
+       "provider": {
+        "@id": "https://pablocorreaprieto.ch/#person"
+       }
+      }
+     },
+     {
+      "@type": "Offer",
+      "name": "Three-session course (one term)",
+      "description": "Three 90-minute sessions with classroom micro-experiments in between, producing a draft AI use policy for the school.",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "AI course and school use policy",
+       "provider": {
+        "@id": "https://pablocorreaprieto.ch/#person"
+       }
+      }
+     }
+    ]
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://pablocorreaprieto.ch/en/training#faq",
+   "inLanguage": "en",
+   "isPartOf": {
+    "@id": "https://pablocorreaprieto.ch/en/training#page"
+   },
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "HEP Vaud already runs AI training. Why bring in someone else?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "I work from the same official Swiss framework. What I add is a session built for your school, on the date of your professional development day, using material from your own cycles, delivered by someone currently teaching in Vaud classrooms. This complements the cantonal provision rather than replacing it."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What about our students’ data?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It is the first point covered in every format. The baseline rule is that no personal student data goes into a consumer tool. I work only with anonymised or fictional examples, and every participant gets a written do-and-don’t sheet."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Our teachers are deeply divided about AI. Is that a problem?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No, and the research documents it. The format is designed for divided teams: nobody is converted, the session establishes facts, a framework and professional choices. Scepticism is treated as a legitimate finding, not as resistance to be corrected."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which tool do you recommend?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "None in particular. I have no commercial relationship with any vendor and no licence to sell. I cover categories of use and the criteria for choosing within cantonal rules."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does a session cost?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "On request, depending on the format, the number of participants and travel. The first sessions are delivered at a reduced pilot rate in exchange for written participant evaluations."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "Person",
+   "@id": "https://pablocorreaprieto.ch/#person",
+   "name": "Pablo Correa Prieto",
+   "givenName": "Pablo",
+   "familyName": "Correa Prieto",
+   "alternateName": "Pablo Correa",
+   "url": "https://pablocorreaprieto.ch/",
+   "jobTitle": "Substitute teacher",
+   "image": "https://pablocorreaprieto.ch/pablo-correa-prieto.jpg",
+   "email": "mailto:pabcorpri@gmail.com",
+   "workLocation": {
+    "@type": "Place",
+    "name": "Canton of Vaud, Switzerland"
+   },
+   "knowsAbout": [
+    "Artificial intelligence in education",
+    "Generative AI in schools",
+    "Teacher professional development",
+    "Digital education",
+    "Educational assessment",
+    "Plan d’études romand",
+    "Education research"
+   ],
+   "sameAs": [
+    "https://www.linkedin.com/in/pablocorreaprieto",
+    "https://scholar.google.com/citations?user=N2vtvGcAAAAJ",
+    "https://github.com/pablocorreaprieto",
+    "https://orcid.org/0009-0009-1844-7453",
+    "https://osf.io/skvn4",
+    "https://universidadinternacionaldelarioja.academia.edu/PabloCorreaPrieto",
+    "https://www.researchgate.net/profile/Pablo-Correa-Prieto",
+    "https://www.wikidata.org/wiki/Q141533563"
+   ],
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "ORCID",
+    "value": "0009-0009-1844-7453",
+    "url": "https://orcid.org/0009-0009-1844-7453"
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar">
+  <a class="brand" href="/en/" aria-label="Pablo Correa Prieto – Home">pablo correa prieto<span class="dot">.</span></a>
+  <nav class="tb" aria-label="Language">
+    <a href="/formations" hreflang="fr" lang="fr" aria-label="Français">FR</a>
+    <a href="/en/training" hreflang="en" lang="en" aria-label="English" aria-current="page">EN</a>
+    <a href="/es/formaciones" hreflang="es" lang="es" aria-label="Español">ES</a>
+  </nav>
+</div>
+
+<main id="main" class="doc">
+<p class="crumbs"><a href="/en/">Home</a> / Training</p>
+<header>
+  <p class="kicker">Professional development · schools in the canton of Vaud and French-speaking Switzerland</p>
+  <h1>AI training for your teaching team, from a teacher in the canton of Vaud</h1>
+  <p class="subtitle">Three formats for school leadership teams and teaching staff. No tool to sell.</p>
+</header>
+
+
+<section class="sec">
+  <h2>The situation</h2>
+  <p class="lead">Generative AI is already in your classrooms. The Swiss recommendations exist, but between the official texts and daily practice your teachers are left alone with concrete questions. What can I ask of my students? What still measures learning? What am I allowed to do with their data?</p>
+  <p>I teach in Vaud classrooms and I do education research on AI in schools. I have no tool to sell. I help your team decide what it does about AI, within the real institutional framework and with tasks that come from real classrooms.</p>
+</section>
+
+<section class="sec">
+  <h2>Three formats</h2>
+
+  <div class="fmt">
+    <p class="tag">Format A · entry point</p>
+    <h3>AI in the classroom. What the official texts say, what actually works.</h3>
+    <p class="dur">Talk and workshop · 90 minutes · staff meeting or the opening of a professional development day</p>
+    <p>Establish a shared factual basis on what generative AI does and does not do, set out the Swiss institutional framework, and lower the tension between enthusiasts and sceptics.</p>
+    <p class="sub-h">Structure</p>
+    <ul>
+      <li>20 min — capabilities and limits, demonstrated live on real curriculum tasks</li>
+      <li>25 min — the institutional framework: what the official texts permit, require and forbid</li>
+      <li>25 min — three classroom-ready uses and three things not to do</li>
+      <li>20 min — questions, structured around the most common objections</li>
+    </ul>
+    <p class="sub-h">Your teachers leave with</p>
+    <ul>
+      <li>a one-page summary of the official Swiss texts</li>
+      <li>a do-and-don’t sheet on student data</li>
+      <li>three task templates aligned with the curriculum</li>
+    </ul>
+  </div>
+
+  <div class="fmt">
+    <p class="tag">Format B · hands-on workshop</p>
+    <h3>Reworking your own assessments</h3>
+    <p class="dur">Half day · 3 to 3.5 hours · groups by cycle</p>
+    <p>Each teacher brings their own material. The aim is that they leave with one of their lesson sequences or assessments reworked for a context where students have access to AI, and that they have handled a tool themselves within a compliant setting.</p>
+    <p class="sub-h">Structure</p>
+    <ul>
+      <li>short input, a condensed version of format A</li>
+      <li>guided hands-on work on a real sequence the teacher brings</li>
+      <li>redesigning an assessment: what still measures learning when students have access to AI?</li>
+      <li>peer critique and individual commitments</li>
+    </ul>
+    <p class="sub-h">Your teachers leave with</p>
+    <ul>
+      <li>one reworked task per participant</li>
+      <li>an assessment redesign checklist</li>
+      <li>a bank of prompt patterns aligned with the curriculum</li>
+      <li>a follow-up email after four weeks</li>
+    </ul>
+  </div>
+
+  <div class="fmt premium">
+    <p class="tag">Format C · course</p>
+    <h3>Through to an AI use policy for your school</h3>
+    <p class="dur">Three 90-minute sessions across one term · classroom micro-experiments in between</p>
+    <p>The literature on professional development is consistent on this point: one-off sessions rarely change practice, while sustained formats anchored in practice do. This is the format that produces a lasting artefact for the school.</p>
+    <p class="sub-h">Structure</p>
+    <ul>
+      <li>session 1 — shared basis and a first classroom experiment assigned</li>
+      <li>session 2 — debrief of what happened in the classrooms, going deeper on assessment and differentiation</li>
+      <li>session 3 — consolidation and drafting of an AI use policy</li>
+    </ul>
+    <p class="sub-h">Your school leaves with</p>
+    <ul>
+      <li>a draft AI use policy</li>
+      <li>a log of the experiments run in classrooms</li>
+      <li>a resource bank</li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec">
+  <h2>Why me</h2>
+  <ol class="pillars">
+    <li><span><b>A practising teacher.</b> First-hand knowledge of Vaud schools, of the Plan d’études romand, of Neo, of professional development days and of what a class will actually tolerate. No provider from outside the profession can say the same.</span></li>
+    <li><span><b>Research on the official texts.</b> I am currently working on an analysis of the texts that frame generative AI in French-speaking Switzerland — CIIP recommendations, CDIP texts, cantonal directives, HEP documents — as part of a paper in preparation. That work feeds directly into the content of these sessions.</span></li>
+    <li><span><b>Independent of the tools.</b> No licence to sell, no commercial partnership with a vendor. What I offer is professional judgement, not a product.</span></li>
+    <li><span><b>Scepticism treated as data.</b> Teachers’ divided attitudes towards AI are a legitimate research finding, not resistance to be corrected. It is also the subject of one of my works in progress on AI acceptance among in-service teachers.</span></li>
+  </ol>
+</section>
+
+<section class="sec">
+  <h2>Data protection</h2>
+  <div class="data">
+    <p>This is the question every school leader asks, and it is addressed first in every format.</p>
+    <p>The baseline rule: no personal student data — no scripts, names, marks or individual situations — goes into a consumer tool. Demonstrations and workshops use only anonymised or fictional examples, and every participant receives a written do-and-don’t sheet.</p>
+    <p>I propose no use that would fall outside cantonal directives, and I say so in the room when a common practice does not meet them.</p>
+  </div>
+</section>
+
+<section class="sec">
+  <h2>Frequently asked questions</h2>
+  <dl class="faq">
+    <dt>HEP Vaud already runs AI training. Why bring in someone else?</dt>
+    <dd>I work from the same official Swiss framework. What I add is a session built for your school, on the date of your professional development day, using material from your own cycles, delivered by someone currently teaching in Vaud classrooms. This complements the cantonal provision rather than replacing it.</dd>
+    <dt>What about our students’ data?</dt>
+    <dd>It is the first point covered in every format. The baseline rule is that no personal student data goes into a consumer tool. I work only with anonymised or fictional examples and I provide a written do-and-don’t sheet.</dd>
+    <dt>Our teachers are deeply divided about AI. Is that a problem?</dt>
+    <dd>No, and the research documents it. The format is designed for divided teams: nobody is converted, the session establishes facts, a framework and professional choices.</dd>
+    <dt>Which tool do you recommend?</dt>
+    <dd>None in particular. I have no commercial relationship with any vendor and no licence to sell. I cover categories of use and the criteria for choosing within cantonal rules.</dd>
+    <dt>What does a session cost?</dt>
+    <dd>On request, depending on the format, the number of participants and travel. The first sessions are delivered at a reduced pilot rate in exchange for written participant evaluations.</dd>
+  </dl>
+</section>
+
+<section class="sec">
+  <h2>What these sessions are built on</h2>
+  <p>The content comes from my own work on AI and assessment, published and explained on this site.</p>
+  <ul class="tags" aria-label="Topics">
+    <li><a href="/en/ai-teachers-prepare-assess">Preparing and assessing with AI</a></li>
+    <li><a href="/en/assessment-items-three-questions">Judging an assessment item</a></li>
+    <li><a href="/en/ai-protect-effort-learning">Protecting the effort that teaches</a></li>
+    <li><a href="/en/ai-detectors-reliability-decision">AI detectors and decisions</a></li>
+    <li><a href="/en/acceptance-is-not-use-teachers-ai">Acceptance and use of AI</a></li>
+    <li><a href="/en/research">Research project</a></li>
+  </ul>
+</section>
+
+<section class="cta" aria-labelledby="h-contact">
+  <h2 id="h-contact">Arranging a session</h2>
+  <p>Write to me with your school, the format you are interested in and the date you have in mind — a professional development day, a staff meeting or a full term. I reply with a detailed outline and a quote.</p>
+  <p>I am also happy to simply send you the outline of the three formats, with no commitment.</p>
+  <dl>
+    <dt>Email</dt>
+    <dd><a href="mailto:pabcorpri@gmail.com?subject=AI%20training%20for%20our%20school">pabcorpri@gmail.com</a></dd>
+    <dt>Area</dt>
+    <dd>Canton of Vaud and French-speaking Switzerland</dd>
+    <dt>Audience</dt>
+    <dd>School leadership teams, teaching staff, private schools, parent associations</dd>
+    <dt>Languages</dt>
+    <dd>French, Spanish, English</dd>
+  </dl>
+</section>
+
+<aside class="about" aria-label="About">
+  <img class="shot" src="/pablo-correa-prieto.jpg" width="600" height="750" loading="lazy" decoding="async" alt="Pablo Correa Prieto, teacher in the schools of the canton of Vaud">
+  <p class="label">About</p>
+  <p>Pablo Correa Prieto is a primary teacher recognised by the CDIP (years 3H–8H) and teaches in the schools of the canton of Vaud. Alongside this he is doing a master’s in education research (UNIR) and works on generative AI in schools: assessment, curriculum alignment and the official Swiss texts.</p>
+  <ul><li><a href="/en/">Profile and CV</a></li><li><a href="/en/research">Research</a></li><li><a href="/en/articles">Articles</a></li><li><a href="/en/publications">Publications</a></li></ul>
+</aside>
+</main>
+
+<footer>
+  <span>© 2026 Pablo Correa Prieto · <a href="/en/">pablocorreaprieto.ch</a></span>
+  <span>Updated October 2026</span>
+</footer>
+</body>
+</html>

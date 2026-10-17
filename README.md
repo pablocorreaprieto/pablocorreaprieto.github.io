@@ -10,6 +10,7 @@ French is the default language at the root; English lives in `/en/`, Spanish in 
 |---|---|---|---|
 | Home / CV | `index.html` | `en/index.html` | `es/index.html` |
 | Research project | `recherche.html` | `en/research.html` | `es/investigacion.html` |
+| Training offer (AI for schools) | `formations.html` | `en/training.html` | `es/formaciones.html` |
 | Publications | `publications.html` | `en/publications.html` | `es/publicaciones.html` |
 | Article (24 Sept 2026) | `ia-enseignant-preparer-evaluer.html` | `en/ai-teachers-prepare-assess.html` | `es/ia-docente-preparar-evaluar.html` |
 | Article: marking with AI (28 Sept 2026) | `ia-correction-second-regard.html` | `en/ai-marking-second-reader.html` | `es/ia-correccion-segunda-mirada.html` |
