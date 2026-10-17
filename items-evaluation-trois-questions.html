@@ -64,6 +64,15 @@
   a:hover{border-bottom-color:var(--accent)}
   a:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:2px}
 
+  .topbar{flex-wrap:wrap}
+  nav.site{display:flex; flex-wrap:wrap; align-items:center; gap:2px 18px; font-size:.8125rem; margin-inline-end:auto}
+  nav.site a{color:var(--muted); border:0; padding:3px 0; white-space:nowrap}
+  nav.site a:hover{color:var(--ink)}
+  nav.site a[aria-current="page"]{color:var(--ink); font-weight:500}
+  @media (max-width:640px){
+    nav.site{order:3; width:100%; gap:2px 14px; padding-top:2px}
+  }
+  @media print{ nav.site{display:none} }
   .topbar{max-width:1040px; margin-inline:auto; display:flex; justify-content:space-between; align-items:center; gap:16px; padding-top:28px}
   .brand{font-family:var(--serif); font-weight:500; font-size:1.375rem; line-height:1; letter-spacing:-0.01em; color:var(--ink); border:0; white-space:nowrap}
   .brand .dot{color:var(--mark)}
@@ -290,14 +299,20 @@
 </head>
 <body>
 <a class="skip" href="#main">Aller au contenu</a>
-<div class="topbar">
+<header class="topbar">
   <a class="brand" href="/" aria-label="Pablo Correa Prieto – Accueil">pablo correa prieto<span class="dot">.</span></a>
+  <nav class="site" aria-label="Sections">
+    <a href="/recherche">Recherche</a>
+    <a href="/formations">Formations</a>
+    <a href="/articles" aria-current="page">Articles</a>
+    <a href="/publications">Publications</a>
+  </nav>
   <nav class="tb" aria-label="Langue">
     <a href="/items-evaluation-trois-questions" hreflang="fr" lang="fr" aria-label="Français" aria-current="page">FR</a>
     <a href="/en/assessment-items-three-questions" hreflang="en" lang="en" aria-label="English">EN</a>
     <a href="/es/items-evaluacion-tres-preguntas" hreflang="es" lang="es" aria-label="Español">ES</a>
   </nav>
-</div>
+</header>
 
 <main id="main" class="doc">
 <p class="crumbs"><a href="/">Accueil</a> / <a href="/articles">Articles</a></p>

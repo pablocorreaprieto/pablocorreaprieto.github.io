@@ -59,6 +59,15 @@
   a:hover{border-bottom-color:var(--accent)}
   a:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:2px}
 
+  .topbar{flex-wrap:wrap}
+  nav.site{display:flex; flex-wrap:wrap; align-items:center; gap:2px 18px; font-size:.8125rem; margin-inline-end:auto}
+  nav.site a{color:var(--muted); border:0; padding:3px 0; white-space:nowrap}
+  nav.site a:hover{color:var(--ink)}
+  nav.site a[aria-current="page"]{color:var(--ink); font-weight:500}
+  @media (max-width:640px){
+    nav.site{order:3; width:100%; gap:2px 14px; padding-top:2px}
+  }
+  @media print{ nav.site{display:none} }
   .topbar{max-width:1040px; margin-inline:auto; display:flex; justify-content:space-between; align-items:center; gap:16px; padding-top:28px}
   .brand{font-family:var(--serif); font-weight:500; font-size:1.375rem; line-height:1; letter-spacing:-0.01em; color:var(--ink); border:0; white-space:nowrap}
   .brand .dot{color:var(--mark)}
@@ -512,7 +521,23 @@
    "@type": "Person",
    "@id": "https://pablocorreaprieto.ch/#person",
    "name": "Pablo Correa Prieto",
-   "url": "https://pablocorreaprieto.ch/"
+   "url": "https://pablocorreaprieto.ch/",
+   "sameAs": [
+    "https://www.linkedin.com/in/pablocorreaprieto",
+    "https://scholar.google.com/citations?user=N2vtvGcAAAAJ",
+    "https://github.com/pablocorreaprieto",
+    "https://orcid.org/0009-0009-1844-7453",
+    "https://osf.io/skvn4",
+    "https://universidadinternacionaldelarioja.academia.edu/PabloCorreaPrieto",
+    "https://www.researchgate.net/profile/Pablo-Correa-Prieto",
+    "https://www.wikidata.org/wiki/Q141533563"
+   ],
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "ORCID",
+    "value": "0009-0009-1844-7453",
+    "url": "https://orcid.org/0009-0009-1844-7453"
+   }
   }
  ]
 }
@@ -520,14 +545,20 @@
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<div class="topbar">
+<header class="topbar">
   <a class="brand" href="/en/" aria-label="Pablo Correa Prieto – Home">pablo correa prieto<span class="dot">.</span></a>
+  <nav class="site" aria-label="Sections">
+    <a href="/en/research">Research</a>
+    <a href="/en/training">Training</a>
+    <a href="/en/articles">Articles</a>
+    <a href="/en/publications">Publications</a>
+  </nav>
   <nav class="tb" aria-label="Language">
     <a href="/figures" hreflang="fr" lang="fr" aria-label="Français">FR</a>
     <a href="/en/figures" hreflang="en" lang="en" aria-label="English" aria-current="page">EN</a>
     <a href="/es/figuras" hreflang="es" lang="es" aria-label="Español">ES</a>
   </nav>
-</div>
+</header>
 
 <main id="main" class="doc">
 <p class="crumbs"><a href="/en/">Home</a> / Figures</p>
