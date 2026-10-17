@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Pablo Correa Prieto – Enseignant en Vaud, IA et recherche en éducation</title>
+<title>Pablo Correa Prieto — Enseignant en Vaud, IA et recherche en éducation</title>
 <meta name="description" content="Pablo Correa Prieto, enseignant dans les écoles vaudoises, reconnu CDIP 3H–8H. Recherche et formations sur l’IA à l’école, canton de Vaud et Suisse romande.">
 <meta name="author" content="Pablo Correa Prieto">
 <meta name="robots" content="max-image-preview:large">
@@ -13,7 +13,7 @@
 <link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/">
 <link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/">
 <meta property="og:type" content="profile">
-<meta property="og:title" content="Pablo Correa Prieto – Enseignant en Vaud, IA et recherche en éducation">
+<meta property="og:title" content="Pablo Correa Prieto — Enseignant en Vaud, IA et recherche en éducation">
 <meta property="og:description" content="Enseignant dans les écoles vaudoises, reconnu CDIP (3H–8H). Recherche et formations sur l’IA à l’école, canton de Vaud et Suisse romande.">
 <meta property="og:url" content="https://pablocorreaprieto.ch/">
 <meta property="og:site_name" content="Pablo Correa Prieto">
@@ -32,10 +32,20 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebSite",
+      "@id": "https://pablocorreaprieto.ch/#website",
+      "url": "https://pablocorreaprieto.ch/",
+      "name": "Pablo Correa Prieto",
+      "inLanguage": "fr",
+      "publisher": {
+        "@id": "https://pablocorreaprieto.ch/#person"
+      }
+    },
+    {
       "@type": "ProfilePage",
       "@id": "https://pablocorreaprieto.ch/#page",
       "url": "https://pablocorreaprieto.ch/",
-      "name": "Pablo Correa Prieto – Enseignant en Vaud, IA et recherche en éducation",
+      "name": "Pablo Correa Prieto — Enseignant en Vaud, IA et recherche en éducation",
       "inLanguage": "fr",
       "dateModified": "2026-10-17",
       "mainEntity": {
@@ -193,7 +203,6 @@
   @media (max-width:640px){
     nav.site{order:3; width:100%; gap:2px 14px; padding-top:2px}
   }
-  @media print{ nav.site{display:none} }
   .topbar{max-width:1040px; margin-inline:auto; display:flex; justify-content:flex-end; gap:8px; padding-top:28px}
   .tb{display:inline-flex; border:1px solid var(--rule); border-radius:4px; overflow:hidden}
   .tb button{font:500 .75rem/1 var(--sans); letter-spacing:.08em; padding:7px 11px; border:0; background:transparent; color:var(--muted); cursor:pointer}
@@ -282,19 +291,43 @@
     .intro .portrait{float:right; width:112px; margin:6px 0 12px 18px}
     .intro .facts{clear:both}
   }
+  @media (pointer:coarse){
+    .crumbs a, nav.site a, .blk a, ul.tags a, ul.links a, figcaption a,
+    .about ul a, nav.next a, .langs a, .facts a{
+      display:inline-block; min-height:24px; line-height:1.55; padding-block:2px
+    }
+    /* every other link: grow the hit area with padding only, so links inside
+       flowing text still wrap normally */
+    a:not(.skip):not(.tb a){ padding-block:4px }
+    .brand{ display:inline-block; min-height:24px; padding-block:3px }
+  }
   @media print{
     :root{--ground:#fff; --ink:#000; --muted:#444; --faint:#666; --rule:#ccc; --accent:#1f3d5c; --accent-soft:#f1f3f6}
-    body{padding:0; font-size:10.5pt}
+    body{padding:0; font-size:9.5pt; line-height:1.45}
     .topbar{display:none}
-    .page{grid-template-columns:200px 1fr; gap:32px; padding:0}
-    .id{position:static}
-    main{gap:22px}
-    .intro{grid-template-columns:minmax(0,1fr) 110px; column-gap:24px}
-    section{break-inside:avoid-page}
-    .row{break-inside:avoid}
+    .page{display:block; max-width:none; padding:0}
+    .id{position:static; margin:0 0 14px; padding-bottom:12px; border-bottom:1px solid var(--rule)}
+    .id h1{font-size:1.9rem; margin-bottom:8px}
+    .id h1 .wm{width:180px}
+    .avail{display:none}
+    .blk{display:grid; grid-template-columns:repeat(4, 1fr); gap:6px 18px; margin:12px 0 0; padding:0; border:0; font-size:8.5pt}
+    .blk .langs .lvl{font-size:8pt}
+    .blk > div{min-width:0}
+    .blk a{word-break:break-all}
+    main{display:block}
+    main > section{margin-top:14px; break-inside:avoid-page}
+    .intro{display:grid; grid-template-columns:minmax(0,1fr) 96px; column-gap:20px}
+    .lede{font-size:1rem}
+    .facts{margin-top:12px}
+    ol.cv{gap:10px}
+    .row{grid-template-columns:120px 1fr; gap:16px; break-inside:avoid}
+    section[aria-labelledby="h-art"] .detail{display:none}
+    section[aria-labelledby="h-art"] ol.cv{gap:3px}
+    section[aria-labelledby="h-art"] .row{grid-template-columns:90px 1fr; gap:12px}
     a{border:0; color:inherit}
     footer{display:none}
     .vis-sec{display:none}
+    nav.site{display:none}
   }
 </style>
 

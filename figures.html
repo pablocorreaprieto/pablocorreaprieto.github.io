@@ -67,6 +67,16 @@
   @media (max-width:640px){
     nav.site{order:3; width:100%; gap:2px 14px; padding-top:2px}
   }
+  @media (pointer:coarse){
+    .crumbs a, nav.site a, .blk a, ul.tags a, ul.links a, figcaption a,
+    .about ul a, nav.next a, .langs a, .facts a{
+      display:inline-block; min-height:24px; line-height:1.55; padding-block:2px
+    }
+    /* every other link: grow the hit area with padding only, so links inside
+       flowing text still wrap normally */
+    a:not(.skip):not(.tb a){ padding-block:4px }
+    .brand{ display:inline-block; min-height:24px; padding-block:3px }
+  }
   @media print{ nav.site{display:none} }
   .topbar{max-width:1040px; margin-inline:auto; display:flex; justify-content:space-between; align-items:center; gap:16px; padding-top:28px}
   .brand{font-family:var(--serif); font-weight:500; font-size:1.375rem; line-height:1; letter-spacing:-0.01em; color:var(--ink); border:0; white-space:nowrap}
@@ -117,6 +127,16 @@
 {
  "@context": "https://schema.org",
  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://pablocorreaprieto.ch/#website",
+      "url": "https://pablocorreaprieto.ch/",
+      "name": "Pablo Correa Prieto",
+      "inLanguage": "fr",
+      "publisher": {
+        "@id": "https://pablocorreaprieto.ch/#person"
+      }
+    },
   {
    "@type": [
     "CollectionPage",

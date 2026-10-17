@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Publicaciones – Pablo Correa Prieto</title>
+<title>Publicaciones — Pablo Correa Prieto</title>
 <meta name="description" content="Las matemáticas a partir del juego (Universidad de La Laguna, 2024) y un artículo en preparación sobre IA y evaluación frente al Plan d’études romand.">
 <meta name="author" content="Pablo Correa Prieto">
 <meta name="robots" content="max-image-preview:large">
@@ -68,6 +68,16 @@
   nav.site a[aria-current="page"]{color:var(--ink); font-weight:500}
   @media (max-width:640px){
     nav.site{order:3; width:100%; gap:2px 14px; padding-top:2px}
+  }
+  @media (pointer:coarse){
+    .crumbs a, nav.site a, .blk a, ul.tags a, ul.links a, figcaption a,
+    .about ul a, nav.next a, .langs a, .facts a{
+      display:inline-block; min-height:24px; line-height:1.55; padding-block:2px
+    }
+    /* every other link: grow the hit area with padding only, so links inside
+       flowing text still wrap normally */
+    a:not(.skip):not(.tb a){ padding-block:4px }
+    .brand{ display:inline-block; min-height:24px; padding-block:3px }
   }
   @media print{ nav.site{display:none} }
   .topbar{max-width:1040px; margin-inline:auto; display:flex; justify-content:space-between; align-items:center; gap:16px; padding-top:28px}
@@ -146,11 +156,21 @@
 {
  "@context": "https://schema.org",
  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://pablocorreaprieto.ch/#website",
+      "url": "https://pablocorreaprieto.ch/",
+      "name": "Pablo Correa Prieto",
+      "inLanguage": "es",
+      "publisher": {
+        "@id": "https://pablocorreaprieto.ch/#person"
+      }
+    },
   {
    "@type": "CollectionPage",
    "@id": "https://pablocorreaprieto.ch/es/publicaciones#page",
    "url": "https://pablocorreaprieto.ch/es/publicaciones",
-   "name": "Publicaciones – Pablo Correa Prieto",
+   "name": "Publicaciones — Pablo Correa Prieto",
    "description": "Publicaciones de Pablo Correa Prieto: Las matemáticas a partir del juego (Universidad de La Laguna, 2024) y un artículo en preparación sobre IA y evaluación frente al Plan d’études romand.",
    "inLanguage": "es",
    "dateModified": "2026-10-13",
