@@ -34,6 +34,33 @@
     <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-investigacion-ia.jpg</image:loc></image:image>
   </url>
   <url>
+    <loc>https://pablocorreaprieto.ch/ia-ecole-romandie</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/ia-ecole-romandie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/ai-schools-french-speaking-switzerland"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/ia-escuela-suiza-romanda"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/ia-ecole-romandie"/>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-romandie-titre-fr.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pablocorreaprieto.ch/en/ai-schools-french-speaking-switzerland</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/ia-ecole-romandie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/ai-schools-french-speaking-switzerland"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/ia-escuela-suiza-romanda"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/ia-ecole-romandie"/>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-romandie-titre-en.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pablocorreaprieto.ch/es/ia-escuela-suiza-romanda</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/ia-ecole-romandie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/ai-schools-french-speaking-switzerland"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/ia-escuela-suiza-romanda"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/ia-ecole-romandie"/>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-romandie-titre-es.jpg</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://pablocorreaprieto.ch/formations</loc>
     <lastmod>2026-10-17</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/formations"/>
