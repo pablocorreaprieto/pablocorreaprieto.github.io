@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://pablocorreaprieto.ch/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/"/>
@@ -10,10 +10,13 @@
     <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto.jpg</image:loc></image:image>
     <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-enseignant.jpg</image:loc></image:image>
     <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-recherche-ia.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-portrait.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-portrait-exterieur.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-lecture.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://pablocorreaprieto.ch/en/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/"/>
@@ -21,10 +24,13 @@
     <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto.jpg</image:loc></image:image>
     <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-teacher.jpg</image:loc></image:image>
     <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-ai-research.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-portrait.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-portrait-exterieur.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-lecture.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://pablocorreaprieto.ch/es/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/"/>
@@ -32,6 +38,9 @@
     <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto.jpg</image:loc></image:image>
     <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-docente.jpg</image:loc></image:image>
     <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-investigacion-ia.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-portrait.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-portrait-exterieur.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-lecture.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://pablocorreaprieto.ch/ia-ecole-romandie</loc>
@@ -473,7 +482,7 @@
   </url>
   <url>
     <loc>https://pablocorreaprieto.ch/figures</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/figures"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/figures"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/figuras"/>
@@ -493,10 +502,20 @@
     <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-preparer-temps-gagne-fr.png</image:loc></image:image>
     <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-preparer-verifier-fr.png</image:loc></image:image>
     <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-ia-enseignant-deplacements-fr.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-chercheur-ia-education-fr.png</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-programme-recherche-fr.png</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-recherche-items-llm-fr.png</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-recherche-essai-grappes-fr.png</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-acceptation-modele-tam-fr.png</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-methodes-recherche-fr.png</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-politiques-niveaux-fr.png</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-politiques-corpus-wpr-fr.png</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-ia-classe-quatre-questions-fr.png</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-formations-formats-fr.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://pablocorreaprieto.ch/en/figures</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/figures"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/figures"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/figuras"/>
@@ -516,10 +535,20 @@
     <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-preparer-temps-gagne-en.png</image:loc></image:image>
     <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-preparer-verifier-en.png</image:loc></image:image>
     <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-ia-enseignant-deplacements-en.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-chercheur-ia-education-en.png</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-programme-recherche-en.png</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-recherche-items-llm-en.png</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-recherche-essai-grappes-en.png</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-acceptation-modele-tam-en.png</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-methodes-recherche-en.png</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-politiques-niveaux-en.png</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-politiques-corpus-wpr-en.png</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-ia-classe-quatre-questions-en.png</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-formations-formats-en.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://pablocorreaprieto.ch/es/figuras</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/figures"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/figures"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/figuras"/>
@@ -539,5 +568,15 @@
     <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-preparer-temps-gagne-es.png</image:loc></image:image>
     <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-preparer-verifier-es.png</image:loc></image:image>
     <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-ia-enseignant-deplacements-es.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-chercheur-ia-education-es.png</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-programme-recherche-es.png</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-recherche-items-llm-es.png</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-recherche-essai-grappes-es.png</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-acceptation-modele-tam-es.png</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-methodes-recherche-es.png</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-politiques-niveaux-es.png</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-politiques-corpus-wpr-es.png</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-ia-classe-quatre-questions-es.png</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-formations-formats-es.png</image:loc></image:image>
   </url>
 </urlset>

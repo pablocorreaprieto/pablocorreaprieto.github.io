@@ -18,7 +18,7 @@ Articles are short, rigorous pieces on AI in education, each with original figur
 - **Citations:** only sources you have actually opened (the DOI resolves or the page loads). APA 7. If you can’t verify one, write `[SOURCE À VÉRIFIER]` and tell Pablo. Never invent authors, years, titles or pages.
 - **No unpublished data or results** from Pablo’s studies; only what is already public.
 - **Charts only from real, cited data.** Conceptual diagrams are fine.
-- **Images:** no stock images, no photos of anyone except Pablo’s headshot, no AI-generated photorealistic images, no robot or glowing-brain clichés.
+- **Images:** no stock images, no photos of anyone except Pablo himself, no robot or glowing-brain clichés. No AI-generated photorealistic imagery, with one exception: an AI-edited photo of Pablo that he supplies or approves in the conversation may be used as a temporary placeholder until a real photo replaces it. Such a photo must not show invented titles, names, institutions or works attributed to real people, and its alt text and caption describe only what the image shows.
 - **Credit and CC BY apply to figures and covers only**, and only to ones Pablo made or has confirmed as his — never to photos of Pablo.
 - **Profiles:** link only the profiles listed under “Profiles”. Never Facebook or YouTube.
 - **Placeholders:** where text is needed and the facts aren’t available, leave a visible placeholder like `[À COMPLÉTER : …]` and list every placeholder in the reply and the PR body. A PR with placeholders is not ready to merge; say so.

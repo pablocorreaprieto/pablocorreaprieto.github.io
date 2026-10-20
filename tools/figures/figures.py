@@ -906,6 +906,461 @@ TEXT = {
 }
 
 
+# ---------------------------------------------------------------- programme figures (Oct 2026)
+# Figures for the research programme, the Swiss-texts reference page and the
+# training page (not tied to one article). Conceptual diagrams only.
+
+def _numcol(x, head, rows, num=None, head_size=44, y_rule=300):
+    """Column in the style of fig_three_questions: rule, serif number/figure, serif head, sans rows."""
+    b = [f'<line x1="{x}" y1="{y_rule}" x2="{x + 484}" y2="{y_rule}" stroke="{C["rule"]}" stroke-width="2"/>']
+    if num:
+        b.append(f'<text class="serif" x="{x}" y="{y_rule + 98}" font-family="{SERIF}" font-size="60" font-weight="400" fill="{C["mark"]}" data-maxw="484">{escape(num)}</text>')
+    b.append(f'<text class="serif" x="{x}" y="{y_rule + 178}" font-family="{SERIF}" font-size="{head_size}" font-weight="500" fill="{C["ink"]}" data-maxw="484">{escape(head)}</text>')
+    b.append(lines(x, y_rule + 232, rows, size=28, fill=C['muted'], maxw=484))
+    return '\n'.join(b)
+
+
+def fig_p_identity(lang, T):
+    """Presentation card: name as the headline, the three research themes, credentials from the site."""
+    b = []
+    for i, (x, head, rows) in enumerate([(L, T['a1'][0], T['a1'][1]),
+                                         (L + 543, T['a2'][0], T['a2'][1]),
+                                         (L + 1086, T['a3'][0], T['a3'][1])]):
+        b.append(_numcol(x, head, rows, num=f'0{i + 1}', head_size=40, y_rule=310))
+    b.append(t(L, 712, escape(T['facts']), size=27, weight=500, maxw=R - L))
+    return frame(T['lang'], T['kicker'], T['title'], '\n'.join(b), None, title_size=92)
+
+
+def fig_p_programme(lang, T):
+    """The research programme in three strands."""
+    b = []
+    for i, (x, (head, rows)) in enumerate([(L, T['c1']), (L + 543, T['c2']), (L + 1086, T['c3'])]):
+        b.append(_numcol(x, head, rows, num=f'0{i + 1}'))
+    return frame(T['lang'], T['kicker'], T['title'], '\n'.join(b), T['source'])
+
+
+def fig_p_llm_per(lang, T):
+    """Article 1 in one view: PER objectives, LLM-generated items, three judgements."""
+    b = []
+    b.append(box(L, 380, 430, 190, T['b1_label'], T['b1']))
+    b.append(box(665, 380, 430, 190, T['b2_label'], T['b2']))
+    b.append(box(1230, 320, 455, 310, T['b3_label'], T['b3'], emph=True))
+    b.append(lines(1260, 596, T['b3_note'], size=23, fill=C['muted'], maxw=395))
+    b.append(arrow(L + 430 + 8, 475, 657, 475))
+    b.append(arrow(1095 + 8, 475, 1222, 475))
+    b.append(lines(L, 710, T['note'], size=28, weight=500, maxw=R - L))
+    return frame(T['lang'], T['kicker'], T['title'], '\n'.join(b), T['source'])
+
+
+def fig_p_wpr(lang, T):
+    """Article 2 in one view: a corpus of official texts read with Bacchi's WPR approach."""
+    b = []
+    b.append(box(L, 350, 470, 250, T['b1_label'], T['b1']))
+    b.append(lines(L + 30, 520, T['b1_note'], size=23, fill=C['muted'], maxw=410))
+    b.append(box(705, 350, 430, 250, T['b2_label'], T['b2']))
+    b.append(lines(735, 520, T['b2_note'], size=23, fill=C['muted'], maxw=370))
+    b.append(box(1250, 350, 435, 250, T['b3_label'], T['b3'], emph=True, size=32))
+    b.append(arrow(L + 470 + 8, 475, 697, 475))
+    b.append(arrow(1135 + 8, 475, 1242, 475))
+    return frame(T['lang'], T['kicker'], T['title'], '\n'.join(b), T['source'])
+
+
+def fig_p_niveaux(lang, T):
+    """Who frames AI for schools: four levels of public texts, national to classroom."""
+    b = []
+    y = 288
+    for i, (name, tag, desc) in enumerate(T['rows']):
+        x, w = L + i * 56, R - L - 3 * 56
+        b.append(rrect(x, y, w, 88, fill=C['white'], stroke=C['rule']))
+        b.append(f'<rect x="{x}" y="{y}" width="8" height="88" rx="3" fill="{C["blue"]}"/>')
+        b.append(f'<text class="serif" x="{x + 36}" y="{y + 46}" font-family="{SERIF}" font-size="34" font-weight="500" fill="{C["ink"]}" data-maxw="330">{escape(name)}</text>')
+        b.append(t(x + 36, y + 74, escape(tag.upper()), size=17, weight=600, fill=C['accent'], ls='2', maxw=330))
+        b.append(lines(x + 410, y + 54, [desc], size=25, fill=C['muted'], maxw=w - 440))
+        if i < 3:
+            b.append(arrow(x + 90, y + 90, x + 90 + 40, y + 110))
+        y += 112
+    return frame(T['lang'], T['kicker'], T['title'], '\n'.join(b), T['source'])
+
+
+def fig_p_grappes(lang, T):
+    """Planned study design: whole schools randomised to a short training or usual practice."""
+    b = []
+    b.append(box(L, 390, 360, 270, T['b1_label'], T['b1'], size=30))
+    for i in range(2):
+        for j in range(5):
+            b.append(rrect(L + 32 + j * 58, 535 + i * 58, 44, 44, r=8,
+                           fill=C['soft'], stroke=C['blue'], sw=2))
+    b.append(box(615, 330, 480, 140, T['b2_label'], T['b2'], emph=True, size=30))
+    b.append(box(615, 530, 480, 140, T['b3_label'], T['b3'], size=30))
+    b.append(box(1230, 420, 455, 190, T['b4_label'], T['b4'], size=32))
+    b.append(elbow(L + 360 + 6, 470, 607, 400))
+    b.append(elbow(L + 360 + 6, 560, 607, 600))
+    b.append(elbow(1095 + 6, 400, 1222, 500))
+    b.append(elbow(1095 + 6, 600, 1222, 530))
+    b.append(lines(L, 712, T['note'], size=28, weight=500, maxw=R - L))
+    return frame(T['lang'], T['kicker'], T['title'], '\n'.join(b), T['source'])
+
+
+def fig_p_tam(lang, T):
+    """The technology acceptance model (Davis, 1989), as used in the planned teacher study."""
+    b = []
+    b.append(box(L, 320, 430, 150, T['b1_label'], T['b1'], size=32))
+    b.append(box(L, 540, 430, 150, T['b2_label'], T['b2'], size=32))
+    b.append(box(700, 430, 420, 150, T['b3_label'], T['b3'], size=32))
+    b.append(box(1265, 430, 420, 150, T['b4_label'], T['b4'], emph=True, size=32))
+    b.append(elbow(L + 430 + 6, 395, 692, 480))
+    b.append(elbow(L + 430 + 6, 615, 692, 530))
+    b.append(arrow(1120 + 6, 505, 1257, 505))
+    b.append(lines(L, 745, T['note'], size=26, fill=C['muted'], maxw=R - L))
+    return frame(T['lang'], T['kicker'], T['title'], '\n'.join(b), T['source'])
+
+
+def fig_p_formations(lang, T):
+    """The three training formats for school teams."""
+    b = []
+    for x, (num, head, rows) in [(L, T['c1']), (L + 543, T['c2']), (L + 1086, T['c3'])]:
+        b.append(_numcol(x, head, rows, num=num))
+    b.append(t(L, 712, escape(T['note']), size=28, weight=500, maxw=R - L))
+    return frame(T['lang'], T['kicker'], T['title'], '\n'.join(b), T['source'])
+
+
+def fig_p_questions(lang, T):
+    """Four questions to ask before using AI in class."""
+    b = []
+    y = 282
+    for i, (word, q) in enumerate(T['rows']):
+        b.append(rrect(L, y, R - L, 92, fill=C['white'], stroke=C['rule']))
+        b.append(f'<text class="serif" x="{L + 38}" y="{y + 60}" font-family="{SERIF}" font-size="40" font-weight="400" fill="{C["mark"]}">{i + 1}</text>')
+        b.append(f'<text class="serif" x="{L + 100}" y="{y + 58}" font-family="{SERIF}" font-size="33" font-weight="500" fill="{C["ink"]}" data-maxw="300">{escape(word)}</text>')
+        b.append(lines(L + 470, y + 56, [q], size=26, fill=C['muted'], maxw=R - L - 510))
+        y += 110
+    return frame(T['lang'], T['kicker'], T['title'], '\n'.join(b), T['source'])
+
+
+def fig_p_methodes(lang, T):
+    """The methods used across the programme, one box each."""
+    b = []
+    for i, (head, rows) in enumerate(T['cells']):
+        x = L + (i % 2) * 800
+        y = 290 + (i // 2) * 230
+        b.append(rrect(x, y, 770, 200, fill=C['white'], stroke=C['rule']))
+        b.append(f'<rect x="{x}" y="{y}" width="8" height="200" rx="3" fill="{C["blue"]}"/>')
+        b.append(f'<text class="serif" x="{x + 36}" y="{y + 62}" font-family="{SERIF}" font-size="36" font-weight="500" fill="{C["ink"]}" data-maxw="700">{escape(head)}</text>')
+        b.append(lines(x + 36, y + 110, rows, size=25, fill=C['muted'], maxw=700))
+    return frame(T['lang'], T['kicker'], T['title'], '\n'.join(b), T['source'])
+
+
+FIGS.update({
+    'chercheur-ia-education': fig_p_identity,
+    'programme-recherche': fig_p_programme,
+    'recherche-items-llm': fig_p_llm_per,
+    'politiques-corpus-wpr': fig_p_wpr,
+    'politiques-niveaux': fig_p_niveaux,
+    'recherche-essai-grappes': fig_p_grappes,
+    'acceptation-modele-tam': fig_p_tam,
+    'formations-formats': fig_p_formations,
+    'ia-classe-quatre-questions': fig_p_questions,
+    'methodes-recherche': fig_p_methodes,
+})
+
+TEXT['fr'].update({
+    'chercheur-ia-education': dict(
+        kicker='Enseignant et chercheur · canton de Vaud',
+        title='Pablo Correa Prieto.',
+        a1=('Évaluation et IA', ['Items d’évaluation générés', 'par IA, jugés au regard', 'du Plan d’études romand.']),
+        a2=('Acceptation enseignante', ['Ce qui conduit les enseignants', 'à utiliser, ou non, l’IA', 'générative en classe.']),
+        a3=('Politiques publiques', ['Comment les textes officiels', 'romands cadrent l’IA', 'à l’école obligatoire.']),
+        facts='Reconnaissance CDIP 3H–8H · Master en méthodes de recherche en éducation (UNIR) · ORCID 0009-0009-1844-7453',
+    ),
+    'programme-recherche': dict(
+        kicker='Recherche · programme',
+        title='Un programme, trois axes.',
+        c1=('Évaluation', ['Des items générés par IA,', 'jugés au regard du PER :', 'alignement, exigence', 'cognitive, qualité.']),
+        c2=('Acceptation', ['L’intention d’usage de l’IA', 'générative chez les', 'enseignants, et ce qu’une', 'formation courte y change.']),
+        c3=('Politiques', ['Comment les textes officiels', 'romands représentent le', '« problème » de l’IA', 'à l’école.']),
+        source=['Programme de recherche de l’auteur. Schéma : Pablo Correa Prieto.'],
+    ),
+    'recherche-items-llm': dict(
+        kicker='Recherche · article en préparation',
+        title='Des items générés, trois jugements.',
+        b1_label='Plan d’études', b1=['Objectifs du PER,', 'mathématiques'],
+        b2_label='Génération', b2=['Items produits', 'par un LLM'],
+        b3_label='Trois jugements', b3=['Alignement', 'Exigence cognitive', 'Qualité'],
+        b3_note=[],
+        note=['Un item juste n’est pas forcément aligné : les trois jugements sont distincts.'],
+        source=['Article en préparation ; les trois critères sont présentés dans l’article « Trois questions pour juger un item ».',
+                'Schéma : Pablo Correa Prieto.'],
+    ),
+    'politiques-corpus-wpr': dict(
+        kicker='Politiques · article en préparation',
+        title='Ce que les textes font dire à l’IA.',
+        b1_label='Corpus', b1=['Textes officiels', 'romands'],
+        b1_note=['Recommandations, cadres', 'et directives sur l’IA', 'à l’école obligatoire.'],
+        b2_label='Lecture', b2=['Approche WPR'],
+        b2_note=['« What’s the problem', 'represented to be? »', '(Bacchi, 2009).'],
+        b3_label='Question', b3=['Quel « problème »', 'ces textes', 'construisent-ils ?'],
+        source=['Approche d’après Bacchi, C. (2009). Analysing Policy: What’s the problem represented to be? Pearson Australia.',
+                'Article en préparation. Schéma : Pablo Correa Prieto.'],
+    ),
+    'politiques-niveaux': dict(
+        kicker='Politiques · repères',
+        title='Qui encadre l’IA à l’école.',
+        rows=[('CDIP', 'Coordination nationale', 'Orientations pour l’ensemble des cantons suisses'),
+              ('CIIP', 'Suisse romande et Tessin', 'Recommandations communes pour la scolarité obligatoire'),
+              ('Cantons', 'Directives', 'Cadres d’usage et consignes aux établissements'),
+              ('Écoles et HEP', 'Mise en œuvre', 'Chartes, formation des enseignants, pratique de classe')],
+        source=['Analyse de l’auteur, à partir des textes publics de la CDIP, de la CIIP et des cantons romands.',
+                'Schéma : Pablo Correa Prieto.'],
+    ),
+    'recherche-essai-grappes': dict(
+        kicker='Méthode · étude en préparation',
+        title='Randomiser des écoles, pas des personnes.',
+        b1_label='Établissements', b1=['Écoles tirées', 'au sort'],
+        b2_label='Groupe formation', b2=['Formation courte à', 'l’IA générative'],
+        b3_label='Groupe témoin', b3=['Pratique habituelle,', 'sans formation'],
+        b4_label='Mesure', b4=['Intention d’usage', 'de l’IA générative'],
+        note=['Randomiser l’établissement entier évite qu’un enseignant formé influence un collègue du groupe témoin.'],
+        source=['Étude en préparation, enseignants primaires du canton de Vaud. Schéma : Pablo Correa Prieto.'],
+    ),
+    'acceptation-modele-tam': dict(
+        kicker='Acceptation · cadre théorique',
+        title='Le modèle derrière les enquêtes.',
+        b1_label='Croyance', b1=['Utilité perçue', 'pour enseigner'],
+        b2_label='Croyance', b2=['Facilité d’usage', 'perçue'],
+        b3_label='Attitude', b3=['Attitude envers', 'l’IA générative'],
+        b4_label='Construit mesuré', b4=['Intention', 'd’usage'],
+        note=['Ce que ces enquêtes mesurent, et où s’arrête leur validation : voir l’article « L’acceptation n’est pas l’usage ».'],
+        source=['D’après Davis, F. D. (1989). MIS Quarterly, 13(3), 319–340. Schéma : Pablo Correa Prieto.'],
+    ),
+    'formations-formats': dict(
+        kicker='Formations · établissements',
+        title='Trois formats, un même terrain.',
+        c1=('90 min', 'Conférence-atelier', ['Comprendre ce que l’IA', 'générative change pour', 'préparer, évaluer et', 'faire apprendre.']),
+        c2=('½ journée', 'Atelier pratique', ['Prendre en main les outils', 'sur ses propres séquences,', 'avec des cas tirés', 'du terrain vaudois.']),
+        c3=('3 séances', 'Parcours d’équipe', ['Aboutir à une charte', 'd’usage de l’IA propre', 'à l’établissement, portée', 'par l’équipe.']),
+        note='Aucun outil à vendre : les contenus viennent du terrain et des travaux présentés sur ce site.',
+        source=['Offre de formation de l’auteur, détaillée sur pablocorreaprieto.ch/formations. Schéma : Pablo Correa Prieto.'],
+    ),
+    'ia-classe-quatre-questions': dict(
+        kicker='Repères pour la classe · proposition',
+        title='Quatre questions avant d’utiliser l’IA.',
+        rows=[('Données', 'Des données d’élèves sortent-elles de l’école ? Si oui, on s’arrête là.'),
+              ('Alignement', 'La tâche sert-elle un objectif du PER, ou seulement la nouveauté de l’outil ?'),
+              ('Effort', 'L’effort qui fait apprendre reste-t-il chez l’élève, ou passe-t-il à la machine ?'),
+              ('Transparence', 'Élèves et parents savent-ils quand et comment l’IA a été utilisée ?')],
+        source=['Proposition de l’auteur, à partir des recommandations de la CIIP (2025) et des travaux cités dans les articles de ce site.',
+                'Schéma : Pablo Correa Prieto.'],
+    ),
+    'methodes-recherche': dict(
+        kicker='Recherche · méthodes',
+        title='Des méthodes au service des questions.',
+        cells=[('Analyse documentaire', ['Corpus de textes officiels, cadre WPR,', 'second codage indépendant.']),
+               ('Essai randomisé en grappes', ['Écoles entières tirées au sort, groupe', 'témoin, effet d’une formation.']),
+               ('Échelles et questionnaires', ['Attitude et intention d’usage,', 'fiabilité des instruments.']),
+               ('Jugement d’items', ['Alignement curriculaire, exigence', 'cognitive et qualité d’items générés.'])],
+        source=['Méthodes mobilisées dans les travaux de l’auteur. Schéma : Pablo Correa Prieto.'],
+    ),
+})
+
+TEXT['en'].update({
+    'chercheur-ia-education': dict(
+        kicker='Teacher and researcher · canton of Vaud',
+        title='Pablo Correa Prieto.',
+        a1=('Assessment and AI', ['AI-generated assessment', 'items, judged against the', 'Plan d’études romand.']),
+        a2=('Teacher acceptance', ['What leads teachers to use,', 'or not use, generative AI', 'in the classroom.']),
+        a3=('Public policy', ['How official texts in French-', 'speaking Switzerland frame', 'AI for compulsory school.']),
+        facts='CDIP recognition, years 3H–8H · Master’s in education research methods (UNIR) · ORCID 0009-0009-1844-7453',
+    ),
+    'programme-recherche': dict(
+        kicker='Research · programme',
+        title='One programme, three strands.',
+        c1=('Assessment', ['AI-generated items, judged', 'against the curriculum:', 'alignment, cognitive', 'demand, quality.']),
+        c2=('Acceptance', ['Teachers’ intention to use', 'generative AI, and what', 'a short training', 'changes about it.']),
+        c3=('Policy', ['How official texts in French-', 'speaking Switzerland', 'represent the “problem”', 'of AI in schools.']),
+        source=['The author’s research programme. Diagram: Pablo Correa Prieto.'],
+    ),
+    'recherche-items-llm': dict(
+        kicker='Research · article in preparation',
+        title='Generated items, three judgements.',
+        b1_label='Curriculum', b1=['Objectives of the PER,', 'mathematics'],
+        b2_label='Generation', b2=['Items produced', 'by an LLM'],
+        b3_label='Three judgements', b3=['Alignment', 'Cognitive demand', 'Quality'],
+        b3_note=[],
+        note=['A correct item is not necessarily aligned: the three judgements are distinct.'],
+        source=['Article in preparation; the three criteria are presented in “Three questions for judging an item”.',
+                'Diagram: Pablo Correa Prieto.'],
+    ),
+    'politiques-corpus-wpr': dict(
+        kicker='Policy · article in preparation',
+        title='What the official texts make AI mean.',
+        b1_label='Corpus', b1=['Official texts,', 'French-speaking', 'Switzerland'],
+        b1_note=['Recommendations, frameworks', 'and directives on AI', 'in compulsory school.'],
+        b2_label='Reading', b2=['WPR approach'],
+        b2_note=['“What’s the problem', 'represented to be?”', '(Bacchi, 2009).'],
+        b3_label='Question', b3=['What “problem”', 'do these texts', 'construct?'],
+        source=['Approach after Bacchi, C. (2009). Analysing Policy: What’s the problem represented to be? Pearson Australia.',
+                'Article in preparation. Diagram: Pablo Correa Prieto.'],
+    ),
+    'politiques-niveaux': dict(
+        kicker='Policy · reference',
+        title='Who frames AI for schools.',
+        rows=[('CDIP', 'National coordination', 'Shared orientations for all the Swiss cantons'),
+              ('CIIP', 'Romandie and Ticino', 'Common recommendations for compulsory schooling'),
+              ('Cantons', 'Directives', 'Usage frameworks and instructions to schools'),
+              ('Schools and HEP', 'Implementation', 'School charters, teacher training, classroom practice')],
+        source=['The author’s analysis, based on the public texts of the CDIP, the CIIP and the cantons.',
+                'Diagram: Pablo Correa Prieto.'],
+    ),
+    'recherche-essai-grappes': dict(
+        kicker='Method · study in preparation',
+        title='Randomise schools, not people.',
+        b1_label='Schools', b1=['Whole schools', 'drawn at random'],
+        b2_label='Training arm', b2=['Short training in', 'generative AI'],
+        b3_label='Control arm', b3=['Usual practice,', 'no training'],
+        b4_label='Measure', b4=['Intention to use', 'generative AI'],
+        note=['Randomising the whole school keeps a trained teacher from influencing a colleague in the control arm.'],
+        source=['Study in preparation, primary teachers in the canton of Vaud. Diagram: Pablo Correa Prieto.'],
+    ),
+    'acceptation-modele-tam': dict(
+        kicker='Acceptance · theoretical frame',
+        title='The model behind the surveys.',
+        b1_label='Belief', b1=['Perceived usefulness', 'for teaching'],
+        b2_label='Belief', b2=['Perceived', 'ease of use'],
+        b3_label='Attitude', b3=['Attitude towards', 'generative AI'],
+        b4_label='Measured construct', b4=['Intention', 'to use'],
+        note=['What these surveys measure, and where their validation stops: see “Acceptance is not use”.'],
+        source=['After Davis, F. D. (1989). MIS Quarterly, 13(3), 319–340. Diagram: Pablo Correa Prieto.'],
+    ),
+    'formations-formats': dict(
+        kicker='Training · school teams',
+        title='Three formats, one classroom base.',
+        c1=('90 min', 'Talk and workshop', ['Understand what generative', 'AI changes for preparing,', 'assessing and helping', 'pupils learn.']),
+        c2=('Half day', 'Hands-on workshop', ['Work on your own teaching', 'sequences, with cases', 'drawn from Vaud', 'classrooms.']),
+        c3=('3 sessions', 'Team pathway', ['End with an AI-use charter', 'of the school’s own,', 'carried by the team.']),
+        note='Nothing to sell: the content comes from the classroom and from the work presented on this site.',
+        source=['The author’s training offer, detailed at pablocorreaprieto.ch/en/training. Diagram: Pablo Correa Prieto.'],
+    ),
+    'ia-classe-quatre-questions': dict(
+        kicker='Classroom reference · proposal',
+        title='Four questions before using AI.',
+        rows=[('Data', 'Does any pupil data leave the school? If so, stop there.'),
+              ('Alignment', 'Does the task serve a curriculum objective, or only the novelty of the tool?'),
+              ('Effort', 'Does the effort that drives learning stay with the pupil, or move to the machine?'),
+              ('Transparency', 'Do pupils and parents know when and how AI was used?')],
+        source=['The author’s proposal, based on the CIIP recommendations (2025) and the work cited in this site’s articles.',
+                'Diagram: Pablo Correa Prieto.'],
+    ),
+    'methodes-recherche': dict(
+        kicker='Research · methods',
+        title='Methods in the service of questions.',
+        cells=[('Document analysis', ['A corpus of official texts, the WPR frame,', 'independent second coding.']),
+               ('Cluster-randomised trial', ['Whole schools drawn at random, a control', 'arm, the effect of a training.']),
+               ('Scales and questionnaires', ['Attitude and intention to use,', 'reliability of the instruments.']),
+               ('Item judgement', ['Curricular alignment, cognitive demand', 'and quality of generated items.'])],
+        source=['Methods used across the author’s work. Diagram: Pablo Correa Prieto.'],
+    ),
+})
+
+TEXT['es'].update({
+    'chercheur-ia-education': dict(
+        kicker='Docente e investigador · cantón de Vaud',
+        title='Pablo Correa Prieto.',
+        a1=('Evaluación e IA', ['Ítems de evaluación generados', 'por IA, juzgados según el', 'Plan d’études romand.']),
+        a2=('Aceptación docente', ['Qué lleva al profesorado a', 'usar, o no, la IA generativa', 'en el aula.']),
+        a3=('Políticas públicas', ['Cómo los textos oficiales', 'de la Suiza francófona', 'encuadran la IA escolar.']),
+        facts='Reconocimiento CDIP 3H–8H · Máster en métodos de investigación educativa (UNIR) · ORCID 0009-0009-1844-7453',
+    ),
+    'programme-recherche': dict(
+        kicker='Investigación · programa',
+        title='Un programa, tres ejes.',
+        c1=('Evaluación', ['Ítems generados por IA,', 'juzgados según el currículo:', 'alineación, exigencia', 'cognitiva, calidad.']),
+        c2=('Aceptación', ['La intención de uso de la IA', 'generativa en el profesorado,', 'y qué cambia una', 'formación breve.']),
+        c3=('Políticas', ['Cómo los textos oficiales', 'de la Suiza francófona', 'representan el «problema»', 'de la IA escolar.']),
+        source=['Programa de investigación del autor. Esquema: Pablo Correa Prieto.'],
+    ),
+    'recherche-items-llm': dict(
+        kicker='Investigación · artículo en preparación',
+        title='Ítems generados, tres juicios.',
+        b1_label='Currículo', b1=['Objetivos del PER,', 'matemáticas'],
+        b2_label='Generación', b2=['Ítems producidos', 'por un LLM'],
+        b3_label='Tres juicios', b3=['Alineación', 'Exigencia cognitiva', 'Calidad'],
+        b3_note=[],
+        note=['Un ítem correcto no está necesariamente alineado: los tres juicios son distintos.'],
+        source=['Artículo en preparación; los tres criterios se presentan en «Tres preguntas para juzgar un ítem».',
+                'Esquema: Pablo Correa Prieto.'],
+    ),
+    'politiques-corpus-wpr': dict(
+        kicker='Políticas · artículo en preparación',
+        title='Lo que los textos hacen decir a la IA.',
+        b1_label='Corpus', b1=['Textos oficiales,', 'Suiza francófona'],
+        b1_note=['Recomendaciones, marcos', 'y directivas sobre la IA', 'en la escuela obligatoria.'],
+        b2_label='Lectura', b2=['Enfoque WPR'],
+        b2_note=['«What’s the problem', 'represented to be?»', '(Bacchi, 2009).'],
+        b3_label='Pregunta', b3=['¿Qué «problema»', 'construyen', 'estos textos?'],
+        source=['Enfoque según Bacchi, C. (2009). Analysing Policy: What’s the problem represented to be? Pearson Australia.',
+                'Artículo en preparación. Esquema: Pablo Correa Prieto.'],
+    ),
+    'politiques-niveaux': dict(
+        kicker='Políticas · referencia',
+        title='Quién encuadra la IA escolar.',
+        rows=[('CDIP', 'Coordinación nacional', 'Orientaciones para el conjunto de los cantones suizos'),
+              ('CIIP', 'Suiza francófona y Tesino', 'Recomendaciones comunes para la escuela obligatoria'),
+              ('Cantones', 'Directivas', 'Marcos de uso e instrucciones a los centros'),
+              ('Centros y HEP', 'Aplicación', 'Cartas de centro, formación docente, práctica de aula')],
+        source=['Análisis del autor, a partir de los textos públicos de la CDIP, la CIIP y los cantones.',
+                'Esquema: Pablo Correa Prieto.'],
+    ),
+    'recherche-essai-grappes': dict(
+        kicker='Método · estudio en preparación',
+        title='Aleatorizar escuelas, no personas.',
+        b1_label='Centros', b1=['Escuelas enteras', 'sorteadas'],
+        b2_label='Grupo formación', b2=['Formación breve en', 'IA generativa'],
+        b3_label='Grupo de control', b3=['Práctica habitual,', 'sin formación'],
+        b4_label='Medida', b4=['Intención de uso', 'de la IA generativa'],
+        note=['Aleatorizar el centro entero evita que un docente formado influya en un colega del grupo de control.'],
+        source=['Estudio en preparación, docentes de primaria del cantón de Vaud. Esquema: Pablo Correa Prieto.'],
+    ),
+    'acceptation-modele-tam': dict(
+        kicker='Aceptación · marco teórico',
+        title='El modelo detrás de las encuestas.',
+        b1_label='Creencia', b1=['Utilidad percibida', 'para enseñar'],
+        b2_label='Creencia', b2=['Facilidad de uso', 'percibida'],
+        b3_label='Actitud', b3=['Actitud hacia', 'la IA generativa'],
+        b4_label='Constructo medido', b4=['Intención', 'de uso'],
+        note=['Qué miden estas encuestas y dónde se detiene su validación: véase «La aceptación no es el uso».'],
+        source=['Según Davis, F. D. (1989). MIS Quarterly, 13(3), 319–340. Esquema: Pablo Correa Prieto.'],
+    ),
+    'formations-formats': dict(
+        kicker='Formaciones · equipos docentes',
+        title='Tres formatos, un mismo terreno.',
+        c1=('90 min', 'Conferencia-taller', ['Entender qué cambia la IA', 'generativa para preparar,', 'evaluar y hacer', 'aprender.']),
+        c2=('½ jornada', 'Taller práctico', ['Trabajar sobre las propias', 'secuencias, con casos', 'tomados de las aulas', 'del cantón de Vaud.']),
+        c3=('3 sesiones', 'Itinerario de equipo', ['Terminar con una carta de', 'uso de la IA propia del', 'centro, asumida por', 'el equipo.']),
+        note='Nada que vender: los contenidos vienen del aula y de los trabajos presentados en este sitio.',
+        source=['Oferta de formación del autor, detallada en pablocorreaprieto.ch/es/formaciones. Esquema: Pablo Correa Prieto.'],
+    ),
+    'ia-classe-quatre-questions': dict(
+        kicker='Referencias para el aula · propuesta',
+        title='Cuatro preguntas antes de usar la IA.',
+        rows=[('Datos', '¿Salen datos del alumnado fuera de la escuela? Si es así, ahí se acaba.'),
+              ('Alineación', '¿Sirve la tarea a un objetivo del currículo, o solo a la novedad de la herramienta?'),
+              ('Esfuerzo', '¿El esfuerzo que hace aprender queda en el alumno, o pasa a la máquina?'),
+              ('Transparencia', '¿Saben alumnos y familias cuándo y cómo se usó la IA?')],
+        source=['Propuesta del autor, a partir de las recomendaciones de la CIIP (2025) y de los trabajos citados en los artículos.',
+                'Esquema: Pablo Correa Prieto.'],
+    ),
+    'methodes-recherche': dict(
+        kicker='Investigación · métodos',
+        title='Métodos al servicio de las preguntas.',
+        cells=[('Análisis documental', ['Corpus de textos oficiales, marco WPR,', 'segunda codificación independiente.']),
+               ('Ensayo aleatorizado por conglomerados', ['Escuelas enteras sorteadas, grupo de', 'control, efecto de una formación.']),
+               ('Escalas y cuestionarios', ['Actitud e intención de uso,', 'fiabilidad de los instrumentos.']),
+               ('Juicio de ítems', ['Alineación curricular, exigencia', 'cognitiva y calidad de ítems generados.'])],
+        source=['Métodos empleados en los trabajos del autor. Esquema: Pablo Correa Prieto.'],
+    ),
+})
+
+
 def main():
     os.makedirs(OUT, exist_ok=True)
     for lang, figs in TEXT.items():
