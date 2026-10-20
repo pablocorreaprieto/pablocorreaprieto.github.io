@@ -1,0 +1,52 @@
+{
+  "chercheur-ia-education": {
+    "fr": "Carte de présentation de Pablo Correa Prieto, enseignant et chercheur dans le canton de Vaud, avec ses trois axes de travail : évaluation et IA, acceptation enseignante, politiques publiques",
+    "en": "Presentation card of Pablo Correa Prieto, teacher and researcher in the canton of Vaud, with his three strands of work: assessment and AI, teacher acceptance, public policy",
+    "es": "Tarjeta de presentación de Pablo Correa Prieto, docente e investigador en el cantón de Vaud, con sus tres ejes de trabajo: evaluación e IA, aceptación docente, políticas públicas"
+  },
+  "programme-recherche": {
+    "fr": "Trois colonnes présentant les trois axes du programme de recherche : items d’évaluation générés par IA, intention d’usage de l’IA chez les enseignants, analyse des textes officiels romands",
+    "en": "Three columns presenting the three strands of the research programme: AI-generated assessment items, teachers’ intention to use generative AI, analysis of official texts",
+    "es": "Tres columnas con los tres ejes del programa de investigación: ítems de evaluación generados por IA, intención de uso de la IA en el profesorado, análisis de los textos oficiales"
+  },
+  "recherche-items-llm": {
+    "fr": "Schéma en trois étapes : objectifs du PER en mathématiques, items produits par un modèle de langage, puis trois jugements distincts — alignement, exigence cognitive, qualité",
+    "en": "Three-step diagram: objectives of the PER in mathematics, items produced by a large language model, then three distinct judgements — alignment, cognitive demand, quality",
+    "es": "Esquema en tres pasos: objetivos del PER en matemáticas, ítems producidos por un modelo de lenguaje y tres juicios distintos — alineación, exigencia cognitiva, calidad"
+  },
+  "politiques-corpus-wpr": {
+    "fr": "Schéma : un corpus de textes officiels romands sur l’IA, lu avec l’approche WPR de Bacchi, menant à la question du « problème » que ces textes construisent",
+    "en": "Diagram: a corpus of official texts on AI in French-speaking Switzerland, read with Bacchi’s WPR approach, leading to the question of the “problem” these texts construct",
+    "es": "Esquema: un corpus de textos oficiales sobre la IA en la Suiza francófona, leído con el enfoque WPR de Bacchi, que lleva a la pregunta por el «problema» que construyen"
+  },
+  "politiques-niveaux": {
+    "fr": "Quatre niveaux de textes encadrant l’IA à l’école : la CDIP au niveau national, la CIIP pour la Suisse romande et le Tessin, les directives cantonales, puis les écoles et les HEP",
+    "en": "Four levels of texts framing AI for schools: the CDIP at national level, the CIIP for Romandie and Ticino, cantonal directives, then schools and teacher-training institutions",
+    "es": "Cuatro niveles de textos que encuadran la IA escolar: la CDIP a nivel nacional, la CIIP para la Suiza francófona y el Tesino, las directivas cantonales y, por último, los centros y las HEP"
+  },
+  "recherche-essai-grappes": {
+    "fr": "Schéma d’un essai randomisé en grappes : des écoles entières tirées au sort entre un groupe formation et un groupe témoin, avec l’intention d’usage de l’IA générative comme mesure",
+    "en": "Diagram of a cluster-randomised trial: whole schools drawn at random into a training arm or a control arm, with the intention to use generative AI as the measure",
+    "es": "Esquema de un ensayo aleatorizado por conglomerados: escuelas enteras sorteadas entre un grupo de formación y un grupo de control, con la intención de uso de la IA generativa como medida"
+  },
+  "acceptation-modele-tam": {
+    "fr": "Schéma du modèle d’acceptation de la technologie : l’utilité perçue et la facilité d’usage perçue mènent à l’attitude envers l’IA générative, puis à l’intention d’usage",
+    "en": "Diagram of the technology acceptance model: perceived usefulness and perceived ease of use lead to the attitude towards generative AI, then to the intention to use it",
+    "es": "Esquema del modelo de aceptación de la tecnología: la utilidad percibida y la facilidad de uso percibida llevan a la actitud hacia la IA generativa y, después, a la intención de uso"
+  },
+  "formations-formats": {
+    "fr": "Trois formats de formation pour les équipes enseignantes : conférence-atelier de 90 minutes, atelier pratique d’une demi-journée, parcours d’équipe en trois séances aboutissant à une charte",
+    "en": "Three training formats for school teams: a 90-minute talk and workshop, a half-day hands-on workshop, and a three-session team pathway ending with an AI-use charter",
+    "es": "Tres formatos de formación para equipos docentes: conferencia-taller de 90 minutos, taller práctico de media jornada e itinerario de equipo en tres sesiones que termina con una carta de uso"
+  },
+  "ia-classe-quatre-questions": {
+    "fr": "Quatre questions à se poser avant d’utiliser l’IA en classe : les données des élèves, l’alignement avec le PER, l’effort d’apprentissage et la transparence",
+    "en": "Four questions to ask before using AI in class: pupil data, alignment with the curriculum, the effort that drives learning, and transparency",
+    "es": "Cuatro preguntas antes de usar la IA en el aula: los datos del alumnado, la alineación con el currículo, el esfuerzo que hace aprender y la transparencia"
+  },
+  "methodes-recherche": {
+    "fr": "Quatre méthodes mobilisées dans le programme : analyse documentaire, essai randomisé en grappes, échelles et questionnaires, jugement d’items",
+    "en": "Four methods used across the programme: document analysis, a cluster-randomised trial, scales and questionnaires, item judgement",
+    "es": "Cuatro métodos empleados en el programa: análisis documental, ensayo aleatorizado por conglomerados, escalas y cuestionarios, juicio de ítems"
+  }
+}
