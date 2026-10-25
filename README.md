@@ -31,6 +31,8 @@ Other files:
 - `404.html` – trilingual “page not found”, served by GitHub Pages for any unknown URL.
 - `sitemap.xml` – every page with its language alternates and images.
 - `robots.txt`, `CNAME`, `google…html` (Search Console verification – do not delete).
+- `e04a684de3418416b66632ab0593cd72.txt` – IndexNow key; must stay published at the site root (do not rename or delete).
+- `.github/workflows/indexnow.yml` + `.github/scripts/indexnow.py` – after every GitHub Pages deploy of `main`, submit the pages that commit added, changed or deleted to IndexNow (Bing, Yandex, Seznam, Naver). Run it by hand from the Actions tab with scope `all` to submit every URL in `sitemap.xml`. Google ignores IndexNow; use Search Console for Google.
 - `assets/fonts/`, `assets/fonts.css` – self-hosted variable fonts (Source Serif 4, IBM Plex Sans). No Google Fonts requests.
 - `feed.xml`, `en/feed.xml`, `es/feed.xml` – hand-maintained Atom feeds, one entry per article; every page links its language's feed.
 - `llms.txt` – short machine-readable site overview.
