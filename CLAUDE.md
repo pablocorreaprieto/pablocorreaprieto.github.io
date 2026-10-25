@@ -65,7 +65,7 @@ For every image:
 
 ## Pages and structured data
 
-- `<title>`: `<Article title> — Pablo Correa Prieto`. Visible byline and date.
+- `<title>`: `<Short form of the article title> — Pablo Correa Prieto`, at most about 600 px wide (roughly 60–65 characters in all) so the name is not cut off in search results. Make the short form by cutting words or keeping the part before the colon, using wording already on the page. The `<h1>`, `og:title` and JSON-LD `headline` keep the full title. Visible byline and date.
 - **Meta description: 160 characters or fewer**, in the page’s language. Count before committing. Shorten by cutting words or reusing wording already on the page; don’t add claims to fill space. Keep `og:description` identical unless the page deliberately differs (the home pages do).
 - Base URL: `https://pablocorreaprieto.ch` (from `CNAME`).
 - Home page: headshot near the top, next to the name (`pablo-correa-prieto.jpg`, alt “Pablo Correa Prieto”).
