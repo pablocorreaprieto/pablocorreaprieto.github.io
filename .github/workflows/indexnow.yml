@@ -1,0 +1,33 @@
+name: IndexNow
+
+# After each GitHub Pages deploy of main, tell IndexNow (Bing, Yandex, Seznam, Naver)
+# which pages the deployed commit added, changed or deleted. Google ignores IndexNow.
+on:
+  workflow_run:
+    workflows: ["pages-build-deployment"]
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      scope:
+        description: "changed = pages changed by the latest commit on main, all = every URL in sitemap.xml"
+        required: true
+        default: changed
+        type: choice
+        options: [changed, all]
+
+permissions:
+  contents: read
+
+jobs:
+  submit:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+          fetch-depth: 2
+      - name: Submit to IndexNow
+        run: python3 .github/scripts/indexnow.py "${{ github.event.inputs.scope || 'changed' }}"

@@ -65,7 +65,7 @@ For every image:
 
 ## Pages and structured data
 
-- `<title>`: `<Article title> — Pablo Correa Prieto`. Visible byline and date.
+- `<title>`: `<Short form of the article title> — Pablo Correa Prieto`, at most about 600 px wide (roughly 60–65 characters in all) so the name is not cut off in search results. Make the short form by cutting words or keeping the part before the colon, using wording already on the page. The `<h1>`, `og:title` and JSON-LD `headline` keep the full title. Visible byline and date.
 - **Meta description: 160 characters or fewer**, in the page’s language. Count before committing. Shorten by cutting words or reusing wording already on the page; don’t add claims to fill space. Keep `og:description` identical unless the page deliberately differs (the home pages do).
 - Base URL: `https://pablocorreaprieto.ch` (from `CNAME`).
 - Home page: headshot near the top, next to the name (`pablo-correa-prieto.jpg`, alt “Pablo Correa Prieto”).
@@ -77,6 +77,7 @@ For every image:
 - Non-site files (docs, `tools/`) are kept off the published site by `_config.yml` `exclude` (GitHub Pages runs Jekyll; there is no `.nojekyll`). Add any new non-site file or folder there.
 - `sitemap.xml`: every page with its hreflang alternates and its images (`<image:image><image:loc>` only; the other image tags are deprecated). Update `<lastmod>` for every page you change. Referenced in `robots.txt`.
 - **Fonts are self-hosted**: `assets/fonts/` (variable WOFF2) + `assets/fonts.css`, preloaded from every page. Never reintroduce Google Fonts links; regeneration steps are in `tools/fonts.md`.
+- **IndexNow**: `.github/workflows/indexnow.yml` runs after every Pages deploy of `main` and submits the changed pages to Bing and the other IndexNow engines. Keep `e04a684de3418416b66632ab0593cd72.txt` at the root, published and unchanged. It does nothing for Google, which still needs Search Console.
 - **Atom feeds** `/feed.xml`, `/en/feed.xml`, `/es/feed.xml` are hand-maintained. For every new article: add an entry (title, link, id, published/updated, summary) to all three feeds and bump each feed's top-level `<updated>`.
 - **Figures gallery** `/figures`, `/en/figures`, `/es/figuras`: every article figure with its caption, credit and a link to its article, plus one `ImageObject` each in the page JSON-LD. Add every new figure to all three pages.
 - **"À lire ensuite / Read next / Para seguir leyendo"**: each article ends with a `<nav class="next">` linking two related articles. When adding an article, give it two links and add it where it fits in the existing articles' navs.
