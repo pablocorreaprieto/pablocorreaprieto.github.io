@@ -10,6 +10,7 @@
 - [Formations / Training](https://pablocorreaprieto.ch/formations): professional development on generative AI for teaching teams in the canton of Vaud and French-speaking Switzerland — three formats, English at /en/training and Spanish at /es/formaciones
 - [IA à l’école en Suisse romande](https://pablocorreaprieto.ch/ia-ecole-romandie): a maintained reference on what the official Swiss texts (CIIP, Eduvaud, HEP Vaud) require of schools on generative AI — English at /en/ai-schools-french-speaking-switzerland, Spanish at /es/ia-escuela-suiza-romanda
 - [Publications](https://pablocorreaprieto.ch/publications): publications and works in preparation
+- [Presse / Press](https://pablocorreaprieto.ch/presse): short and long bio, photo and contact for journalists, English at /en/press and Spanish at /es/prensa
 - [Figures](https://pablocorreaprieto.ch/figures): every original article figure, licensed CC BY 4.0
 - [Réutiliser les figures](https://pablocorreaprieto.ch/reutilisation-figures): how to reuse and credit the figures
 
