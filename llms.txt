@@ -7,7 +7,7 @@
 - [Profil et CV (FR)](https://pablocorreaprieto.ch/): who Pablo Correa Prieto is, experience, education, contact
 - [Articles (FR)](https://pablocorreaprieto.ch/articles): all articles, with English at /en/articles and Spanish at /es/articulos
 - [Recherche](https://pablocorreaprieto.ch/recherche): the research project (AI-generated assessment items and the PER curriculum)
-- [Formations / Training](https://pablocorreaprieto.ch/formations): professional development on generative AI for teaching teams in the canton of Vaud and French-speaking Switzerland — three formats, plus a talk for parents' associations, English at /en/training and Spanish at /es/formaciones
+- [Formations / Training](https://pablocorreaprieto.ch/formations): professional development on generative AI for teaching teams in the canton of Vaud and French-speaking Switzerland — three formats for schools and a talk for parents’ associations, English at /en/training and Spanish at /es/formaciones
 - [Cours particuliers / Private tutoring](https://pablocorreaprieto.ch/cours-particuliers): private lessons in French, maths, English and Spanish, and support for pupils on the autism spectrum, in the Lausanne area or online — English at /en/tutoring and Spanish at /es/clases-particulares
 - [IA à l’école en Suisse romande](https://pablocorreaprieto.ch/ia-ecole-romandie): a maintained reference on what the official Swiss texts (CIIP, Eduvaud, HEP Vaud) require of schools on generative AI — English at /en/ai-schools-french-speaking-switzerland, Spanish at /es/ia-escuela-suiza-romanda
 - [Publications](https://pablocorreaprieto.ch/publications): publications and works in preparation
