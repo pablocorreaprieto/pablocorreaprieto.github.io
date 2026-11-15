@@ -47,7 +47,7 @@
       "url": "https://pablocorreaprieto.ch/es/",
       "name": "Pablo Correa Prieto — Docente en Vaud, IA e investigación educativa",
       "inLanguage": "es",
-      "dateModified": "2026-11-07",
+      "dateModified": "2026-11-15",
       "mainEntity": {
         "@id": "https://pablocorreaprieto.ch/#person"
       }
@@ -243,6 +243,11 @@
   .intro .portrait{grid-column:2; grid-row:1}
   .intro .facts{grid-column:1 / -1; grid-row:2}
   .portrait{display:block; width:100%; height:auto; aspect-ratio:4 / 5; object-fit:cover; border-radius:4px; background:var(--accent-soft)}
+  .doors{grid-column:1 / -1; grid-row:3; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; margin:26px 0 0}
+  .doors a{display:block; padding:12px 14px; border:1px solid var(--rule); border-radius:4px; font-size:.875rem; line-height:1.4}
+  .doors a:hover{border-color:var(--accent)}
+  .doors b{display:block; font-weight:500}
+  .doors span{color:var(--muted)}
 
   section h2{font-size:.75rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin:0 0 22px; padding-bottom:12px; border-bottom:1px solid var(--rule)}
   section p{margin:0 0 14px; max-width:64ch}
@@ -290,6 +295,7 @@
     .intro{display:block}
     .intro .portrait{float:right; width:112px; margin:6px 0 12px 18px}
     .intro .facts{clear:both}
+    .doors{grid-template-columns:1fr; gap:8px; margin-top:20px}
   }
   @media (pointer:coarse){
     .crumbs a, nav.site a, .blk a, ul.tags a, ul.links a, figcaption a,
@@ -309,7 +315,7 @@
     .id{position:static; margin:0 0 14px; padding-bottom:12px; border-bottom:1px solid var(--rule)}
     .id h1{font-size:1.9rem; margin-bottom:8px}
     .id h1 .wm{width:180px}
-    .avail{display:none}
+    .avail, .doors{display:none}
     .blk{display:grid; grid-template-columns:repeat(4, 1fr); gap:6px 18px; margin:12px 0 0; padding:0; border:0; font-size:8.5pt}
     .blk .langs .lvl{font-size:8pt}
     .blk > div{min-width:0}
@@ -342,9 +348,9 @@
     <a href="/es/publicaciones">Publicaciones</a>
   </nav>
   <nav class="tb" aria-label="Idioma">
-    <a href="/" hreflang="fr" lang="fr" aria-label="Français">FR</a>
-    <a href="/en/" hreflang="en" lang="en" aria-label="English">EN</a>
-    <a href="/es/" hreflang="es" lang="es" aria-label="Español" aria-current="page">ES</a>
+    <a href="/" hreflang="fr" lang="fr" aria-label="FR – Français">FR</a>
+    <a href="/en/" hreflang="en" lang="en" aria-label="EN – English">EN</a>
+    <a href="/es/" hreflang="es" lang="es" aria-label="ES – Español" aria-current="page">ES</a>
   </nav>
   <div class="tb"><button type="button" id="btn-print" onclick="window.print()">IMPRIMIR / PDF</button></div>
 </header>
@@ -360,6 +366,7 @@
       <div>
         <strong>Disponible para sustituciones y puestos</strong>
         <span class="sub">Primaria y secundaria I · Lausana y alrededores</span>
+        <span class="sub offer"><a href="mailto:pabcorpri@gmail.com?subject=Sustituci%C3%B3n%20o%20puesto">Escribir para una sustitución o un puesto</a></span>
         <span class="sub offer"><a href="/es/formaciones">Formación en IA para equipos docentes</a></span>
       </div>
     </div>
@@ -428,9 +435,14 @@
       </p>
       <ul class="facts">
         <li><b>3H–8H</b>reconocimiento CDIP</li>
-        <li><b>4H → 12RAC</b>cursos impartidos en Vaud</li>
+        <li><b>4H → 12RAC</b>cursos impartidos en Vaud (RAC, clases puente)</li>
         <li><b>3 idiomas</b>FR · ES · EN</li>
       </ul>
+      <nav class="doors" aria-label="Accesos según su necesidad">
+        <a href="#h-exp"><b>Direcciones de centros</b><span>Experiencia, disponibilidad y documentación</span></a>
+        <a href="/es/formaciones"><b>Formaciones y conferencias</b><span>IA generativa, para equipos docentes y familias</span></a>
+        <a href="/es/investigacion"><b>Investigación</b><span>Proyecto, publicaciones y artículos</span></a>
+      </nav>
     </div>
 
     <section aria-labelledby="h-exp">
@@ -442,8 +454,8 @@
             <span class="what">Docente sustituto</span>
             <span class="where">Estado de Vaud, DGEO (plataforma MIREO) <span class="loc">· contrato temporal</span></span>
             <ul class="pts">
-              <li>Collège de Chernex (EPS Montreux-Est) — sustitución en 4H (ciclo 1) desde el 26 de octubre de 2026, a tiempo completo desde diciembre: enseñanza generalista.</li>
-              <li>Établissement de Montreux-Ouest — clases puente (12RAC): inglés, ciencias humanas y sociales, artes visuales; evaluaciones registradas en Neo.</li>
+              <li>Collège de Chernex (EPS Montreux-Est) — sustitución en 4H (ciclo 1) desde el 26 de octubre de 2026, a tiempo completo a partir de diciembre: enseñanza generalista.</li>
+              <li>Établissement de Montreux-Ouest — clases puente (12RAC) hasta octubre de 2026: inglés, ciencias humanas y sociales, artes visuales; evaluaciones registradas en Neo.</li>
               <li>EPS Le Mont-sur-Lausanne — sustitución en 7H: desarrollo de las secuencias didácticas del titular y seguimiento del alumnado en las áreas del PER (plan de estudios de la Suiza francófona).</li>
             </ul>
           </div>
@@ -452,7 +464,7 @@
           <div class="when">Jul. 2025 – jul. 2026</div>
           <div>
             <span class="what">Auxiliar de educación infantil</span>
-            <span class="where">Babilou, Lausana <span class="loc">· contrato temporal</span></span>
+            <span class="where">Babilou, Lausana</span>
             <p class="detail">Acompañamiento individualizado de un niño con TEA, en coordinación con el equipo educativo; dinamización de actividades grupales y seguimiento del desarrollo.</p>
           </div>
         </li>
@@ -484,6 +496,13 @@
       <h2 id="h-form">Formación</h2>
       <ol class="cv">
         <li class="row">
+          <div class="when">2027</div>
+          <div>
+            <span class="what">Monitor Jeunesse+Sport – Deporte escolar</span>
+            <span class="where">HEP Vaud <span class="loc">· inscrito, enero de 2027</span></span>
+          </div>
+        </li>
+        <li class="row">
           <div class="when">2026 – actualidad</div>
           <div>
             <span class="what">Máster en Investigación en Educación</span>
@@ -502,13 +521,6 @@
           <div>
             <span class="what">Grado en Maestro en Educación Primaria, mención en Lengua Extranjera (Francés)</span>
             <span class="where">Universidad de La Laguna <span class="loc">· 240 ECTS</span></span>
-          </div>
-        </li>
-        <li class="row">
-          <div class="when">2027</div>
-          <div>
-            <span class="what">Monitor Jeunesse+Sport – Deporte escolar</span>
-            <span class="where">HEP Vaud <span class="loc">· inscrito, enero de 2027</span></span>
           </div>
         </li>
       </ol>
@@ -544,6 +556,11 @@
       <h2 id="h-rech">Investigación</h2>
       <p>Mi trabajo se centra en la educación digital, la inteligencia artificial en la escuela y la enseñanza secundaria.</p>
       <div class="work" style="margin-bottom:16px">
+        <p class="kind">Artículo enviado · noviembre de 2026</p>
+        <p class="title">Auditoría prerregistrada de textos de lectura en francés producidos por grandes modelos de lenguaje para los cursos de Primaria suizos, según el curso indicado en la instrucción.</p>
+        <p class="detail">Enviado a una revista con revisión por pares, en evaluación.</p>
+      </div>
+      <div class="work" style="margin-bottom:16px">
         <p class="kind">Artículo en preparación</p>
         <p class="title">¿Pueden los grandes modelos de lenguaje escribir conforme al currículo? Alineación, demanda cognitiva y calidad de ítems de matemáticas para el Plan d’études romand</p>
         <p class="detail">Inteligencia artificial y evaluación: ítems generados por IA analizados frente al PER, matemáticas del ciclo 3.</p>
@@ -562,6 +579,13 @@
       <h2 id="h-pub">Publicaciones</h2>
       <ol class="cv">
         <li class="row">
+          <div class="when">2026</div>
+          <div>
+            <span class="what"><a href="https://doi.org/10.5281/zenodo.23493794" target="_blank" rel="noopener">Archivo de las figuras de este sitio</a></span>
+            <span class="where">Zenodo <span class="loc">· PNG y fuentes SVG, CC BY 4.0</span></span>
+          </div>
+        </li>
+        <li class="row">
           <div class="when">2024</div>
           <div>
             <span class="what"><a href="https://riull.ull.es/xmlui/handle/915/38043" target="_blank" rel="noopener"><cite>Las matemáticas a partir del juego</cite></a></span>
@@ -575,6 +599,7 @@
 
     <section aria-labelledby="h-art">
       <h2 id="h-art">Artículos</h2>
+      <p class="detail" style="margin:0 0 20px">Análisis y síntesis personales, no revisados por pares.</p>
       <ol class="cv">
         <li class="row">
           <div class="when">4 oct. 2026</div>
