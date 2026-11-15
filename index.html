@@ -47,7 +47,7 @@
       "url": "https://pablocorreaprieto.ch/",
       "name": "Pablo Correa Prieto — Enseignant en Vaud, IA et recherche en éducation",
       "inLanguage": "fr",
-      "dateModified": "2026-11-07",
+      "dateModified": "2026-11-15",
       "mainEntity": {
         "@id": "https://pablocorreaprieto.ch/#person"
       }
@@ -243,6 +243,11 @@
   .intro .portrait{grid-column:2; grid-row:1}
   .intro .facts{grid-column:1 / -1; grid-row:2}
   .portrait{display:block; width:100%; height:auto; aspect-ratio:4 / 5; object-fit:cover; border-radius:4px; background:var(--accent-soft)}
+  .doors{grid-column:1 / -1; grid-row:3; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; margin:26px 0 0}
+  .doors a{display:block; padding:12px 14px; border:1px solid var(--rule); border-radius:4px; font-size:.875rem; line-height:1.4}
+  .doors a:hover{border-color:var(--accent)}
+  .doors b{display:block; font-weight:500}
+  .doors span{color:var(--muted)}
 
   section h2{font-size:.75rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin:0 0 22px; padding-bottom:12px; border-bottom:1px solid var(--rule)}
   section p{margin:0 0 14px; max-width:64ch}
@@ -290,6 +295,7 @@
     .intro{display:block}
     .intro .portrait{float:right; width:112px; margin:6px 0 12px 18px}
     .intro .facts{clear:both}
+    .doors{grid-template-columns:1fr; gap:8px; margin-top:20px}
   }
   @media (pointer:coarse){
     .crumbs a, nav.site a, .blk a, ul.tags a, ul.links a, figcaption a,
@@ -309,7 +315,7 @@
     .id{position:static; margin:0 0 14px; padding-bottom:12px; border-bottom:1px solid var(--rule)}
     .id h1{font-size:1.9rem; margin-bottom:8px}
     .id h1 .wm{width:180px}
-    .avail{display:none}
+    .avail, .doors{display:none}
     .blk{display:grid; grid-template-columns:repeat(4, 1fr); gap:6px 18px; margin:12px 0 0; padding:0; border:0; font-size:8.5pt}
     .blk .langs .lvl{font-size:8pt}
     .blk > div{min-width:0}
@@ -342,9 +348,9 @@
     <a href="/publications">Publications</a>
   </nav>
   <nav class="tb" aria-label="Langue">
-    <a href="/" hreflang="fr" lang="fr" aria-label="Français" aria-current="page">FR</a>
-    <a href="/en/" hreflang="en" lang="en" aria-label="English">EN</a>
-    <a href="/es/" hreflang="es" lang="es" aria-label="Español">ES</a>
+    <a href="/" hreflang="fr" lang="fr" aria-label="FR – Français" aria-current="page">FR</a>
+    <a href="/en/" hreflang="en" lang="en" aria-label="EN – English">EN</a>
+    <a href="/es/" hreflang="es" lang="es" aria-label="ES – Español">ES</a>
   </nav>
   <div class="tb"><button type="button" id="btn-print" onclick="window.print()">IMPRIMER / PDF</button></div>
 </header>
@@ -360,6 +366,7 @@
       <div>
         <strong>Disponible pour remplacements et postes</strong>
         <span class="sub">Primaire et secondaire I · Lausanne et région</span>
+        <span class="sub offer"><a href="mailto:pabcorpri@gmail.com?subject=Remplacement%20ou%20poste">Écrire pour un remplacement ou un poste</a></span>
         <span class="sub offer"><a href="/formations">Formations IA pour les équipes enseignantes</a></span>
       </div>
     </div>
@@ -431,6 +438,11 @@
         <li><b>4H → 12RAC</b>degrés enseignés en Vaud (RAC, classes de raccordement)</li>
         <li><b>3 langues</b>FR · ES · EN</li>
       </ul>
+      <nav class="doors" aria-label="Accès selon votre besoin">
+        <a href="#h-exp"><b>Directions d’école</b><span>Expérience, disponibilité et dossier</span></a>
+        <a href="/formations"><b>Formations et conférences</b><span>IA générative, pour les équipes enseignantes et les parents</span></a>
+        <a href="/recherche"><b>Recherche</b><span>Projet, publications et articles</span></a>
+      </nav>
     </div>
 
     <section aria-labelledby="h-exp">
@@ -452,7 +464,7 @@
           <div class="when">Juil. 2025 – juil. 2026</div>
           <div>
             <span class="what">Auxiliaire de la petite enfance</span>
-            <span class="where">Babilou, Lausanne <span class="loc">· CDD</span></span>
+            <span class="where">Babilou, Lausanne</span>
             <p class="detail">Accompagnement individualisé d’un enfant présentant un TSA, en lien avec l’équipe éducative ; animation d’activités de groupe et suivi du développement.</p>
           </div>
         </li>
@@ -562,6 +574,13 @@
       <h2 id="h-pub">Publications</h2>
       <ol class="cv">
         <li class="row">
+          <div class="when">2026</div>
+          <div>
+            <span class="what"><a href="https://doi.org/10.5281/zenodo.23493794" target="_blank" rel="noopener">Archive des figures de ce site</a></span>
+            <span class="where">Zenodo <span class="loc">· PNG et sources SVG, CC BY 4.0</span></span>
+          </div>
+        </li>
+        <li class="row">
           <div class="when">2024</div>
           <div>
             <span class="what"><a href="https://riull.ull.es/xmlui/handle/915/38043" target="_blank" rel="noopener"><cite lang="es">Las matemáticas a partir del juego</cite></a></span>
@@ -575,6 +594,7 @@
 
     <section aria-labelledby="h-art">
       <h2 id="h-art">Articles</h2>
+      <p class="detail" style="margin:0 0 20px">Analyses et synthèses personnelles, non évaluées par les pairs.</p>
       <ol class="cv">
         <li class="row">
           <div class="when">4 oct. 2026</div>
