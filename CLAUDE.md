@@ -39,10 +39,7 @@ Articles are short, rigorous pieces on AI in education, each with original figur
 3. Make the images (see “Images”).
 4. Show Pablo the draft and the images; wait for his edits.
 5. Write the English and Spanish versions, with figure labels translated.
-6. End every version with a one-line AI-assistance note:
-   - FR: « Texte rédigé avec l’aide d’une IA, relu et validé par l’auteur. »
-   - EN: “Text written with the help of AI, reviewed and approved by the author.”
-   - ES: «Texto redactado con ayuda de una IA, revisado y validado por el autor.»
+6. Do not add any note about how the text was produced. Pablo declares that himself, where and when he chooses.
 7. Run the checklist and preview locally (`python3 -m http.server`).
 8. Push the branch and open or update the pull request. Pablo reviews and merges (“publish”).
 
@@ -113,7 +110,7 @@ HAL: none for now. Any other profile only after Pablo confirms its URL.
 - [ ] Every internal link resolves to a file
 - [ ] Meta descriptions ≤ 160 characters
 - [ ] Every citation verified, or flagged `[SOURCE À VÉRIFIER]`
-- [ ] AI-assistance note present in all three versions
+- [ ] No note about how the text was produced, in any of the three versions
 - [ ] No placeholders left
 
 ## Check the live site after every deploy
