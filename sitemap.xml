@@ -130,6 +130,36 @@
     <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto.jpg</image:loc></image:image>
   </url>
   <url>
+    <loc>https://pablocorreaprieto.ch/traduction</loc>
+    <lastmod>2026-11-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/traduction"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/translation"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/traduccion"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/traduction"/>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-traduction-titre-fr.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pablocorreaprieto.ch/en/translation</loc>
+    <lastmod>2026-11-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/traduction"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/translation"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/traduccion"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/traduction"/>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-traduction-titre-en.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pablocorreaprieto.ch/es/traduccion</loc>
+    <lastmod>2026-11-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/traduction"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pablocorreaprieto.ch/en/translation"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pablocorreaprieto.ch/es/traduccion"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocorreaprieto.ch/traduction"/>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto-traduction-titre-es.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pablocorreaprieto.ch/pablo-correa-prieto.jpg</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://pablocorreaprieto.ch/recherche</loc>
     <lastmod>2026-11-15</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://pablocorreaprieto.ch/recherche"/>

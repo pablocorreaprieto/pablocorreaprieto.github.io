@@ -12,6 +12,7 @@ French is the default language at the root; English lives in `/en/`, Spanish in 
 | Research project | `recherche.html` | `en/research.html` | `es/investigacion.html` |
 | Training offer (AI for schools) | `formations.html` | `en/training.html` | `es/formaciones.html` |
 | Private tutoring | `cours-particuliers.html` | `en/tutoring.html` | `es/clases-particulares.html` |
+| Translation and language editing | `traduction.html` | `en/translation.html` | `es/traduccion.html` |
 | Reference: what the Swiss texts require | `ia-ecole-romandie.html` | `en/ai-schools-french-speaking-switzerland.html` | `es/ia-escuela-suiza-romanda.html` |
 | Publications | `publications.html` | `en/publications.html` | `es/publicaciones.html` |
 | Article (24 Sept 2026) | `ia-enseignant-preparer-evaluer.html` | `en/ai-teachers-prepare-assess.html` | `es/ia-docente-preparar-evaluar.html` |
