@@ -5,12 +5,20 @@
   <id>https://pablocorreaprieto.ch/articles</id>
   <link rel="self" type="application/atom+xml" href="https://pablocorreaprieto.ch/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://pablocorreaprieto.ch/articles"/>
-  <updated>2026-10-04T00:00:00+02:00</updated>
+  <updated>2026-11-25T00:00:00+01:00</updated>
   <author>
     <name>Pablo Correa Prieto</name>
     <uri>https://pablocorreaprieto.ch/</uri>
   </author>
   <rights>© 2026 Pablo Correa Prieto</rights>
+  <entry>
+    <title>Les remplaçants que l’école ne voit pas</title>
+    <link rel="alternate" type="text/html" href="https://pablocorreaprieto.ch/remplacants-ecole-ne-voit-pas"/>
+    <id>https://pablocorreaprieto.ch/remplacants-ecole-ne-voit-pas</id>
+    <published>2026-11-25T00:00:00+01:00</published>
+    <updated>2026-11-25T00:00:00+01:00</updated>
+    <summary>Tribune parue dans Le Courrier du 25 novembre 2026. Quatre mesures sans budget pour que les remplaçants fassent partie de l’école, même pour quelques semaines.</summary>
+  </entry>
   <entry>
     <title>Détecter l’IA dans une copie : pourquoi la fiabilité n’est pas la bonne question</title>
     <link rel="alternate" type="text/html" href="https://pablocorreaprieto.ch/detecteurs-ia-fiabilite-decision"/>

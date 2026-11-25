@@ -23,6 +23,7 @@ French is the default language at the root; English lives in `/en/`, Spanish in 
 | Article: acceptance is not use (4 Oct 2026) | `acceptation-usage-ia-enseignants.html` | `en/acceptance-is-not-use-teachers-ai.html` | `es/aceptacion-no-es-uso-docentes-ia.html` |
 | Article: information, not the grade (4 Oct 2026) | `commentaire-note-feedback-ia.html` | `en/comments-grades-ai-feedback.html` | `es/comentario-nota-feedback-ia.html` |
 | Article: AI detectors and decisions (4 Oct 2026) | `detecteurs-ia-fiabilite-decision.html` | `en/ai-detectors-reliability-decision.html` | `es/detectores-ia-fiabilidad-decision.html` |
+| Tribune in Le Courrier (25 Nov 2026), French only, linked from the press pages | `remplacants-ecole-ne-voit-pas.html` | – | – |
 | Articles index | `articles.html` | `en/articles.html` | `es/articulos.html` |
 | Figures gallery | `figures.html` | `en/figures.html` | `es/figuras.html` |
 | Figure reuse (licence) | `reutilisation-figures.html` | `en/figure-reuse.html` | `es/reutilizacion-figuras.html` |
